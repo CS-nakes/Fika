@@ -99,13 +99,12 @@
 		2E7E38E72676FC0A00034007 /* Fika */ = {
 			isa = PBXGroup;
 			children = (
-				2E7E38E82676FC0A00034007 /* AppDelegate.swift */,
-				2E7E38EA2676FC0A00034007 /* SceneDelegate.swift */,
-				2E7E38EC2676FC0A00034007 /* ViewController.swift */,
-				2E7E38EE2676FC0A00034007 /* Main.storyboard */,
-				2E7E38F12676FC0C00034007 /* Assets.xcassets */,
-				2E7E38F32676FC0C00034007 /* LaunchScreen.storyboard */,
-				2E7E38F62676FC0C00034007 /* Info.plist */,
+				2E7E391E2677084600034007 /* Models */,
+				2E7E391D2677082E00034007 /* Application */,
+				2E7E391C2677082500034007 /* Common */,
+				2E7E391B2677081D00034007 /* Assets */,
+				2E7E391A2677081200034007 /* Bootstrap */,
+				2E7E39192677080600034007 /* Supporting Files */,
 			);
 			path = Fika;
 			sourceTree = "<group>";
@@ -126,6 +125,79 @@
 				2E7E390C2676FC0C00034007 /* Info.plist */,
 			);
 			path = FikaUITests;
+			sourceTree = "<group>";
+		};
+		2E7E39192677080600034007 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2E7E38F62676FC0C00034007 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2E7E391A2677081200034007 /* Bootstrap */ = {
+			isa = PBXGroup;
+			children = (
+				2E7E38E82676FC0A00034007 /* AppDelegate.swift */,
+				2E7E38EA2676FC0A00034007 /* SceneDelegate.swift */,
+				2E7E38F32676FC0C00034007 /* LaunchScreen.storyboard */,
+			);
+			path = Bootstrap;
+			sourceTree = "<group>";
+		};
+		2E7E391B2677081D00034007 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				2E7E38F12676FC0C00034007 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		2E7E391C2677082500034007 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		2E7E391D2677082E00034007 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				2E7E391F2677086200034007 /* Main */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		2E7E391E2677084600034007 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2E7E391F2677086200034007 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2E7E39202677086A00034007 /* Views */,
+				2E7E39212677087100034007 /* Controllers */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		2E7E39202677086A00034007 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2E7E38EE2676FC0A00034007 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2E7E39212677087100034007 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2E7E38EC2676FC0A00034007 /* ViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

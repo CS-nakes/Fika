@@ -15,6 +15,14 @@
 		2E7E38F52676FC0C00034007 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E7E38F32676FC0C00034007 /* LaunchScreen.storyboard */; };
 		2E7E39002676FC0C00034007 /* FikaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E38FF2676FC0C00034007 /* FikaTests.swift */; };
 		2E7E390B2676FC0C00034007 /* FikaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E390A2676FC0C00034007 /* FikaUITests.swift */; };
+		2E7E392626779B8800034007 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E7E392526779B8800034007 /* Onboarding.storyboard */; };
+		2E7E392A26779C0300034007 /* NexaBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2E7E392826779BF100034007 /* NexaBold.otf */; };
+		2E7E392B26779C0800034007 /* NexaLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2E7E392926779BF100034007 /* NexaLight.otf */; };
+		2E7E392E26779EF000034007 /* UIView+ShadowColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E392D26779EF000034007 /* UIView+ShadowColor.swift */; };
+		2E7E39302677A6A700034007 /* OnboardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E392F2677A6A600034007 /* OnboardingPageViewController.swift */; };
+		2E7E39332677AAF600034007 /* OnboardingPageViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E39322677AAF600034007 /* OnboardingPageViewControllerDelegate.swift */; };
+		2E7E39352677ACA700034007 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E39342677ACA700034007 /* OnboardingViewController.swift */; };
+		2E7E39372677B08200034007 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E39362677B08200034007 /* PageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,14 @@
 		2E7E39062676FC0C00034007 /* FikaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FikaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E7E390A2676FC0C00034007 /* FikaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FikaUITests.swift; sourceTree = "<group>"; };
 		2E7E390C2676FC0C00034007 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E7E392526779B8800034007 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		2E7E392826779BF100034007 /* NexaBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NexaBold.otf; sourceTree = "<group>"; };
+		2E7E392926779BF100034007 /* NexaLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NexaLight.otf; sourceTree = "<group>"; };
+		2E7E392D26779EF000034007 /* UIView+ShadowColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ShadowColor.swift"; sourceTree = "<group>"; };
+		2E7E392F2677A6A600034007 /* OnboardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewController.swift; sourceTree = "<group>"; };
+		2E7E39322677AAF600034007 /* OnboardingPageViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewControllerDelegate.swift; sourceTree = "<group>"; };
+		2E7E39342677ACA700034007 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		2E7E39362677B08200034007 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				2E7E38F12676FC0C00034007 /* Assets.xcassets */,
+				2E7E392726779BE100034007 /* Fonts */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -156,6 +173,7 @@
 		2E7E391C2677082500034007 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				2E7E392C26779ED900034007 /* Extensions */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -163,6 +181,7 @@
 		2E7E391D2677082E00034007 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				2E7E392226779AA600034007 /* Onboarding */,
 				2E7E391F2677086200034007 /* Main */,
 			);
 			path = Application;
@@ -198,6 +217,59 @@
 				2E7E38EC2676FC0A00034007 /* ViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2E7E392226779AA600034007 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				2E7E392326779B3D00034007 /* Views */,
+				2E7E392426779B4100034007 /* Controllers */,
+				2E7E39312677AADC00034007 /* Protocols */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		2E7E392326779B3D00034007 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2E7E392526779B8800034007 /* Onboarding.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2E7E392426779B4100034007 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2E7E392F2677A6A600034007 /* OnboardingPageViewController.swift */,
+				2E7E39342677ACA700034007 /* OnboardingViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2E7E392726779BE100034007 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2E7E392826779BF100034007 /* NexaBold.otf */,
+				2E7E392926779BF100034007 /* NexaLight.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		2E7E392C26779ED900034007 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2E7E392D26779EF000034007 /* UIView+ShadowColor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2E7E39312677AADC00034007 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2E7E39322677AAF600034007 /* OnboardingPageViewControllerDelegate.swift */,
+				2E7E39362677B08200034007 /* PageViewController.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,6 +379,9 @@
 				2E7E38F52676FC0C00034007 /* LaunchScreen.storyboard in Resources */,
 				2E7E38F22676FC0C00034007 /* Assets.xcassets in Resources */,
 				2E7E38F02676FC0A00034007 /* Main.storyboard in Resources */,
+				2E7E392A26779C0300034007 /* NexaBold.otf in Resources */,
+				2E7E392626779B8800034007 /* Onboarding.storyboard in Resources */,
+				2E7E392B26779C0800034007 /* NexaLight.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,9 +426,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E7E392E26779EF000034007 /* UIView+ShadowColor.swift in Sources */,
 				2E7E38ED2676FC0A00034007 /* ViewController.swift in Sources */,
+				2E7E39302677A6A700034007 /* OnboardingPageViewController.swift in Sources */,
+				2E7E39332677AAF600034007 /* OnboardingPageViewControllerDelegate.swift in Sources */,
+				2E7E39352677ACA700034007 /* OnboardingViewController.swift in Sources */,
 				2E7E38E92676FC0A00034007 /* AppDelegate.swift in Sources */,
 				2E7E38EB2676FC0A00034007 /* SceneDelegate.swift in Sources */,
+				2E7E39372677B08200034007 /* PageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

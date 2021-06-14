@@ -15,6 +15,8 @@
 		2E7E38F52676FC0C00034007 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E7E38F32676FC0C00034007 /* LaunchScreen.storyboard */; };
 		2E7E39002676FC0C00034007 /* FikaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E38FF2676FC0C00034007 /* FikaTests.swift */; };
 		2E7E390B2676FC0C00034007 /* FikaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E390A2676FC0C00034007 /* FikaUITests.swift */; };
+		AE68628926777A9700059414 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE68628826777A9700059414 /* Profile.storyboard */; };
+		AE68628B26777ADB00059414 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE68628A26777ADB00059414 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		2E7E39062676FC0C00034007 /* FikaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FikaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E7E390A2676FC0C00034007 /* FikaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FikaUITests.swift; sourceTree = "<group>"; };
 		2E7E390C2676FC0C00034007 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE68628826777A9700059414 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		AE68628A26777ADB00059414 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				2E7E38EE2676FC0A00034007 /* Main.storyboard */,
+				AE68628826777A9700059414 /* Profile.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -196,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				2E7E38EC2676FC0A00034007 /* ViewController.swift */,
+				AE68628A26777ADB00059414 /* ProfileViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -306,6 +312,7 @@
 			files = (
 				2E7E38F52676FC0C00034007 /* LaunchScreen.storyboard in Resources */,
 				2E7E38F22676FC0C00034007 /* Assets.xcassets in Resources */,
+				AE68628926777A9700059414 /* Profile.storyboard in Resources */,
 				2E7E38F02676FC0A00034007 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,6 +360,7 @@
 			files = (
 				2E7E38ED2676FC0A00034007 /* ViewController.swift in Sources */,
 				2E7E38E92676FC0A00034007 /* AppDelegate.swift in Sources */,
+				AE68628B26777ADB00059414 /* ProfileViewController.swift in Sources */,
 				2E7E38EB2676FC0A00034007 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -530,13 +538,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K9H85859Q4;
+				DEVELOPMENT_TEAM = GDV65BVPL6;
 				INFOPLIST_FILE = "Fika/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hanmingdev.Fika;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wenjie.Fika;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -549,13 +557,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K9H85859Q4;
+				DEVELOPMENT_TEAM = GDV65BVPL6;
 				INFOPLIST_FILE = "Fika/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hanmingdev.Fika;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wenjie.Fika;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -568,7 +576,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K9H85859Q4;
+				DEVELOPMENT_TEAM = GDV65BVPL6;
 				INFOPLIST_FILE = FikaTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -590,7 +598,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K9H85859Q4;
+				DEVELOPMENT_TEAM = GDV65BVPL6;
 				INFOPLIST_FILE = FikaTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (

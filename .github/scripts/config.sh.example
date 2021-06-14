@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+readonly ORIGINAL_DEV_TEAM="K9H85859Q4"
+readonly ORIGINAL_BUNDLE_ID="com.hanmingdev.Fika"
+
+# Replace with your dev team identifier
+readonly NEW_DEV_TEAM="XXXXXXXXXX"
+# Replace with your bundle id
+readonly NEW_BUNDLE_ID="com.example.Fika"

@@ -23,6 +23,7 @@
 		2E7E39332677AAF600034007 /* OnboardingPageViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E39322677AAF600034007 /* OnboardingPageViewControllerDelegate.swift */; };
 		2E7E39352677ACA700034007 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E39342677ACA700034007 /* OnboardingViewController.swift */; };
 		2E7E39372677B08200034007 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E39362677B08200034007 /* PageViewController.swift */; };
+		2E975DBB2678C88C00907565 /* UIViewController+HideNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E975DBA2678C88C00907565 /* UIViewController+HideNavBar.swift */; };
 		2EAB40762677B5C800FFF586 /* Registration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EAB40752677B5C800FFF586 /* Registration.storyboard */; };
 		2EAB40782677B7DF00FFF586 /* CompanyCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAB40772677B7DF00FFF586 /* CompanyCodeViewController.swift */; };
 		2EFA3CDB2677BBD8009B2826 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFA3CDA2677BBD8009B2826 /* TextField.swift */; };
@@ -69,6 +70,7 @@
 		2E7E39322677AAF600034007 /* OnboardingPageViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewControllerDelegate.swift; sourceTree = "<group>"; };
 		2E7E39342677ACA700034007 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		2E7E39362677B08200034007 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		2E975DBA2678C88C00907565 /* UIViewController+HideNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+HideNavBar.swift"; sourceTree = "<group>"; };
 		2EAB40752677B5C800FFF586 /* Registration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Registration.storyboard; sourceTree = "<group>"; };
 		2EAB40772677B7DF00FFF586 /* CompanyCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyCodeViewController.swift; sourceTree = "<group>"; };
 		2EFA3CDA2677BBD8009B2826 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
@@ -269,6 +271,7 @@
 			isa = PBXGroup;
 			children = (
 				2E7E392D26779EF000034007 /* UIView+ShadowColor.swift */,
+				2E975DBA2678C88C00907565 /* UIViewController+HideNavBar.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -475,6 +478,7 @@
 				2EFA3CDE2677BF1C009B2826 /* AccountRegistrationViewController.swift in Sources */,
 				2E7E38ED2676FC0A00034007 /* ViewController.swift in Sources */,
 				2E7E39302677A6A700034007 /* OnboardingPageViewController.swift in Sources */,
+				2E975DBB2678C88C00907565 /* UIViewController+HideNavBar.swift in Sources */,
 				2EFA3CDB2677BBD8009B2826 /* TextField.swift in Sources */,
 				2EAB40782677B7DF00FFF586 /* CompanyCodeViewController.swift in Sources */,
 				2E7E39332677AAF600034007 /* OnboardingPageViewControllerDelegate.swift in Sources */,

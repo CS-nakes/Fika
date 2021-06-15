@@ -22,13 +22,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Fika" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJn-7e-OrA">
-                                <rect key="frame" x="20" y="188" width="208" height="33"/>
+                                <rect key="frame" x="20" y="188" width="215.5" height="28"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get ready for exciting conversations with your colleagues!  Please enter your company code to continue." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GbS-sD-7nk">
-                                <rect key="frame" x="20" y="249" width="374" height="68"/>
+                                <rect key="frame" x="20" y="244" width="374" height="68"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="68" id="sX7-BX-cDb"/>
                                 </constraints>
@@ -37,7 +37,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Company Code" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="GaC-dS-wOP" customClass="TextField" customModule="Fika" customModuleProvider="target">
-                                <rect key="frame" x="20" y="373.5" width="374" height="50"/>
+                                <rect key="frame" x="20" y="366" width="374" height="50"/>
                                 <color key="backgroundColor" name="White"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="CIW-ph-0Ug"/>
@@ -64,7 +64,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnp-F7-Fz3">
-                                <rect key="frame" x="20" y="350" width="99" height="16.5"/>
+                                <rect key="frame" x="20" y="345" width="100.5" height="14"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
                                 <color key="textColor" name="Aluminium"/>
                                 <nil key="highlightedColor"/>
@@ -134,13 +134,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register for Company A" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZQ-Lt-uT5">
-                                <rect key="frame" x="20" y="188" width="374" height="33"/>
+                                <rect key="frame" x="20" y="188" width="374" height="28"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L3X-aE-w9A">
-                                <rect key="frame" x="20" y="249" width="374" height="87"/>
+                                <rect key="frame" x="20" y="244" width="374" height="87"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="87" id="etK-yg-HdV"/>
                                 </constraints>
@@ -150,7 +150,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Email Address" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="oKC-8Q-9NP" customClass="TextField" customModule="Fika" customModuleProvider="target">
-                                <rect key="frame" x="20" y="392.5" width="374" height="50"/>
+                                <rect key="frame" x="20" y="385" width="374" height="50"/>
                                 <color key="backgroundColor" name="White"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="3cc-K4-DJR"/>
@@ -177,13 +177,13 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxs-00-3fJ">
-                                <rect key="frame" x="20" y="369" width="90" height="16.5"/>
+                                <rect key="frame" x="20" y="364" width="95" height="14"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
                                 <color key="textColor" name="Aluminium"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Email Address" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="oAH-gq-9OH" customClass="TextField" customModule="Fika" customModuleProvider="target">
-                                <rect key="frame" x="20" y="487" width="374" height="50"/>
+                                <rect key="frame" x="20" y="477" width="374" height="50"/>
                                 <color key="backgroundColor" name="White"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="pAl-50-bhH"/>
@@ -210,7 +210,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Email Address" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="B6C-FU-In8" customClass="TextField" customModule="Fika" customModuleProvider="target">
-                                <rect key="frame" x="20" y="548" width="374" height="50"/>
+                                <rect key="frame" x="20" y="538" width="374" height="50"/>
                                 <color key="backgroundColor" name="White"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="iWW-xB-0Wk"/>
@@ -237,7 +237,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBL-WE-ACy">
-                                <rect key="frame" x="20" y="463.5" width="62" height="16.5"/>
+                                <rect key="frame" x="20" y="456" width="67.5" height="14"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
                                 <color key="textColor" name="Aluminium"/>
                                 <nil key="highlightedColor"/>
@@ -270,21 +270,10 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f55-iG-lq6">
-                                <rect key="frame" x="13" y="132" width="30" height="24"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="JV9-LP-6NU"/>
-                                </constraints>
-                                <state key="normal" image="back"/>
-                                <connections>
-                                    <action selector="onBackButtonPressed:" destination="2lx-eb-8JL" eventType="touchUpInside" id="hkh-I3-Urm"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6fC-Ek-KCr"/>
                         <color key="backgroundColor" name="White Lilac"/>
                         <constraints>
-                            <constraint firstItem="f55-iG-lq6" firstAttribute="leading" secondItem="6fC-Ek-KCr" secondAttribute="leading" constant="13" id="0eh-Oh-zNV"/>
                             <constraint firstItem="oAH-gq-9OH" firstAttribute="leading" secondItem="6fC-Ek-KCr" secondAttribute="leading" constant="20" id="2LB-vp-kin"/>
                             <constraint firstItem="B6C-FU-In8" firstAttribute="top" secondItem="oAH-gq-9OH" secondAttribute="bottom" constant="11" id="6Al-xf-RRn"/>
                             <constraint firstItem="6fC-Ek-KCr" firstAttribute="trailing" secondItem="L3X-aE-w9A" secondAttribute="trailing" constant="20" id="CqE-1l-6YV"/>
@@ -294,11 +283,9 @@
                             <constraint firstItem="gBL-WE-ACy" firstAttribute="top" secondItem="oKC-8Q-9NP" secondAttribute="bottom" constant="21" id="NL6-kW-eyL"/>
                             <constraint firstItem="IZQ-Lt-uT5" firstAttribute="leading" secondItem="6fC-Ek-KCr" secondAttribute="leading" constant="20" id="PKE-3c-qiy"/>
                             <constraint firstItem="UGN-cx-8w5" firstAttribute="leading" secondItem="6fC-Ek-KCr" secondAttribute="leading" constant="20" id="Qns-h8-COt"/>
-                            <constraint firstItem="IZQ-Lt-uT5" firstAttribute="top" secondItem="f55-iG-lq6" secondAttribute="bottom" constant="32" id="Uwf-2W-TpD"/>
                             <constraint firstItem="6fC-Ek-KCr" firstAttribute="trailing" secondItem="IZQ-Lt-uT5" secondAttribute="trailing" constant="20" id="Vwh-7q-ben"/>
                             <constraint firstItem="L3X-aE-w9A" firstAttribute="leading" secondItem="6fC-Ek-KCr" secondAttribute="leading" constant="20" id="Zye-en-uMN"/>
                             <constraint firstItem="L3X-aE-w9A" firstAttribute="top" secondItem="IZQ-Lt-uT5" secondAttribute="bottom" constant="28" id="c4u-iq-KE9"/>
-                            <constraint firstItem="f55-iG-lq6" firstAttribute="top" secondItem="6fC-Ek-KCr" secondAttribute="top" constant="44" id="coY-Lz-duh"/>
                             <constraint firstItem="bxs-00-3fJ" firstAttribute="leading" secondItem="6fC-Ek-KCr" secondAttribute="leading" constant="20" id="kAR-n0-o0q"/>
                             <constraint firstItem="oAH-gq-9OH" firstAttribute="top" secondItem="gBL-WE-ACy" secondAttribute="bottom" constant="7" id="lMr-NL-Jc6"/>
                             <constraint firstItem="B6C-FU-In8" firstAttribute="leading" secondItem="6fC-Ek-KCr" secondAttribute="leading" constant="20" id="rhg-OX-ZaC"/>
@@ -338,20 +325,19 @@
     </scenes>
     <designables>
         <designable name="B6C-FU-In8">
-            <size key="intrinsicContentSize" width="158.5" height="18"/>
+            <size key="intrinsicContentSize" width="167.5" height="15.5"/>
         </designable>
         <designable name="GaC-dS-wOP">
-            <size key="intrinsicContentSize" width="167.5" height="18"/>
+            <size key="intrinsicContentSize" width="173.5" height="15.5"/>
         </designable>
         <designable name="oAH-gq-9OH">
-            <size key="intrinsicContentSize" width="158.5" height="18"/>
+            <size key="intrinsicContentSize" width="167.5" height="15.5"/>
         </designable>
         <designable name="oKC-8Q-9NP">
-            <size key="intrinsicContentSize" width="158.5" height="18"/>
+            <size key="intrinsicContentSize" width="167.5" height="15.5"/>
         </designable>
     </designables>
     <resources>
-        <image name="back" width="24" height="24"/>
         <namedColor name="Aluminium">
             <color red="0.59600001573562622" green="0.59600001573562622" blue="0.59600001573562622" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

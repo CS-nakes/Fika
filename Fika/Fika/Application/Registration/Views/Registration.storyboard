@@ -16,19 +16,19 @@
         <!--Company Code View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="CompanyCodeViewController" customModule="Fika" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Registration" id="Y6W-OH-hqX" customClass="CompanyCodeViewController" customModule="Fika" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Fika" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJn-7e-OrA">
-                                <rect key="frame" x="20" y="188" width="215.5" height="28"/>
+                                <rect key="frame" x="20" y="153" width="215.5" height="28"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get ready for exciting conversations with your colleagues!  Please enter your company code to continue." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GbS-sD-7nk">
-                                <rect key="frame" x="20" y="244" width="374" height="68"/>
+                                <rect key="frame" x="20" y="209" width="374" height="68"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="68" id="sX7-BX-cDb"/>
                                 </constraints>
@@ -37,7 +37,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Company Code" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="GaC-dS-wOP" customClass="TextField" customModule="Fika" customModuleProvider="target">
-                                <rect key="frame" x="20" y="366" width="374" height="50"/>
+                                <rect key="frame" x="20" y="331" width="374" height="50"/>
                                 <color key="backgroundColor" name="White"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="CIW-ph-0Ug"/>
@@ -64,7 +64,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnp-F7-Fz3">
-                                <rect key="frame" x="20" y="345" width="100.5" height="14"/>
+                                <rect key="frame" x="20" y="310" width="100.5" height="14"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
                                 <color key="textColor" name="Aluminium"/>
                                 <nil key="highlightedColor"/>
@@ -114,7 +114,7 @@
                             <constraint firstItem="60g-aa-1XV" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="b2G-K8-cj0"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="GaC-dS-wOP" secondAttribute="trailing" constant="20" id="eAF-fA-ssA"/>
                             <constraint firstItem="GaC-dS-wOP" firstAttribute="top" secondItem="bnp-F7-Fz3" secondAttribute="bottom" constant="7" id="f1U-ga-fxH"/>
-                            <constraint firstItem="lJn-7e-OrA" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="100" id="njc-pB-Iav"/>
+                            <constraint firstItem="lJn-7e-OrA" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="65" id="njc-pB-Iav"/>
                             <constraint firstItem="lJn-7e-OrA" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="p65-K1-eoP"/>
                             <constraint firstItem="bnp-F7-Fz3" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="rtq-y4-vfV"/>
                         </constraints>
@@ -134,13 +134,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register for Company A" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZQ-Lt-uT5">
-                                <rect key="frame" x="20" y="188" width="374" height="28"/>
+                                <rect key="frame" x="20" y="153" width="374" height="28"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L3X-aE-w9A">
-                                <rect key="frame" x="20" y="244" width="374" height="87"/>
+                                <rect key="frame" x="20" y="207" width="374" height="87"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="87" id="etK-yg-HdV"/>
                                 </constraints>
@@ -150,7 +150,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Email Address" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="oKC-8Q-9NP" customClass="TextField" customModule="Fika" customModuleProvider="target">
-                                <rect key="frame" x="20" y="385" width="374" height="50"/>
+                                <rect key="frame" x="20" y="348" width="374" height="50"/>
                                 <color key="backgroundColor" name="White"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="3cc-K4-DJR"/>
@@ -177,13 +177,13 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxs-00-3fJ">
-                                <rect key="frame" x="20" y="364" width="95" height="14"/>
+                                <rect key="frame" x="20" y="327" width="95" height="14"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
                                 <color key="textColor" name="Aluminium"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Email Address" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="oAH-gq-9OH" customClass="TextField" customModule="Fika" customModuleProvider="target">
-                                <rect key="frame" x="20" y="477" width="374" height="50"/>
+                                <rect key="frame" x="20" y="440" width="374" height="50"/>
                                 <color key="backgroundColor" name="White"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="pAl-50-bhH"/>
@@ -210,7 +210,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Email Address" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="B6C-FU-In8" customClass="TextField" customModule="Fika" customModuleProvider="target">
-                                <rect key="frame" x="20" y="538" width="374" height="50"/>
+                                <rect key="frame" x="20" y="501" width="374" height="50"/>
                                 <color key="backgroundColor" name="White"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="iWW-xB-0Wk"/>
@@ -237,7 +237,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBL-WE-ACy">
-                                <rect key="frame" x="20" y="456" width="67.5" height="14"/>
+                                <rect key="frame" x="20" y="419" width="67.5" height="14"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
                                 <color key="textColor" name="Aluminium"/>
                                 <nil key="highlightedColor"/>
@@ -285,14 +285,14 @@
                             <constraint firstItem="UGN-cx-8w5" firstAttribute="leading" secondItem="6fC-Ek-KCr" secondAttribute="leading" constant="20" id="Qns-h8-COt"/>
                             <constraint firstItem="6fC-Ek-KCr" firstAttribute="trailing" secondItem="IZQ-Lt-uT5" secondAttribute="trailing" constant="20" id="Vwh-7q-ben"/>
                             <constraint firstItem="L3X-aE-w9A" firstAttribute="leading" secondItem="6fC-Ek-KCr" secondAttribute="leading" constant="20" id="Zye-en-uMN"/>
-                            <constraint firstItem="L3X-aE-w9A" firstAttribute="top" secondItem="IZQ-Lt-uT5" secondAttribute="bottom" constant="28" id="c4u-iq-KE9"/>
+                            <constraint firstItem="L3X-aE-w9A" firstAttribute="top" secondItem="IZQ-Lt-uT5" secondAttribute="bottom" constant="26" id="c4u-iq-KE9"/>
                             <constraint firstItem="bxs-00-3fJ" firstAttribute="leading" secondItem="6fC-Ek-KCr" secondAttribute="leading" constant="20" id="kAR-n0-o0q"/>
                             <constraint firstItem="oAH-gq-9OH" firstAttribute="top" secondItem="gBL-WE-ACy" secondAttribute="bottom" constant="7" id="lMr-NL-Jc6"/>
                             <constraint firstItem="B6C-FU-In8" firstAttribute="leading" secondItem="6fC-Ek-KCr" secondAttribute="leading" constant="20" id="rhg-OX-ZaC"/>
                             <constraint firstItem="gBL-WE-ACy" firstAttribute="leading" secondItem="6fC-Ek-KCr" secondAttribute="leading" constant="20" id="rri-ON-V7e"/>
                             <constraint firstItem="6fC-Ek-KCr" firstAttribute="trailing" secondItem="oAH-gq-9OH" secondAttribute="trailing" constant="20" id="s6L-bf-Wwy"/>
                             <constraint firstItem="bxs-00-3fJ" firstAttribute="top" secondItem="L3X-aE-w9A" secondAttribute="bottom" constant="33" id="skD-xV-BeS"/>
-                            <constraint firstItem="IZQ-Lt-uT5" firstAttribute="top" secondItem="6fC-Ek-KCr" secondAttribute="top" constant="100" id="tYY-Rn-Y8l"/>
+                            <constraint firstItem="IZQ-Lt-uT5" firstAttribute="top" secondItem="6fC-Ek-KCr" secondAttribute="top" constant="65" id="tYY-Rn-Y8l"/>
                             <constraint firstItem="6fC-Ek-KCr" firstAttribute="trailing" secondItem="oKC-8Q-9NP" secondAttribute="trailing" constant="20" id="uPd-B9-sYc"/>
                             <constraint firstItem="6fC-Ek-KCr" firstAttribute="trailing" secondItem="UGN-cx-8w5" secondAttribute="trailing" constant="20" id="ybP-vY-kT2"/>
                             <constraint firstItem="6fC-Ek-KCr" firstAttribute="trailing" secondItem="B6C-FU-In8" secondAttribute="trailing" constant="20" id="zsd-nB-aga"/>

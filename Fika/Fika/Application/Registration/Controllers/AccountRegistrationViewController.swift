@@ -11,6 +11,7 @@ class AccountRegistrationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        hideNavBar()
     }
 
 }

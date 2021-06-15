@@ -252,8 +252,8 @@
 		2E7E392426779B4100034007 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				2E7E392F2677A6A600034007 /* OnboardingPageViewController.swift */,
 				2E7E39342677ACA700034007 /* OnboardingViewController.swift */,
+				2E7E392F2677A6A600034007 /* OnboardingPageViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";

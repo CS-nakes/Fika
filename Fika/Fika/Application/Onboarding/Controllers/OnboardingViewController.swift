@@ -47,6 +47,7 @@ extension OnboardingViewController {
     @IBAction private func onNextButtonPress(_ sender: UIButton) {
         if pageControl.currentPage == 2 {
             performSegue(withIdentifier: "ToRegistration", sender: nil)
+            UserRepository.saveValue(forKey: "onboarded", value: true)
             return
         }
         pageViewController?.toggleForward()

@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="153-t4-P0v">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -67,7 +66,7 @@
                             </pageControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="White Lilac"/>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="F9o-tN-joP" secondAttribute="bottom" constant="20" id="BCd-I3-0mj"/>
                             <constraint firstItem="skO-FE-7S9" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="DX0-yV-Snm"/>
@@ -76,14 +75,16 @@
                             <constraint firstItem="F9o-tN-joP" firstAttribute="top" secondItem="skO-FE-7S9" secondAttribute="bottom" constant="18" id="sv7-iK-4vd"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Ppv-df-P5X"/>
                     <connections>
                         <outlet property="nextButton" destination="F9o-tN-joP" id="WV5-yK-6yr"/>
                         <outlet property="pageControl" destination="skO-FE-7S9" id="42e-Mf-OsP"/>
+                        <segue destination="m7b-aG-q1e" kind="show" identifier="ToRegistration" id="n7v-ZJ-l2T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="105.79710144927537" y="97.767857142857139"/>
+            <point key="canvasLocation" x="1015.9420289855074" y="97.767857142857139"/>
         </scene>
         <!--Onboarding Page View Controller-->
         <scene sceneID="ZhC-jd-cJQ">
@@ -91,7 +92,7 @@
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="6td-R3-GLk" customClass="OnboardingPageViewController" customModule="Fika" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LXN-by-nTe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="928" y="98"/>
+            <point key="canvasLocation" x="1837.68115942029" y="97.767857142857139"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="eDU-GT-JAJ">
@@ -124,7 +125,7 @@
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XcQ-hv-M9o"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="White Lilac"/>
                         <constraints>
                             <constraint firstItem="XcQ-hv-M9o" firstAttribute="bottom" secondItem="2JT-Po-gWr" secondAttribute="bottom" constant="100" id="ETI-lo-J8L"/>
                             <constraint firstItem="2JT-Po-gWr" firstAttribute="top" secondItem="7sb-pc-6a0" secondAttribute="bottom" constant="16" id="IMd-hJ-q76"/>
@@ -139,7 +140,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fvS-RA-Vjo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1748" y="98"/>
+            <point key="canvasLocation" x="2657.971014492754" y="97.767857142857139"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="6B1-dt-SQb">
@@ -172,7 +173,7 @@
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tx3-Nw-jy6"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="White Lilac"/>
                         <constraints>
                             <constraint firstItem="tx3-Nw-jy6" firstAttribute="trailing" secondItem="PgI-SO-ag6" secondAttribute="trailing" constant="20" id="Egm-OW-njv"/>
                             <constraint firstItem="tx3-Nw-jy6" firstAttribute="bottom" secondItem="yzb-Fx-lis" secondAttribute="bottom" constant="100" id="FKr-ee-d8o"/>
@@ -187,7 +188,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7AU-qI-j1Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2549" y="98"/>
+            <point key="canvasLocation" x="3457.971014492754" y="97.767857142857139"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ewl-Zf-2Zd">
@@ -220,7 +221,7 @@
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TqR-TB-uGE"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="White Lilac"/>
                         <constraints>
                             <constraint firstItem="qVW-ip-Sd8" firstAttribute="top" secondItem="ANO-Fe-D9A" secondAttribute="bottom" constant="16" id="1TF-Vu-kFh"/>
                             <constraint firstItem="K1S-qc-Z5d" firstAttribute="leading" secondItem="TqR-TB-uGE" secondAttribute="leading" constant="20" id="8FT-ts-h71"/>
@@ -235,7 +236,35 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bzL-Q9-hxT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3330" y="98"/>
+            <point key="canvasLocation" x="4239.130434782609" y="97.767857142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="I8T-qV-OJR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="153-t4-P0v" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2Kx-Bs-iZy">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="tLu-uL-Rn4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hbV-mQ-PDb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="105.79710144927537" y="97.767857142857139"/>
+        </scene>
+        <!--Registration-->
+        <scene sceneID="TP3-8U-dKy">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Registration" referencedIdentifier="Registration" id="m7b-aG-q1e" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ONa-hR-sxV"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dLb-55-RZJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1799" y="-287"/>
         </scene>
     </scenes>
     <resources>
@@ -257,8 +286,8 @@
         <namedColor name="White">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <namedColor name="White Lilac">
+            <color red="0.98000001907348633" green="0.98400002717971802" blue="0.99199998378753662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

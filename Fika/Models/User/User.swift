@@ -1,5 +1,6 @@
 struct User {
     // email pw is in firebase
+    let id: String
     let name: String
     let position: String
     let companyId: String

@@ -34,7 +34,7 @@
 					<key>UISceneDelegateClassName</key>
 					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
 					<key>UISceneStoryboardFile</key>
-					<string>Landing</string>
+					<string>Call</string>
 				</dict>
 			</array>
 		</dict>
@@ -44,7 +44,7 @@
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
-	<string>Landing</string>
+	<string>Call</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>NexaBold.otf</string>
@@ -61,9 +61,10 @@
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationPortraitUpsideDown</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>Fika will need access to your camera solely for video calling purposes.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Fika will need access to your microphone solely for video calling purposes.</string>
 </dict>
 </plist>

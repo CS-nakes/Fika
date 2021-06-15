@@ -6,6 +6,8 @@ target 'Fika' do
   use_frameworks!
 
   # Pods for Fika
+  pod 'AgoraRtcEngine_iOS'
+  pod 'AgoraRtm_iOS'
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
   pod 'Firebase/Storage'

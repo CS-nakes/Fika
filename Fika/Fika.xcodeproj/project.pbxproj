@@ -23,6 +23,9 @@
 		2E7E39332677AAF600034007 /* OnboardingPageViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E39322677AAF600034007 /* OnboardingPageViewControllerDelegate.swift */; };
 		2E7E39352677ACA700034007 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E39342677ACA700034007 /* OnboardingViewController.swift */; };
 		2E7E39372677B08200034007 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E39362677B08200034007 /* PageViewController.swift */; };
+		EBE8CD0926789D5C0092338E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EBE8CD0826789D5C0092338E /* GoogleService-Info.plist */; };
+		EBE8CD0A26789D5C0092338E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EBE8CD0826789D5C0092338E /* GoogleService-Info.plist */; };
+		EBE8CD0B26789D5C0092338E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EBE8CD0826789D5C0092338E /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,7 @@
 		2E7E39322677AAF600034007 /* OnboardingPageViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewControllerDelegate.swift; sourceTree = "<group>"; };
 		2E7E39342677ACA700034007 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		2E7E39362677B08200034007 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		EBE8CD0826789D5C0092338E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +150,7 @@
 		2E7E39192677080600034007 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EBE8CD0826789D5C0092338E /* GoogleService-Info.plist */,
 				2E7E38F62676FC0C00034007 /* Info.plist */,
 			);
 			path = "Supporting Files";
@@ -382,6 +387,7 @@
 				2E7E392A26779C0300034007 /* NexaBold.otf in Resources */,
 				2E7E392626779B8800034007 /* Onboarding.storyboard in Resources */,
 				2E7E392B26779C0800034007 /* NexaLight.otf in Resources */,
+				EBE8CD0926789D5C0092338E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +395,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBE8CD0A26789D5C0092338E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +403,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBE8CD0B26789D5C0092338E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,6 +17,11 @@
 		2E7E390B2676FC0C00034007 /* FikaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E390A2676FC0C00034007 /* FikaUITests.swift */; };
 		AE68628926777A9700059414 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE68628826777A9700059414 /* Profile.storyboard */; };
 		AE68628B26777ADB00059414 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE68628A26777ADB00059414 /* ProfileViewController.swift */; };
+		AE867BA526783E36007A0EB2 /* HobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE867BA426783E36007A0EB2 /* HobbyViewController.swift */; };
+		AE867BA726783E82007A0EB2 /* TimingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE867BA626783E82007A0EB2 /* TimingViewController.swift */; };
+		AE867BA92678488A007A0EB2 /* TimeSlotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE867BA82678488A007A0EB2 /* TimeSlotView.swift */; };
+		AE867BAB26784EE4007A0EB2 /* TimeSlotView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE867BAA26784EE4007A0EB2 /* TimeSlotView.xib */; };
+		AE867BAD26788FDB007A0EB2 /* TimeSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE867BAC26788FDB007A0EB2 /* TimeSlot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,11 @@
 		2E7E390C2676FC0C00034007 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE68628826777A9700059414 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		AE68628A26777ADB00059414 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		AE867BA426783E36007A0EB2 /* HobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbyViewController.swift; sourceTree = "<group>"; };
+		AE867BA626783E82007A0EB2 /* TimingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimingViewController.swift; sourceTree = "<group>"; };
+		AE867BA82678488A007A0EB2 /* TimeSlotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSlotView.swift; sourceTree = "<group>"; };
+		AE867BAA26784EE4007A0EB2 /* TimeSlotView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeSlotView.xib; sourceTree = "<group>"; };
+		AE867BAC26788FDB007A0EB2 /* TimeSlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TimeSlot.swift; path = Fika/Application/Profile/Views/TimeSlot.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +177,7 @@
 		2E7E391D2677082E00034007 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				AE867BA126783DF4007A0EB2 /* Profile */,
 				2E7E391F2677086200034007 /* Main */,
 			);
 			path = Application;
@@ -175,6 +186,7 @@
 		2E7E391E2677084600034007 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AE867BAC26788FDB007A0EB2 /* TimeSlot.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -192,7 +204,6 @@
 			isa = PBXGroup;
 			children = (
 				2E7E38EE2676FC0A00034007 /* Main.storyboard */,
-				AE68628826777A9700059414 /* Profile.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -201,7 +212,35 @@
 			isa = PBXGroup;
 			children = (
 				2E7E38EC2676FC0A00034007 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AE867BA126783DF4007A0EB2 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				AE867BA326783E0B007A0EB2 /* Controllers */,
+				AE867BA226783E02007A0EB2 /* Views */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		AE867BA226783E02007A0EB2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AE68628826777A9700059414 /* Profile.storyboard */,
+				AE867BA82678488A007A0EB2 /* TimeSlotView.swift */,
+				AE867BAA26784EE4007A0EB2 /* TimeSlotView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AE867BA326783E0B007A0EB2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
 				AE68628A26777ADB00059414 /* ProfileViewController.swift */,
+				AE867BA626783E82007A0EB2 /* TimingViewController.swift */,
+				AE867BA426783E36007A0EB2 /* HobbyViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -311,6 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E7E38F52676FC0C00034007 /* LaunchScreen.storyboard in Resources */,
+				AE867BAB26784EE4007A0EB2 /* TimeSlotView.xib in Resources */,
 				2E7E38F22676FC0C00034007 /* Assets.xcassets in Resources */,
 				AE68628926777A9700059414 /* Profile.storyboard in Resources */,
 				2E7E38F02676FC0A00034007 /* Main.storyboard in Resources */,
@@ -358,7 +398,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE867BA726783E82007A0EB2 /* TimingViewController.swift in Sources */,
+				AE867BA526783E36007A0EB2 /* HobbyViewController.swift in Sources */,
+				AE867BAD26788FDB007A0EB2 /* TimeSlot.swift in Sources */,
 				2E7E38ED2676FC0A00034007 /* ViewController.swift in Sources */,
+				AE867BA92678488A007A0EB2 /* TimeSlotView.swift in Sources */,
 				2E7E38E92676FC0A00034007 /* AppDelegate.swift in Sources */,
 				AE68628B26777ADB00059414 /* ProfileViewController.swift in Sources */,
 				2E7E38EB2676FC0A00034007 /* SceneDelegate.swift in Sources */,

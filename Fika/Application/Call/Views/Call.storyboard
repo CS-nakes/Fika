@@ -57,30 +57,84 @@
                                     <outlet property="delegate" destination="Y6W-OH-hqX" id="LFe-3v-z2y"/>
                                 </connections>
                             </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZR-q9-lxR">
-                                <rect key="frame" x="250" y="773" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="End"/>
-                                <connections>
-                                    <action selector="didTapExit:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="BbF-6x-f9n"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eeG-9I-PlK">
-                                <rect key="frame" x="105" y="773" width="35" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Mute"/>
-                                <connections>
-                                    <action selector="didToggleMute:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="pl2-q1-AfI"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qi4-Mp-ZXk">
-                                <rect key="frame" x="173" y="773" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Flip"/>
-                                <connections>
-                                    <action selector="didTapSwitchCamera:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="NUY-29-64P"/>
-                                </connections>
-                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2XQ-Fd-141">
+                                <rect key="frame" x="0.0" y="776" width="414" height="200"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="mlt-Q8-T3K">
+                                        <rect key="frame" x="87" y="30" width="240" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m7D-Ft-Bhs">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" name="Aluminium"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="9mu-es-wJS"/>
+                                                    <constraint firstAttribute="width" constant="40" id="cG1-QJ-Ixe"/>
+                                                </constraints>
+                                                <color key="tintColor" name="White"/>
+                                                <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                                <state key="normal" image="mic.fill" catalog="system"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="didToggleMute:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="qht-py-1nT"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ysZ-G1-6NS">
+                                                <rect key="frame" x="100" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" name="Aluminium"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="0A4-sY-KJs"/>
+                                                    <constraint firstAttribute="height" constant="40" id="jOj-zr-4ys"/>
+                                                </constraints>
+                                                <color key="tintColor" name="White"/>
+                                                <inset key="imageEdgeInsets" minX="8" minY="10" maxX="8" maxY="10"/>
+                                                <state key="normal" image="arrow.triangle.2.circlepath.camera.fill" catalog="system"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="didTapSwitchCamera:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="SPi-CC-ARq"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XzM-Gf-RHT">
+                                                <rect key="frame" x="200" y="0.0" width="40" height="40"/>
+                                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="V2g-AZ-s47"/>
+                                                    <constraint firstAttribute="height" constant="40" id="i2L-tc-5ha"/>
+                                                </constraints>
+                                                <color key="tintColor" name="White"/>
+                                                <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                                <state key="normal" image="phone.fill" catalog="system"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="didTapExit:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="xlY-fa-AYu"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="mlt-Q8-T3K" firstAttribute="centerX" secondItem="2XQ-Fd-141" secondAttribute="centerX" id="VsI-Ab-5Sq"/>
+                                    <constraint firstAttribute="height" constant="200" id="ckJ-tk-sbE"/>
+                                    <constraint firstItem="mlt-Q8-T3K" firstAttribute="centerY" secondItem="2XQ-Fd-141" secondAttribute="centerY" constant="-50" id="s7o-4Y-46z"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hwn-az-dD2">
                                 <rect key="frame" x="274" y="64" width="120" height="213.5"/>
                                 <constraints>
@@ -132,8 +186,11 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" name="White Lilac"/>
                         <constraints>
+                            <constraint firstItem="2XQ-Fd-141" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="3GR-1B-HH0"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="hwn-az-dD2" secondAttribute="trailing" constant="20" id="BQD-Eb-aaG"/>
                             <constraint firstItem="Of4-lZ-bv4" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="Obj-GK-JhE"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="2XQ-Fd-141" secondAttribute="trailing" id="dIN-VK-XXw"/>
+                            <constraint firstItem="2XQ-Fd-141" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="bottom" constant="-120" id="gNo-fG-zvE"/>
                             <constraint firstAttribute="bottom" secondItem="Of4-lZ-bv4" secondAttribute="bottom" id="hcR-a0-5BU"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="top" secondItem="hwn-az-dD2" secondAttribute="top" constant="-20" id="sck-wF-Ltl"/>
                             <constraint firstAttribute="trailing" secondItem="Of4-lZ-bv4" secondAttribute="trailing" id="wmx-be-xKE"/>
@@ -141,7 +198,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="muteButton" destination="eeG-9I-PlK" id="xJo-vs-kSX"/>
+                        <outlet property="muteButton" destination="m7D-Ft-Bhs" id="EN7-6F-DAX"/>
                         <outlet property="otherCollectionView" destination="Of4-lZ-bv4" id="MBp-QH-8vL"/>
                         <outlet property="selfCollectionView" destination="hwn-az-dD2" id="Qn4-rd-0xk"/>
                     </connections>
@@ -152,11 +209,23 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrow.triangle.2.circlepath.camera.fill" catalog="system" width="128" height="94"/>
+        <image name="mic.fill" catalog="system" width="108" height="128"/>
+        <image name="phone.fill" catalog="system" width="128" height="114"/>
+        <namedColor name="Aluminium">
+            <color red="0.59600001573562622" green="0.59600001573562622" blue="0.59600001573562622" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="White Lilac">
             <color red="0.98000001907348633" green="0.98400002717971802" blue="0.99199998378753662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hqv-Ng-SCz">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -22,13 +22,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Fika" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJn-7e-OrA">
-                                <rect key="frame" x="20" y="144" width="208" height="33"/>
+                                <rect key="frame" x="20" y="188" width="208" height="33"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get ready for exciting conversations with your colleagues!  Please enter your company code to continue." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GbS-sD-7nk">
-                                <rect key="frame" x="20" y="205" width="374" height="68"/>
+                                <rect key="frame" x="20" y="249" width="374" height="68"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="68" id="sX7-BX-cDb"/>
                                 </constraints>
@@ -37,7 +37,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Company Code" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="GaC-dS-wOP" customClass="TextField" customModule="Fika" customModuleProvider="target">
-                                <rect key="frame" x="20" y="329.5" width="374" height="50"/>
+                                <rect key="frame" x="20" y="373.5" width="374" height="50"/>
                                 <color key="backgroundColor" name="White"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="CIW-ph-0Ug"/>
@@ -64,7 +64,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnp-F7-Fz3">
-                                <rect key="frame" x="20" y="306" width="99" height="16.5"/>
+                                <rect key="frame" x="20" y="350" width="99" height="16.5"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
                                 <color key="textColor" name="Aluminium"/>
                                 <nil key="highlightedColor"/>
@@ -119,27 +119,28 @@
                             <constraint firstItem="bnp-F7-Fz3" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="rtq-y4-vfV"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="bp4-xm-hEb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="56.521739130434788" y="77.678571428571431"/>
+            <point key="canvasLocation" x="966.66666666666674" y="77.678571428571431"/>
         </scene>
         <!--Account Registration View Controller-->
         <scene sceneID="GVT-NX-bOD">
             <objects>
                 <viewController id="2lx-eb-8JL" customClass="AccountRegistrationViewController" customModule="Fika" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aK8-P1-GcF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register for Company A" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZQ-Lt-uT5">
-                                <rect key="frame" x="20" y="100" width="374" height="33"/>
+                                <rect key="frame" x="20" y="188" width="374" height="33"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L3X-aE-w9A">
-                                <rect key="frame" x="20" y="161" width="374" height="87"/>
+                                <rect key="frame" x="20" y="249" width="374" height="87"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="87" id="etK-yg-HdV"/>
                                 </constraints>
@@ -149,7 +150,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Email Address" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="oKC-8Q-9NP" customClass="TextField" customModule="Fika" customModuleProvider="target">
-                                <rect key="frame" x="20" y="304.5" width="374" height="50"/>
+                                <rect key="frame" x="20" y="392.5" width="374" height="50"/>
                                 <color key="backgroundColor" name="White"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="3cc-K4-DJR"/>
@@ -176,13 +177,13 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxs-00-3fJ">
-                                <rect key="frame" x="20" y="281" width="90" height="16.5"/>
+                                <rect key="frame" x="20" y="369" width="90" height="16.5"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
                                 <color key="textColor" name="Aluminium"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Email Address" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="oAH-gq-9OH" customClass="TextField" customModule="Fika" customModuleProvider="target">
-                                <rect key="frame" x="20" y="399" width="374" height="50"/>
+                                <rect key="frame" x="20" y="487" width="374" height="50"/>
                                 <color key="backgroundColor" name="White"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="pAl-50-bhH"/>
@@ -209,7 +210,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Email Address" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="B6C-FU-In8" customClass="TextField" customModule="Fika" customModuleProvider="target">
-                                <rect key="frame" x="20" y="460" width="374" height="50"/>
+                                <rect key="frame" x="20" y="548" width="374" height="50"/>
                                 <color key="backgroundColor" name="White"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="iWW-xB-0Wk"/>
@@ -236,13 +237,13 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBL-WE-ACy">
-                                <rect key="frame" x="20" y="375.5" width="62" height="16.5"/>
+                                <rect key="frame" x="20" y="463.5" width="62" height="16.5"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
                                 <color key="textColor" name="Aluminium"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UGN-cx-8w5">
-                                <rect key="frame" x="20" y="736" width="374" height="52"/>
+                                <rect key="frame" x="20" y="790" width="374" height="52"/>
                                 <color key="backgroundColor" name="Medium Aquamarine"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="tSe-ki-NPe"/>
@@ -270,7 +271,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f55-iG-lq6">
-                                <rect key="frame" x="13" y="44" width="30" height="24"/>
+                                <rect key="frame" x="13" y="132" width="30" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="JV9-LP-6NU"/>
                                 </constraints>
@@ -314,7 +315,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q3T-T0-HH8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="971" y="78"/>
+            <point key="canvasLocation" x="1879.7101449275365" y="77.678571428571431"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qzo-fp-6Ee">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hqv-Ng-SCz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pyf-2N-KnS">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="Toz-vW-zAr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NEA-8i-yFb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="56.521739130434788" y="77.678571428571431"/>
         </scene>
     </scenes>
     <designables>
@@ -352,7 +371,7 @@
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="White Lilac">
-            <color red="0.98039215686274506" green="0.98431372549019602" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.98000001907348633" green="0.98400002717971802" blue="0.99199998378753662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

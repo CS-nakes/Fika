@@ -6,10 +6,8 @@ target 'Fika' do
   use_frameworks!
 
   # Pods for Fika
-  pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
-  pod 'FirebaseUI' 
   pod 'Firebase/Storage'
 
   target 'FikaTests' do

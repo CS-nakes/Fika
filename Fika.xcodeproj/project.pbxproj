@@ -452,7 +452,6 @@
 				2E7E38E22676FC0A00034007 /* Frameworks */,
 				2E7E38E32676FC0A00034007 /* Resources */,
 				B428AC31FED9E0742E2002D6 /* [CP] Embed Pods Frameworks */,
-				7E01B7F2C961C781A5F9F5AE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -491,7 +490,6 @@
 				2E7E39032676FC0C00034007 /* Frameworks */,
 				2E7E39042676FC0C00034007 /* Resources */,
 				4E2183F54E5EE388C0C59AB2 /* [CP] Embed Pods Frameworks */,
-				E7D9376FE560472D5FE9D850 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -614,23 +612,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fika-FikaUITests/Pods-Fika-FikaUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7E01B7F2C961C781A5F9F5AE /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Fika/Pods-Fika-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Fika/Pods-Fika-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fika/Pods-Fika-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		85946C6ADAE4CC08CB6F67A6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -690,23 +671,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E7D9376FE560472D5FE9D850 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Fika-FikaUITests/Pods-Fika-FikaUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Fika-FikaUITests/Pods-Fika-FikaUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fika-FikaUITests/Pods-Fika-FikaUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E95F2DE93FBBFF46B0224EB3 /* [CP] Check Pods Manifest.lock */ = {

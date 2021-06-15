@@ -1,17 +1,10 @@
-//
-//  ProfileViewController.swift
-//  Fika
-//
-//  Created by Cao Wenjie on 14/6/21.
-//
-
 import UIKit
 
 class ProfileViewController: UIViewController, UITextViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-    @IBOutlet private weak var nameField: UITextField!
-    @IBOutlet private weak var positionField: UITextField!
-    @IBOutlet private weak var introduce: UITextView!
-    @IBOutlet private weak var profileImage: UIImageView!
+    @IBOutlet private var nameField: UITextField!
+    @IBOutlet private var positionField: UITextField!
+    @IBOutlet private var introduce: UITextView!
+    @IBOutlet private var profileImage: UIImageView!
 
     let imagePicker = UIImagePickerController()
 

@@ -1,15 +1,9 @@
-//
-//  TimingViewController.swift
-//  Fika
-//
-//  Created by Cao Wenjie on 15/6/21.
-//
 import UIKit
 
 class TimingViewController: UIViewController {
-    @IBOutlet private weak var breakFastSlot: UIView!
-    @IBOutlet private weak var lunchSlot: UIView!
-    @IBOutlet private weak var teaSlot: UIView!
+    @IBOutlet private var breakFastSlot: UIView!
+    @IBOutlet private var lunchSlot: UIView!
+    @IBOutlet private var teaSlot: UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()

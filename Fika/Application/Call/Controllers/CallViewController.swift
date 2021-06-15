@@ -7,10 +7,7 @@ class CallViewController: UIViewController {
     @IBOutlet private var otherCollectionView: UICollectionView!
     @IBOutlet private var muteButton: UIButton!
 
-    let appId = "29f941ada0484cd188769da6e7e4570e"
-    let tempToken = "00629f941ada0484cd188769da6e7e4570eIABP/cKa2vT6pLg/zW7ZAK+mVxFJCsTcyzYy/U/3O3Q6O59xbhcAAAAAEAARpytrwD/KYAEAAQC/P8pg"
     var callId: UInt = 0 // Int based IDs for Agora
-
     var muted = false {
         didSet {
             if muted {
@@ -49,7 +46,7 @@ class CallViewController: UIViewController {
 
     private func getAgoraEngine() -> AgoraRtcEngineKit {
         if agoraKit == nil {
-            agoraKit = AgoraRtcEngineKit.sharedEngine(withAppId: appId, delegate: self)
+            agoraKit = AgoraRtcEngineKit.sharedEngine(withAppId: AgoraConstants.appId, delegate: self)
         }
         return agoraKit!
     }
@@ -63,7 +60,7 @@ class CallViewController: UIViewController {
     }
 
     func joinChannel(channelName: String) {
-        getAgoraEngine().joinChannel(byToken: tempToken, channelId: channelName,
+        getAgoraEngine().joinChannel(byToken: AgoraConstants.token, channelId: channelName,
                                      info: nil, uid: callId) { [weak self] _, uid, _ in
             self?.inCall = true
             self?.callId = uid

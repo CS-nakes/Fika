@@ -28,6 +28,7 @@
 		2E7E39372677B08200034007 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E39362677B08200034007 /* PageViewController.swift */; };
 		2E975DBB2678C88C00907565 /* UIViewController+HideNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E975DBA2678C88C00907565 /* UIViewController+HideNavBar.swift */; };
 		2E975DBE2678D45A00907565 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E975DBD2678D45A00907565 /* UserRepository.swift */; };
+		2EA6E4C926793AEB00889F78 /* AgoraConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA6E4C826793AEB00889F78 /* AgoraConstants.swift */; };
 		2EAB40762677B5C800FFF586 /* Registration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EAB40752677B5C800FFF586 /* Registration.storyboard */; };
 		2EAB40782677B7DF00FFF586 /* CompanyCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAB40772677B7DF00FFF586 /* CompanyCodeViewController.swift */; };
 		2EFA3CDB2677BBD8009B2826 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFA3CDA2677BBD8009B2826 /* TextField.swift */; };
@@ -94,6 +95,7 @@
 		2E7E39362677B08200034007 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		2E975DBA2678C88C00907565 /* UIViewController+HideNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+HideNavBar.swift"; sourceTree = "<group>"; };
 		2E975DBD2678D45A00907565 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		2EA6E4C826793AEB00889F78 /* AgoraConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgoraConstants.swift; sourceTree = "<group>"; };
 		2EAB40752677B5C800FFF586 /* Registration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Registration.storyboard; sourceTree = "<group>"; };
 		2EAB40772677B7DF00FFF586 /* CompanyCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyCodeViewController.swift; sourceTree = "<group>"; };
 		2EFA3CDA2677BBD8009B2826 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
@@ -270,6 +272,7 @@
 		2E7E391C2677082500034007 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				2EA6E4C726793ADD00889F78 /* Constants */,
 				2E975DBC2678D44200907565 /* Persistence */,
 				2EFA3CDC2677BBE3009B2826 /* Views */,
 				2E7E392C26779ED900034007 /* Extensions */,
@@ -385,6 +388,14 @@
 				2E975DBD2678D45A00907565 /* UserRepository.swift */,
 			);
 			path = Persistence;
+			sourceTree = "<group>";
+		};
+		2EA6E4C726793ADD00889F78 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				2EA6E4C826793AEB00889F78 /* AgoraConstants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		2EAB40722677B59D00FFF586 /* Registration */ = {
@@ -786,6 +797,7 @@
 				2E975DBE2678D45A00907565 /* UserRepository.swift in Sources */,
 				2E7E39332677AAF600034007 /* OnboardingPageViewControllerDelegate.swift in Sources */,
 				726E41372679020B00DA377F /* Session.swift in Sources */,
+				2EA6E4C926793AEB00889F78 /* AgoraConstants.swift in Sources */,
 				726E4134267901EE00DA377F /* Company.swift in Sources */,
 				2E7E39352677ACA700034007 /* OnboardingViewController.swift in Sources */,
 				7207420B2677C1F900D5502B /* LandingPageViewController.swift in Sources */,

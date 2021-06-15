@@ -6,10 +6,18 @@ class OnboardingViewController: UIViewController {
     private var pageViewController: PageViewController?
     @IBOutlet private var nextButton: UIButton!
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        hideNavBar()
+    }
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let onboardingPageViewController = segue.destination as? OnboardingPageViewController {
             onboardingPageViewController.onboardingDelegate = self
             self.pageViewController = onboardingPageViewController
+        }
+        if let registrationViewController = segue.destination as? CompanyCodeViewController {
+            registrationViewController.hidesBackButton = true
         }
     }
 
@@ -37,6 +45,10 @@ extension OnboardingViewController: OnboardingPageViewControllerDelegate {
 extension OnboardingViewController {
 
     @IBAction private func onNextButtonPress(_ sender: UIButton) {
+        if pageControl.currentPage == 2 {
+            performSegue(withIdentifier: "ToRegistration", sender: nil)
+            return
+        }
         pageViewController?.toggleForward()
     }
 

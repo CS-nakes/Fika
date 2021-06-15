@@ -177,61 +177,105 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome back! Enter your email address and password to login." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjI-dN-nCd">
-                                <rect key="frame" x="20" y="207" width="374" height="32"/>
+                                <rect key="frame" x="20" y="212" width="374" height="37.5"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="16"/>
                                 <color key="textColor" name="Aluminium"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aQ1-L7-oPb">
-                                <rect key="frame" x="20" y="369" width="374" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpy-TX-zWd">
-                                <rect key="frame" x="20" y="153" width="71" height="28"/>
+                                <rect key="frame" x="20" y="153" width="69.5" height="33"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="28"/>
                                 <color key="textColor" name="Ebony"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAE-Qh-YCS">
-                                <rect key="frame" x="20" y="272" width="95" height="14"/>
+                                <rect key="frame" x="20" y="282.5" width="90" height="16.5"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
                                 <color key="textColor" name="Aluminium"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dBf-Dn-tM8">
-                                <rect key="frame" x="20" y="293" width="374" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJD-G4-TbU">
-                                <rect key="frame" x="20" y="348" width="67.5" height="14"/>
+                                <rect key="frame" x="20" y="377" width="62" height="16.5"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
                                 <color key="textColor" name="Aluminium"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Email Address" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="iqp-aU-3RV" customClass="TextField" customModule="Fika" customModuleProvider="target">
+                                <rect key="frame" x="20" y="306" width="374" height="50"/>
+                                <color key="backgroundColor" name="White"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="n4U-Ze-Ji3"/>
+                                </constraints>
+                                <color key="textColor" name="Ebony"/>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="0.0" height="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="dropShadowColor">
+                                        <color key="value" name="Gallery"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Password" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="Pzd-ie-iqy" customClass="TextField" customModule="Fika" customModuleProvider="target">
+                                <rect key="frame" x="20" y="400.5" width="374" height="50"/>
+                                <color key="backgroundColor" name="White"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5ke-6a-dfE"/>
+                                </constraints>
+                                <color key="textColor" name="Ebony"/>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="0.0" height="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="dropShadowColor">
+                                        <color key="value" name="Gallery"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="d4T-qU-Ecd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="d4T-qU-Ecd" firstAttribute="trailing" secondItem="iqp-aU-3RV" secondAttribute="trailing" constant="20" id="1bz-Lk-Mmb"/>
                             <constraint firstItem="jjI-dN-nCd" firstAttribute="leading" secondItem="d4T-qU-Ecd" secondAttribute="leading" constant="20" id="747-ig-KBN"/>
                             <constraint firstItem="mpy-TX-zWd" firstAttribute="leading" secondItem="d4T-qU-Ecd" secondAttribute="leading" constant="20" id="BrV-3R-HRS"/>
-                            <constraint firstItem="aQ1-L7-oPb" firstAttribute="leading" secondItem="d4T-qU-Ecd" secondAttribute="leading" constant="20" id="CaD-jq-aw6"/>
                             <constraint firstItem="Eh4-YY-sIK" firstAttribute="leading" secondItem="d4T-qU-Ecd" secondAttribute="leading" constant="20" id="FVD-UD-68D"/>
+                            <constraint firstItem="dJD-G4-TbU" firstAttribute="top" secondItem="iqp-aU-3RV" secondAttribute="bottom" constant="21" id="FzK-Q2-RA6"/>
                             <constraint firstItem="jjI-dN-nCd" firstAttribute="top" secondItem="mpy-TX-zWd" secondAttribute="bottom" constant="26" id="Pi3-GI-Vyt"/>
-                            <constraint firstItem="d4T-qU-Ecd" firstAttribute="trailing" secondItem="aQ1-L7-oPb" secondAttribute="trailing" constant="20" id="VYi-vu-tQq"/>
+                            <constraint firstItem="Pzd-ie-iqy" firstAttribute="leading" secondItem="d4T-qU-Ecd" secondAttribute="leading" constant="20" id="Vly-U5-0Tk"/>
                             <constraint firstItem="dJD-G4-TbU" firstAttribute="leading" secondItem="d4T-qU-Ecd" secondAttribute="leading" constant="20" id="Yzw-EI-DAg"/>
-                            <constraint firstItem="dJD-G4-TbU" firstAttribute="top" secondItem="dBf-Dn-tM8" secondAttribute="bottom" constant="21" id="aOC-dw-dLJ"/>
-                            <constraint firstItem="dBf-Dn-tM8" firstAttribute="top" secondItem="xAE-Qh-YCS" secondAttribute="bottom" constant="7" id="bmQ-dR-Cfd"/>
-                            <constraint firstItem="dBf-Dn-tM8" firstAttribute="leading" secondItem="d4T-qU-Ecd" secondAttribute="leading" constant="20" id="fAA-12-UXR"/>
+                            <constraint firstItem="Pzd-ie-iqy" firstAttribute="trailing" secondItem="d4T-qU-Ecd" secondAttribute="trailing" constant="-20" id="dmJ-D8-zkP"/>
                             <constraint firstItem="d4T-qU-Ecd" firstAttribute="trailing" secondItem="Eh4-YY-sIK" secondAttribute="trailing" constant="20" id="gsV-oI-iEg"/>
                             <constraint firstItem="xAE-Qh-YCS" firstAttribute="top" secondItem="jjI-dN-nCd" secondAttribute="bottom" constant="33" id="hMq-HH-kdy"/>
+                            <constraint firstItem="iqp-aU-3RV" firstAttribute="top" secondItem="xAE-Qh-YCS" secondAttribute="bottom" constant="7" id="hvC-Ld-gdT"/>
+                            <constraint firstItem="Pzd-ie-iqy" firstAttribute="top" secondItem="dJD-G4-TbU" secondAttribute="bottom" constant="7" id="j4v-OP-J6d"/>
                             <constraint firstItem="d4T-qU-Ecd" firstAttribute="trailing" secondItem="jjI-dN-nCd" secondAttribute="trailing" constant="20" id="jBL-u7-kRi"/>
-                            <constraint firstItem="d4T-qU-Ecd" firstAttribute="trailing" secondItem="dBf-Dn-tM8" secondAttribute="trailing" constant="20" id="k4a-v8-ReU"/>
                             <constraint firstItem="mpy-TX-zWd" firstAttribute="top" secondItem="d4T-qU-Ecd" secondAttribute="top" constant="65" id="l9h-id-cOh"/>
-                            <constraint firstItem="aQ1-L7-oPb" firstAttribute="top" secondItem="dJD-G4-TbU" secondAttribute="bottom" constant="7" id="mD2-2W-zVa"/>
                             <constraint firstItem="d4T-qU-Ecd" firstAttribute="bottom" secondItem="Eh4-YY-sIK" secondAttribute="bottom" constant="20" id="mEP-e3-04c"/>
                             <constraint firstItem="xAE-Qh-YCS" firstAttribute="leading" secondItem="d4T-qU-Ecd" secondAttribute="leading" constant="20" id="oTJ-V4-sY5"/>
+                            <constraint firstItem="iqp-aU-3RV" firstAttribute="leading" secondItem="d4T-qU-Ecd" secondAttribute="leading" constant="20" id="uF3-h1-72f"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="CvZ-MR-00g"/>
@@ -241,6 +285,14 @@
             <point key="canvasLocation" x="3147.826086956522" y="143.97321428571428"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="Pzd-ie-iqy">
+            <size key="intrinsicContentSize" width="131" height="18"/>
+        </designable>
+        <designable name="iqp-aU-3RV">
+            <size key="intrinsicContentSize" width="158.5" height="18"/>
+        </designable>
+    </designables>
     <resources>
         <image name="videocall" width="3271.43994140625" height="2402"/>
         <namedColor name="Aluminium">
@@ -248,6 +300,9 @@
         </namedColor>
         <namedColor name="Ebony">
             <color red="0.19599999487400055" green="0.20000000298023224" blue="0.20800000429153442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Gallery">
+            <color red="0.94499999284744263" green="0.95300000905990601" blue="0.94900000095367432" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Medium Aquamarine">
             <color red="0.33700001239776611" green="0.79600000381469727" blue="0.72200000286102295" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

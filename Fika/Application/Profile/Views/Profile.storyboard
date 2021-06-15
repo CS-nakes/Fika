@@ -3,10 +3,16 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="NexaBold.otf">
+            <string>NexaBold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Profile View Controller-->
         <scene sceneID="s0d-6b-0kx">
@@ -17,70 +23,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Your Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UnX-2n-OSK">
-                                <rect key="frame" x="20" y="151" width="201" height="27.5"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="20" y="153" width="233.5" height="33"/>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="28"/>
+                                <color key="textColor" name="Ebony"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="FQF-dZ-LZV">
-                                <rect key="frame" x="130.5" y="240" width="153" height="113.5"/>
+                                <rect key="frame" x="130.5" y="252.5" width="153" height="113.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="FQF-dZ-LZV" secondAttribute="height" multiplier="161:122" id="wid-ZX-nU4"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cb1-YU-GlX">
-                                <rect key="frame" x="162.5" y="362" width="89" height="30"/>
+                                <rect key="frame" x="162.5" y="374.5" width="89" height="30"/>
                                 <state key="normal" title="Select image"/>
                                 <connections>
                                     <action selector="selectImage:" destination="Y6W-OH-hqX" eventType="touchDown" id="97c-dA-XsM"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Position" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xt7-5U-1D2">
-                                <rect key="frame" x="20" y="469" width="63" height="19.5"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                <color key="textColor" red="0.60626382540000001" green="0.60626382540000001" blue="0.60626382540000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Job Position" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9pm-UG-QvF">
-                                <rect key="frame" x="20" y="496" width="374" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" textContentType="organization-title"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Introduction (Optional)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Avb-0k-Xbl">
-                                <rect key="frame" x="20" y="538" width="178.5" height="19.5"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                <color key="textColor" red="0.60626382540000001" green="0.60626382540000001" blue="0.60626382540000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="USU-1o-oGY">
-                                <rect key="frame" x="20" y="400" width="45.5" height="19.5"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                <color key="textColor" red="0.60626382540000001" green="0.60626382540000001" blue="0.60626382540000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <rect key="frame" x="20" y="412.5" width="37.5" height="16.5"/>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
+                                <color key="textColor" name="Aluminium"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tIB-Ti-EOf">
-                                <rect key="frame" x="20" y="427" width="374" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" textContentType="name"/>
-                            </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MIx-OB-qLQ">
-                                <rect key="frame" x="20" y="565" width="374" height="126"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="126" id="9Dh-oh-sgN"/>
-                                </constraints>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="6"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
-                                        <integer key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dz-bI-dNV">
                                 <rect key="frame" x="20" y="780" width="374" height="36"/>
                                 <color key="backgroundColor" red="0.39781038718084483" green="0.7693973183631897" blue="0.65752826990156366" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -94,56 +60,117 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help your colleagues get to know you better!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9GF-Q5-v4z">
-                                <rect key="frame" x="20" y="200" width="374" height="20.5"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" red="0.60626382538766577" green="0.60626382538766577" blue="0.60626382538766577" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <rect key="frame" x="20" y="214" width="374" height="19"/>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="16"/>
+                                <color key="textColor" name="Aluminium"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Position" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xt7-5U-1D2">
+                                <rect key="frame" x="20" y="507" width="51" height="16.5"/>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
+                                <color key="textColor" name="Aluminium"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Name" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="sZT-ls-n5r" customClass="TextField" customModule="Fika" customModuleProvider="target">
+                                <rect key="frame" x="20" y="436" width="374" height="50"/>
+                                <color key="backgroundColor" name="White"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Wbo-lE-ePw"/>
+                                </constraints>
+                                <color key="textColor" name="Ebony"/>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="0.0" height="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="dropShadowColor">
+                                        <color key="value" name="Gallery"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Position" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="viA-Vp-cJk" customClass="TextField" customModule="Fika" customModuleProvider="target">
+                                <rect key="frame" x="20" y="530.5" width="374" height="50"/>
+                                <color key="backgroundColor" name="White"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="XVc-Lp-elY"/>
+                                </constraints>
+                                <color key="textColor" name="Ebony"/>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="0.0" height="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="dropShadowColor">
+                                        <color key="value" name="Gallery"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Introduction (Optional)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Avb-0k-Xbl">
+                                <rect key="frame" x="20" y="601.5" width="139.5" height="16.5"/>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
+                                <color key="textColor" red="0.60626382540000001" green="0.60626382540000001" blue="0.60626382540000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="viA-Vp-cJk" firstAttribute="top" secondItem="xt7-5U-1D2" secondAttribute="bottom" constant="7" id="3RT-0W-l8r"/>
                             <constraint firstItem="FQF-dZ-LZV" firstAttribute="height" secondItem="vDu-zF-Fre" secondAttribute="height" multiplier="0.15" id="3TO-XE-E8g"/>
-                            <constraint firstItem="tIB-Ti-EOf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="5yn-aH-I8T"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="9GF-Q5-v4z" secondAttribute="trailing" constant="20" id="727-DY-14v"/>
-                            <constraint firstItem="9pm-UG-QvF" firstAttribute="top" secondItem="xt7-5U-1D2" secondAttribute="bottom" constant="7.5" id="7rm-sw-le3"/>
-                            <constraint firstItem="9GF-Q5-v4z" firstAttribute="top" secondItem="UnX-2n-OSK" secondAttribute="bottom" constant="21.5" id="7to-KX-tFH"/>
+                            <constraint firstItem="9GF-Q5-v4z" firstAttribute="top" secondItem="UnX-2n-OSK" secondAttribute="bottom" constant="28" id="7to-KX-tFH"/>
                             <constraint firstItem="FQF-dZ-LZV" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="81B-KZ-dfH"/>
-                            <constraint firstItem="UnX-2n-OSK" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="63" id="A3r-W8-4Vz"/>
+                            <constraint firstItem="UnX-2n-OSK" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="65" id="A3r-W8-4Vz"/>
                             <constraint firstItem="UnX-2n-OSK" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="AbD-Zs-KW9"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="viA-Vp-cJk" secondAttribute="trailing" constant="20" id="Dw1-MF-9Sl"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="6dz-bI-dNV" secondAttribute="trailing" constant="20" id="Dxl-vb-BjA"/>
                             <constraint firstItem="xt7-5U-1D2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="FPc-Lp-Hhj"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="6dz-bI-dNV" secondAttribute="bottom" constant="46" id="Hrh-2w-Dco"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="9pm-UG-QvF" secondAttribute="trailing" constant="20" id="IV6-pR-i3t"/>
                             <constraint firstItem="cb1-YU-GlX" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="JBc-U5-mKR"/>
-                            <constraint firstItem="MIx-OB-qLQ" firstAttribute="top" secondItem="Avb-0k-Xbl" secondAttribute="bottom" constant="7.5" id="LuB-Rm-aNP"/>
+                            <constraint firstItem="viA-Vp-cJk" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="Q3w-XP-evK"/>
                             <constraint firstItem="FQF-dZ-LZV" firstAttribute="top" secondItem="9GF-Q5-v4z" secondAttribute="bottom" constant="18" id="Sou-uI-iFe"/>
-                            <constraint firstItem="9pm-UG-QvF" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="X2L-IR-lhp"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="MIx-OB-qLQ" secondAttribute="trailing" constant="20" id="b21-q7-fgT"/>
+                            <constraint firstItem="xt7-5U-1D2" firstAttribute="top" secondItem="sZT-ls-n5r" secondAttribute="bottom" constant="21" id="TID-Pp-wZ2"/>
+                            <constraint firstItem="Avb-0k-Xbl" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="ZMu-0Q-Y4F"/>
+                            <constraint firstItem="sZT-ls-n5r" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="cwb-AQ-FoS"/>
                             <constraint firstItem="USU-1o-oGY" firstAttribute="top" secondItem="cb1-YU-GlX" secondAttribute="bottom" constant="8" symbolic="YES" id="d51-o6-yKr"/>
-                            <constraint firstItem="xt7-5U-1D2" firstAttribute="top" secondItem="tIB-Ti-EOf" secondAttribute="bottom" constant="8" symbolic="YES" id="eVy-qO-0G4"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="tIB-Ti-EOf" secondAttribute="trailing" constant="20" id="f66-9e-n2F"/>
-                            <constraint firstItem="MIx-OB-qLQ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="l34-ZD-o8M"/>
+                            <constraint firstItem="Avb-0k-Xbl" firstAttribute="top" secondItem="viA-Vp-cJk" secondAttribute="bottom" constant="21" id="nHU-EU-c3v"/>
                             <constraint firstItem="Avb-0k-Xbl" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="pbO-ME-Bgl"/>
                             <constraint firstItem="9GF-Q5-v4z" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="qBi-lO-u1O"/>
                             <constraint firstItem="cb1-YU-GlX" firstAttribute="top" secondItem="FQF-dZ-LZV" secondAttribute="bottom" constant="7.5" id="qLm-0y-rwf"/>
+                            <constraint firstItem="sZT-ls-n5r" firstAttribute="top" secondItem="USU-1o-oGY" secondAttribute="bottom" constant="7" id="qO7-TU-VwF"/>
                             <constraint firstItem="6dz-bI-dNV" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="qid-if-XXt"/>
                             <constraint firstItem="USU-1o-oGY" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="rw1-yQ-OLa"/>
-                            <constraint firstItem="Avb-0k-Xbl" firstAttribute="top" secondItem="9pm-UG-QvF" secondAttribute="bottom" constant="8" symbolic="YES" id="wWw-mr-LTv"/>
-                            <constraint firstItem="tIB-Ti-EOf" firstAttribute="top" secondItem="USU-1o-oGY" secondAttribute="bottom" constant="7.5" id="zmJ-Y5-Whd"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="sZT-ls-n5r" secondAttribute="trailing" constant="20" id="u5e-tL-ka9"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="VjC-2G-XcK"/>
                     <connections>
-                        <outlet property="introduce" destination="MIx-OB-qLQ" id="bn6-cF-TX1"/>
-                        <outlet property="nameField" destination="tIB-Ti-EOf" id="9ET-3e-elL"/>
-                        <outlet property="positionField" destination="9pm-UG-QvF" id="mln-a7-bNd"/>
                         <outlet property="profileImage" destination="FQF-dZ-LZV" id="nLk-tM-3v9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="76.339285714285708"/>
+            <point key="canvasLocation" x="-28" y="838"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="evf-o5-H9s">
@@ -373,7 +400,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1666.6666666666667" y="75.669642857142847"/>
+            <point key="canvasLocation" x="980" y="838"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="TDV-pJ-g2u">
@@ -451,11 +478,28 @@
             <point key="canvasLocation" x="1636" y="-660"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="sZT-ls-n5r">
+            <size key="intrinsicContentSize" width="106" height="18"/>
+        </designable>
+        <designable name="viA-Vp-cJk">
+            <size key="intrinsicContentSize" width="119.5" height="18"/>
+        </designable>
+    </designables>
     <resources>
         <image name="person" catalog="system" width="128" height="117"/>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <namedColor name="Aluminium">
+            <color red="0.59600001573562622" green="0.59600001573562622" blue="0.59600001573562622" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Ebony">
+            <color red="0.19599999487400055" green="0.20000000298023224" blue="0.20800000429153442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Gallery">
+            <color red="0.94499999284744263" green="0.95300000905990601" blue="0.94900000095367432" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

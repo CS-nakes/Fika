@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  Fika
-//
-//  Created by Hanming on 14/6/21.
-//
-
 import UIKit
 import Firebase
 @main
@@ -13,10 +6,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
+
         // Configure a `FirebaseApp` shared instance
         FirebaseApp.configure()
-        
+
         return true
     }
     // MARK: UISceneSession Lifecycle

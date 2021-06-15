@@ -36,6 +36,9 @@
 		9F193FC9C56C2C6BD55BD961 /* Pods_Fika_FikaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B51D6AE426B7D89A7F5A4CB7 /* Pods_Fika_FikaUITests.framework */; };
 		E5D49AC90F8388F2D3A5DE63 /* Pods_Fika.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC78CC5679FB143CE9C3E13 /* Pods_Fika.framework */; };
 		EBE8CD0926789D5C0092338E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EBE8CD0826789D5C0092338E /* GoogleService-Info.plist */; };
+		AE68628926777A9700059414 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE68628826777A9700059414 /* Profile.storyboard */; };
+		AE68628B26777ADB00059414 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE68628A26777ADB00059414 /* ProfileViewController.swift */; };
+		AE867BA726783E82007A0EB2 /* TimingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE867BA626783E82007A0EB2 /* TimingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +100,18 @@
 		DE4D78AC547ADF636F5B5921 /* Pods-Fika-FikaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fika-FikaUITests.release.xcconfig"; path = "Target Support Files/Pods-Fika-FikaUITests/Pods-Fika-FikaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		EBE8CD0826789D5C0092338E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FA095752999F0DCE1639BE34 /* Pods-Fika.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fika.debug.xcconfig"; path = "Target Support Files/Pods-Fika/Pods-Fika.debug.xcconfig"; sourceTree = "<group>"; };
+		2E975DBA2678C88C00907565 /* UIViewController+HideNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+HideNavBar.swift"; sourceTree = "<group>"; };
+		2E975DBD2678D45A00907565 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		2EAB40752677B5C800FFF586 /* Registration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Registration.storyboard; sourceTree = "<group>"; };
+		2EAB40772677B7DF00FFF586 /* CompanyCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyCodeViewController.swift; sourceTree = "<group>"; };
+		2EFA3CDA2677BBD8009B2826 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		2EFA3CDD2677BF1C009B2826 /* AccountRegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRegistrationViewController.swift; sourceTree = "<group>"; };
+		720742072677C1E100D5502B /* Landing.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Landing.storyboard; sourceTree = "<group>"; };
+		7207420A2677C1F900D5502B /* LandingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
+		7207421326783E9A00D5502B /* LoginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
+		AE68628826777A9700059414 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		AE68628A26777ADB00059414 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		AE867BA626783E82007A0EB2 /* TimingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +250,7 @@
 		2E7E391D2677082E00034007 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				AE867BA126783DF4007A0EB2 /* Profile */,
 				720742022677C17400D5502B /* Landing */,
 				2E7E392226779AA600034007 /* Onboarding */,
 				2EAB40722677B59D00FFF586 /* Registration */,
@@ -407,6 +423,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AE867BA126783DF4007A0EB2 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				AE867BA326783E0B007A0EB2 /* Controllers */,
+				AE867BA226783E02007A0EB2 /* Views */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		AE867BA226783E02007A0EB2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AE68628826777A9700059414 /* Profile.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AE867BA326783E0B007A0EB2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AE68628A26777ADB00059414 /* ProfileViewController.swift */,
+				AE867BA626783E82007A0EB2 /* TimingViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -522,6 +564,7 @@
 				2E7E38F52676FC0C00034007 /* LaunchScreen.storyboard in Resources */,
 				2E7E38F22676FC0C00034007 /* Assets.xcassets in Resources */,
 				2E7E38F02676FC0A00034007 /* Home.storyboard in Resources */,
+				AE68628926777A9700059414 /* Profile.storyboard in Resources */,
 				2EAB40762677B5C800FFF586 /* Registration.storyboard in Resources */,
 				2E7E392A26779C0300034007 /* NexaBold.otf in Resources */,
 				2E7E392626779B8800034007 /* Onboarding.storyboard in Resources */,
@@ -705,6 +748,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE867BA726783E82007A0EB2 /* TimingViewController.swift in Sources */,
 				2E7E392E26779EF000034007 /* UIView+ShadowColor.swift in Sources */,
 				2EFA3CDE2677BF1C009B2826 /* AccountRegistrationViewController.swift in Sources */,
 				2E7E38ED2676FC0A00034007 /* HomeViewController.swift in Sources */,
@@ -718,6 +762,7 @@
 				2E7E39352677ACA700034007 /* OnboardingViewController.swift in Sources */,
 				7207420B2677C1F900D5502B /* LandingPageViewController.swift in Sources */,
 				2E7E38E92676FC0A00034007 /* AppDelegate.swift in Sources */,
+				AE68628B26777ADB00059414 /* ProfileViewController.swift in Sources */,
 				2E7E38EB2676FC0A00034007 /* SceneDelegate.swift in Sources */,
 				2E7E39372677B08200034007 /* PageViewController.swift in Sources */,
 			);

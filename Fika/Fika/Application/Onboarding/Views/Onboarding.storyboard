@@ -111,13 +111,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make New Friends" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7sb-pc-6a0">
-                                <rect key="frame" x="20" y="644" width="122.5" height="14"/>
+                                <rect key="frame" x="20" y="641.5" width="117" height="16.5"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
                                 <color key="textColor" name="Aluminium"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="videocall" translatesAutoresizingMaskIntoConstraints="NO" id="Kcn-B0-F0Y">
-                                <rect key="frame" x="20" y="228" width="374" height="341"/>
+                                <rect key="frame" x="20" y="225.5" width="374" height="341"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="341" id="FtO-3l-HMI"/>
                                 </constraints>
@@ -159,13 +159,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Automated Scheduling" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dlE-N8-ach">
-                                <rect key="frame" x="20" y="644" width="150" height="14"/>
+                                <rect key="frame" x="20" y="641.5" width="143" height="16.5"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
                                 <color key="textColor" name="Aluminium"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="schedule" translatesAutoresizingMaskIntoConstraints="NO" id="PgI-SO-ag6">
-                                <rect key="frame" x="20" y="228" width="374" height="341"/>
+                                <rect key="frame" x="20" y="225.5" width="374" height="341"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="341" id="4wj-Ng-be2"/>
                                 </constraints>
@@ -207,13 +207,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take a Break" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ANO-Fe-D9A">
-                                <rect key="frame" x="20" y="644" width="85" height="14"/>
+                                <rect key="frame" x="20" y="641.5" width="80.5" height="16.5"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
                                 <color key="textColor" name="Aluminium"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="break" translatesAutoresizingMaskIntoConstraints="NO" id="K1S-qc-Z5d">
-                                <rect key="frame" x="20" y="228" width="374" height="341"/>
+                                <rect key="frame" x="20" y="225.5" width="374" height="341"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="341" id="CgU-Xi-WFH"/>
                                 </constraints>

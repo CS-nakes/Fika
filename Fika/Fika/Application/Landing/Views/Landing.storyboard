@@ -17,7 +17,6 @@
         <!--Navigation Controller-->
         <scene sceneID="oaK-Dg-BQf">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3DU-IO-V1G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="Gbr-23-4kE" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="6ZG-dC-spA">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -27,6 +26,7 @@
                         <segue destination="AkR-oo-U1T" kind="relationship" relationship="rootViewController" id="QFF-Oa-j0b"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3DU-IO-V1G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1241" y="144"/>
         </scene>
@@ -38,23 +38,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Fika" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahy-0q-YS4">
-                                <rect key="frame" x="18" y="498" width="375" height="88"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="88" id="EZa-05-FRi"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="28"/>
-                                <color key="textColor" name="Ebony"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login now for an exciting world of one-to-one conversations!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEM-rQ-DSd">
-                                <rect key="frame" x="69" y="574.5" width="273" height="37.5"/>
+                                <rect key="frame" x="40" y="587" width="334" height="37.5"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="16"/>
                                 <color key="textColor" name="Aluminium"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign up now" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecz-e6-NOV">
-                                <rect key="frame" x="39" y="777" width="331" height="19"/>
+                                <rect key="frame" x="162.5" y="778" width="89.5" height="19"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="16"/>
                                 <color key="textColor" name="Niagara"/>
                                 <nil key="highlightedColor"/>
@@ -66,7 +57,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yRu-YR-RDr">
-                                <rect key="frame" x="18" y="675" width="373" height="52"/>
+                                <rect key="frame" x="20" y="672" width="374" height="52"/>
                                 <color key="backgroundColor" name="Medium Aquamarine"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="FiX-Kr-2rg"/>
@@ -93,36 +84,39 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="Hj7-rI-QKf" kind="show" id="VKD-7B-kiS"/>
+                                    <segue destination="EKN-y5-fbi" kind="show" id="OMH-R6-kCV"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lps-Tn-agQ">
-                                <rect key="frame" x="100" y="750" width="209" height="19"/>
+                                <rect key="frame" x="122" y="751" width="170.5" height="19"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="16"/>
                                 <color key="textColor" name="Aluminium"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Fika" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahy-0q-YS4">
+                                <rect key="frame" x="103" y="519" width="208" height="33"/>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="28"/>
+                                <color key="textColor" name="Ebony"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4F4-6p-SrC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="lps-Tn-agQ" firstAttribute="top" secondItem="yRu-YR-RDr" secondAttribute="bottom" constant="23" id="07i-eR-0e9"/>
-                            <constraint firstItem="lps-Tn-agQ" firstAttribute="leading" secondItem="ecz-e6-NOV" secondAttribute="leading" constant="61" id="3Ot-0W-b7d"/>
-                            <constraint firstItem="lEM-rQ-DSd" firstAttribute="centerX" secondItem="ecz-e6-NOV" secondAttribute="centerX" constant="1" id="4kM-n0-9Mi"/>
-                            <constraint firstItem="yRu-YR-RDr" firstAttribute="top" secondItem="lEM-rQ-DSd" secondAttribute="bottom" constant="63" id="4xW-mB-cZD"/>
-                            <constraint firstItem="lEM-rQ-DSd" firstAttribute="leading" secondItem="4F4-6p-SrC" secondAttribute="leading" constant="69" id="6Qz-8B-Q4K"/>
-                            <constraint firstItem="yRu-YR-RDr" firstAttribute="leading" secondItem="ahy-0q-YS4" secondAttribute="leading" id="9Pn-b2-7fA"/>
+                            <constraint firstItem="4F4-6p-SrC" firstAttribute="bottom" secondItem="ecz-e6-NOV" secondAttribute="bottom" constant="65" id="58l-bJ-6M0"/>
+                            <constraint firstItem="4F4-6p-SrC" firstAttribute="trailing" secondItem="yRu-YR-RDr" secondAttribute="trailing" constant="20" id="GW4-yc-8O0"/>
+                            <constraint firstAttribute="trailing" secondItem="lEM-rQ-DSd" secondAttribute="trailing" constant="40" id="KFF-jx-FtC"/>
                             <constraint firstItem="4F4-6p-SrC" firstAttribute="trailing" secondItem="PDZ-4H-Onh" secondAttribute="trailing" constant="20" id="L2B-fl-FiL"/>
                             <constraint firstItem="ecz-e6-NOV" firstAttribute="top" secondItem="lps-Tn-agQ" secondAttribute="bottom" constant="8" id="Lij-YX-y9k"/>
-                            <constraint firstItem="4F4-6p-SrC" firstAttribute="trailing" secondItem="ahy-0q-YS4" secondAttribute="trailing" constant="21" id="MSh-UU-8Ss"/>
-                            <constraint firstItem="yRu-YR-RDr" firstAttribute="centerX" secondItem="ecz-e6-NOV" secondAttribute="centerX" id="U2W-v2-zgU"/>
-                            <constraint firstItem="4F4-6p-SrC" firstAttribute="bottom" secondItem="ahy-0q-YS4" secondAttribute="bottom" constant="276" id="YvJ-pH-kEa"/>
+                            <constraint firstItem="lps-Tn-agQ" firstAttribute="top" secondItem="yRu-YR-RDr" secondAttribute="bottom" constant="27" id="LyA-R9-YbD"/>
+                            <constraint firstItem="yRu-YR-RDr" firstAttribute="leading" secondItem="4F4-6p-SrC" secondAttribute="leading" constant="20" id="M7n-B9-zjR"/>
+                            <constraint firstItem="ecz-e6-NOV" firstAttribute="centerX" secondItem="AxY-WQ-uxf" secondAttribute="centerX" id="OSL-iP-3pX"/>
+                            <constraint firstItem="ahy-0q-YS4" firstAttribute="top" secondItem="PDZ-4H-Onh" secondAttribute="bottom" constant="20" id="UY6-fV-L0E"/>
+                            <constraint firstItem="lEM-rQ-DSd" firstAttribute="top" secondItem="ahy-0q-YS4" secondAttribute="bottom" constant="35" id="UYL-UH-Aul"/>
+                            <constraint firstItem="lps-Tn-agQ" firstAttribute="centerX" secondItem="AxY-WQ-uxf" secondAttribute="centerX" id="ZH0-lb-AQ8"/>
                             <constraint firstItem="PDZ-4H-Onh" firstAttribute="leading" secondItem="4F4-6p-SrC" secondAttribute="leading" constant="20" id="dVt-fG-vY6"/>
-                            <constraint firstItem="lEM-rQ-DSd" firstAttribute="centerX" secondItem="ahy-0q-YS4" secondAttribute="centerX" id="faI-sV-b5H"/>
-                            <constraint firstItem="yRu-YR-RDr" firstAttribute="centerX" secondItem="lps-Tn-agQ" secondAttribute="centerX" id="l5T-qf-iwM"/>
-                            <constraint firstItem="lps-Tn-agQ" firstAttribute="leading" secondItem="4F4-6p-SrC" secondAttribute="leading" constant="100" id="lO8-Pw-mL6"/>
-                            <constraint firstItem="ahy-0q-YS4" firstAttribute="leading" secondItem="4F4-6p-SrC" secondAttribute="leading" constant="18" id="sSz-rX-Vqx"/>
-                            <constraint firstItem="4F4-6p-SrC" firstAttribute="bottom" secondItem="lps-Tn-agQ" secondAttribute="bottom" constant="93" id="vWO-kf-tfC"/>
+                            <constraint firstItem="lEM-rQ-DSd" firstAttribute="leading" secondItem="AxY-WQ-uxf" secondAttribute="leading" constant="40" id="fHZ-LI-21n"/>
+                            <constraint firstItem="ahy-0q-YS4" firstAttribute="centerX" secondItem="AxY-WQ-uxf" secondAttribute="centerX" id="wQ2-mz-c7V"/>
                             <constraint firstItem="PDZ-4H-Onh" firstAttribute="top" secondItem="4F4-6p-SrC" secondAttribute="top" constant="96" id="xzd-Nv-QRV"/>
                         </constraints>
                     </view>
@@ -132,15 +126,105 @@
             </objects>
             <point key="canvasLocation" x="2237.68115942029" y="143.97321428571428"/>
         </scene>
-        <!--LoginVC-->
-        <scene sceneID="Kyo-yK-6XZ">
+        <!--Login Page View Controller-->
+        <scene sceneID="Mt6-rT-Ujp">
             <objects>
-                <viewControllerPlaceholder storyboardName="Login" referencedIdentifier="LoginVC" id="Hj7-rI-QKf" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="sV9-am-fkO"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Eiz-gN-oRt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="LoginVC" id="EKN-y5-fbi" customClass="LoginPageViewController" customModule="Fika" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DRm-i9-I9O">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eh4-YY-sIK">
+                                <rect key="frame" x="20" y="790" width="374" height="52"/>
+                                <color key="backgroundColor" name="Medium Aquamarine"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="To3-qn-nkv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="20"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" name="White"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="0.0" height="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <real key="value" value="0.29999999999999999"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="dropShadowColor">
+                                        <color key="value" name="Niagara"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome back! Enter your email address and password to login." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjI-dN-nCd">
+                                <rect key="frame" x="20" y="212" width="374" height="37.5"/>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="16"/>
+                                <color key="textColor" name="Aluminium"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aQ1-L7-oPb">
+                                <rect key="frame" x="20" y="384.5" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpy-TX-zWd">
+                                <rect key="frame" x="20" y="153" width="69.5" height="33"/>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="28"/>
+                                <color key="textColor" name="Ebony"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAE-Qh-YCS">
+                                <rect key="frame" x="20" y="282.5" width="90" height="16.5"/>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
+                                <color key="textColor" name="Aluminium"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dBf-Dn-tM8">
+                                <rect key="frame" x="20" y="306" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJD-G4-TbU">
+                                <rect key="frame" x="20" y="361" width="62" height="16.5"/>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
+                                <color key="textColor" name="Aluminium"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="d4T-qU-Ecd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jjI-dN-nCd" firstAttribute="leading" secondItem="d4T-qU-Ecd" secondAttribute="leading" constant="20" id="747-ig-KBN"/>
+                            <constraint firstItem="mpy-TX-zWd" firstAttribute="leading" secondItem="d4T-qU-Ecd" secondAttribute="leading" constant="20" id="BrV-3R-HRS"/>
+                            <constraint firstItem="aQ1-L7-oPb" firstAttribute="leading" secondItem="d4T-qU-Ecd" secondAttribute="leading" constant="20" id="CaD-jq-aw6"/>
+                            <constraint firstItem="Eh4-YY-sIK" firstAttribute="leading" secondItem="d4T-qU-Ecd" secondAttribute="leading" constant="20" id="FVD-UD-68D"/>
+                            <constraint firstItem="jjI-dN-nCd" firstAttribute="top" secondItem="mpy-TX-zWd" secondAttribute="bottom" constant="26" id="Pi3-GI-Vyt"/>
+                            <constraint firstItem="d4T-qU-Ecd" firstAttribute="trailing" secondItem="aQ1-L7-oPb" secondAttribute="trailing" constant="20" id="VYi-vu-tQq"/>
+                            <constraint firstItem="dJD-G4-TbU" firstAttribute="leading" secondItem="d4T-qU-Ecd" secondAttribute="leading" constant="20" id="Yzw-EI-DAg"/>
+                            <constraint firstItem="dJD-G4-TbU" firstAttribute="top" secondItem="dBf-Dn-tM8" secondAttribute="bottom" constant="21" id="aOC-dw-dLJ"/>
+                            <constraint firstItem="dBf-Dn-tM8" firstAttribute="top" secondItem="xAE-Qh-YCS" secondAttribute="bottom" constant="7" id="bmQ-dR-Cfd"/>
+                            <constraint firstItem="dBf-Dn-tM8" firstAttribute="leading" secondItem="d4T-qU-Ecd" secondAttribute="leading" constant="20" id="fAA-12-UXR"/>
+                            <constraint firstItem="d4T-qU-Ecd" firstAttribute="trailing" secondItem="Eh4-YY-sIK" secondAttribute="trailing" constant="20" id="gsV-oI-iEg"/>
+                            <constraint firstItem="xAE-Qh-YCS" firstAttribute="top" secondItem="jjI-dN-nCd" secondAttribute="bottom" constant="33" id="hMq-HH-kdy"/>
+                            <constraint firstItem="d4T-qU-Ecd" firstAttribute="trailing" secondItem="jjI-dN-nCd" secondAttribute="trailing" constant="20" id="jBL-u7-kRi"/>
+                            <constraint firstItem="d4T-qU-Ecd" firstAttribute="trailing" secondItem="dBf-Dn-tM8" secondAttribute="trailing" constant="20" id="k4a-v8-ReU"/>
+                            <constraint firstItem="mpy-TX-zWd" firstAttribute="top" secondItem="d4T-qU-Ecd" secondAttribute="top" constant="65" id="l9h-id-cOh"/>
+                            <constraint firstItem="aQ1-L7-oPb" firstAttribute="top" secondItem="dJD-G4-TbU" secondAttribute="bottom" constant="7" id="mD2-2W-zVa"/>
+                            <constraint firstItem="d4T-qU-Ecd" firstAttribute="bottom" secondItem="Eh4-YY-sIK" secondAttribute="bottom" constant="20" id="mEP-e3-04c"/>
+                            <constraint firstItem="xAE-Qh-YCS" firstAttribute="leading" secondItem="d4T-qU-Ecd" secondAttribute="leading" constant="20" id="oTJ-V4-sY5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="CvZ-MR-00g"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BP5-ZP-vrd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2793" y="150"/>
+            <point key="canvasLocation" x="3147.826086956522" y="143.97321428571428"/>
         </scene>
     </scenes>
     <resources>

@@ -1,6 +1,7 @@
 import UIKit
 
-class ProfileViewController: UIViewController, UITextViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class ProfileViewController: UIViewController, UITextViewDelegate,
+                             UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     @IBOutlet private var nameField: UITextField!
     @IBOutlet private var positionField: UITextField!
     @IBOutlet private var introduce: UITextView!
@@ -23,7 +24,7 @@ class ProfileViewController: UIViewController, UITextViewDelegate, UIImagePicker
         imagePicker.delegate = self
     }
 
-    @IBAction func selectImage(_ sender: UIButton) {
+    @IBAction private func selectImage(_ sender: UIButton) {
         imagePicker.allowsEditing = true
         imagePicker.sourceType = .photoLibrary
 
@@ -31,7 +32,7 @@ class ProfileViewController: UIViewController, UITextViewDelegate, UIImagePicker
     }
 
     func imagePickerController(_ picker: UIImagePickerController,
-        didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
+                               didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
 
         if let pickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
             profileImage.contentMode = .scaleAspectFit
@@ -67,7 +68,7 @@ class ProfileViewController: UIViewController, UITextViewDelegate, UIImagePicker
 
     }
 
-    @IBAction func onSave(_ sender: UIButton) {
+    @IBAction private func onSave(_ sender: UIButton) {
         if validateProfile() {
 
         } else {

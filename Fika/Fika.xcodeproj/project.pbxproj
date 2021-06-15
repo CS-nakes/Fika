@@ -554,7 +554,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE867BA726783E82007A0EB2 /* TimingViewController.swift in Sources */,
-				2E7E38ED2676FC0A00034007 /* ViewController.swift in Sources */,
 				2E7E392E26779EF000034007 /* UIView+ShadowColor.swift in Sources */,
 				2EFA3CDE2677BF1C009B2826 /* AccountRegistrationViewController.swift in Sources */,
 				2E7E38ED2676FC0A00034007 /* ViewController.swift in Sources */,

@@ -8,24 +8,25 @@ class LoginPageViewController: UIViewController {
         hideNavBar()
     }
 
-    @IBOutlet var emailField: UITextField!
-    @IBOutlet var passwordField: UITextField!
+    @IBOutlet private var emailField: UITextField!
+    @IBOutlet private var passwordField: UITextField!
 
-    @IBAction func onDidTapLoginButton(_ sender: UIButton) {
+    @IBAction private func onDidTapLoginButton(_ sender: UIButton) {
         let email = emailField.text!
         let password = passwordField.text!
 
         Auth.auth().signIn(withEmail: email, password: password) { [weak self] _, error in
-          guard let strongSelf = self else {
-            return
+            guard let strongSelf = self else {return}
 
-          }
-
+            // Login unsuccessful
             if error != nil {
+                // TODO: create an alert here
                 print("ERROR")
                 return
             }
 
+            // Login successful
+            // TODO: transition to another page and persist user data?
             print("Success")
         }
 

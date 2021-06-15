@@ -10,11 +10,8 @@ class CallViewController: UIViewController {
     var callId: UInt = 0 // Int based IDs for Agora
     var muted = false {
         didSet {
-            if muted {
-                muteButton.setTitle("Unmute", for: .normal)
-            } else {
-                muteButton.setTitle("Mute", for: .normal)
-            }
+            muteButton.isSelected = muted
+            muteButton.backgroundColor = muted ? .systemRed : .lightGray
         }
     }
     var inCall = false

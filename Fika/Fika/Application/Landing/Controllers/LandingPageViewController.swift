@@ -4,13 +4,13 @@ class LandingPageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        hideNavBar()
+    }
 
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.isTranslucent = true
-
-        self.navigationController?.navigationBar.tintColor = UIColor.black
-        self.navigationController?.navigationBar.topItem?.backButtonDisplayMode = .minimal
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let registrationViewController = segue.destination as? CompanyCodeViewController {
+            registrationViewController.titleText = "Sign Up"
+        }
     }
 
 }

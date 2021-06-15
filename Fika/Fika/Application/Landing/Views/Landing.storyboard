@@ -39,15 +39,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login now for an exciting world of one-to-one conversations!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEM-rQ-DSd">
-                                <rect key="frame" x="40" y="587" width="334" height="37.5"/>
+                                <rect key="frame" x="40" y="582" width="334" height="32"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="16"/>
                                 <color key="textColor" name="Aluminium"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign up now" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecz-e6-NOV">
-                                <rect key="frame" x="162.5" y="778" width="89.5" height="19"/>
-                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="16"/>
-                                <color key="textColor" name="Niagara"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="videocall" translatesAutoresizingMaskIntoConstraints="NO" id="PDZ-4H-Onh">
@@ -57,7 +51,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yRu-YR-RDr">
-                                <rect key="frame" x="20" y="672" width="374" height="52"/>
+                                <rect key="frame" x="20" y="675" width="374" height="52"/>
                                 <color key="backgroundColor" name="Medium Aquamarine"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="FiX-Kr-2rg"/>
@@ -88,36 +82,46 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lps-Tn-agQ">
-                                <rect key="frame" x="122" y="751" width="170.5" height="19"/>
+                                <rect key="frame" x="119" y="754" width="176" height="16"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="16"/>
                                 <color key="textColor" name="Aluminium"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Fika" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahy-0q-YS4">
-                                <rect key="frame" x="103" y="519" width="208" height="33"/>
+                                <rect key="frame" x="99.5" y="519" width="215.5" height="28"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="28"/>
                                 <color key="textColor" name="Ebony"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jEc-8z-TzW">
+                                <rect key="frame" x="161" y="774" width="92" height="28"/>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="16"/>
+                                <state key="normal" title="Sign up now">
+                                    <color key="titleColor" name="Medium Aquamarine"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BrI-V3-IVP" kind="show" id="0Qt-tN-ffk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4F4-6p-SrC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="4F4-6p-SrC" firstAttribute="bottom" secondItem="ecz-e6-NOV" secondAttribute="bottom" constant="65" id="58l-bJ-6M0"/>
                             <constraint firstItem="4F4-6p-SrC" firstAttribute="trailing" secondItem="yRu-YR-RDr" secondAttribute="trailing" constant="20" id="GW4-yc-8O0"/>
                             <constraint firstAttribute="trailing" secondItem="lEM-rQ-DSd" secondAttribute="trailing" constant="40" id="KFF-jx-FtC"/>
                             <constraint firstItem="4F4-6p-SrC" firstAttribute="trailing" secondItem="PDZ-4H-Onh" secondAttribute="trailing" constant="20" id="L2B-fl-FiL"/>
-                            <constraint firstItem="ecz-e6-NOV" firstAttribute="top" secondItem="lps-Tn-agQ" secondAttribute="bottom" constant="8" id="Lij-YX-y9k"/>
                             <constraint firstItem="lps-Tn-agQ" firstAttribute="top" secondItem="yRu-YR-RDr" secondAttribute="bottom" constant="27" id="LyA-R9-YbD"/>
                             <constraint firstItem="yRu-YR-RDr" firstAttribute="leading" secondItem="4F4-6p-SrC" secondAttribute="leading" constant="20" id="M7n-B9-zjR"/>
-                            <constraint firstItem="ecz-e6-NOV" firstAttribute="centerX" secondItem="AxY-WQ-uxf" secondAttribute="centerX" id="OSL-iP-3pX"/>
                             <constraint firstItem="ahy-0q-YS4" firstAttribute="top" secondItem="PDZ-4H-Onh" secondAttribute="bottom" constant="20" id="UY6-fV-L0E"/>
                             <constraint firstItem="lEM-rQ-DSd" firstAttribute="top" secondItem="ahy-0q-YS4" secondAttribute="bottom" constant="35" id="UYL-UH-Aul"/>
+                            <constraint firstItem="4F4-6p-SrC" firstAttribute="bottom" secondItem="jEc-8z-TzW" secondAttribute="bottom" constant="60" id="Vzg-Lq-E4Z"/>
                             <constraint firstItem="lps-Tn-agQ" firstAttribute="centerX" secondItem="AxY-WQ-uxf" secondAttribute="centerX" id="ZH0-lb-AQ8"/>
                             <constraint firstItem="PDZ-4H-Onh" firstAttribute="leading" secondItem="4F4-6p-SrC" secondAttribute="leading" constant="20" id="dVt-fG-vY6"/>
                             <constraint firstItem="lEM-rQ-DSd" firstAttribute="leading" secondItem="AxY-WQ-uxf" secondAttribute="leading" constant="40" id="fHZ-LI-21n"/>
+                            <constraint firstItem="jEc-8z-TzW" firstAttribute="top" secondItem="lps-Tn-agQ" secondAttribute="bottom" constant="4" id="mwt-6A-ejy"/>
                             <constraint firstItem="ahy-0q-YS4" firstAttribute="centerX" secondItem="AxY-WQ-uxf" secondAttribute="centerX" id="wQ2-mz-c7V"/>
                             <constraint firstItem="PDZ-4H-Onh" firstAttribute="top" secondItem="4F4-6p-SrC" secondAttribute="top" constant="96" id="xzd-Nv-QRV"/>
+                            <constraint firstItem="jEc-8z-TzW" firstAttribute="centerX" secondItem="AxY-WQ-uxf" secondAttribute="centerX" id="yXu-Gf-3SN"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ROy-RR-26s"/>
@@ -125,6 +129,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="STg-xQ-7oU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2237.68115942029" y="143.97321428571428"/>
+        </scene>
+        <!--Registration-->
+        <scene sceneID="T4u-8f-am7">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Registration" referencedIdentifier="Registration" id="BrI-V3-IVP" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Soe-eT-cbU"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uYc-vc-Drp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2238" y="573"/>
         </scene>
         <!--Login Page View Controller-->
         <scene sceneID="Mt6-rT-Ujp">
@@ -163,35 +177,35 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome back! Enter your email address and password to login." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjI-dN-nCd">
-                                <rect key="frame" x="20" y="212" width="374" height="37.5"/>
+                                <rect key="frame" x="20" y="207" width="374" height="32"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="16"/>
                                 <color key="textColor" name="Aluminium"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aQ1-L7-oPb">
-                                <rect key="frame" x="20" y="384.5" width="374" height="34"/>
+                                <rect key="frame" x="20" y="369" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpy-TX-zWd">
-                                <rect key="frame" x="20" y="153" width="69.5" height="33"/>
+                                <rect key="frame" x="20" y="153" width="71" height="28"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="28"/>
                                 <color key="textColor" name="Ebony"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAE-Qh-YCS">
-                                <rect key="frame" x="20" y="282.5" width="90" height="16.5"/>
+                                <rect key="frame" x="20" y="272" width="95" height="14"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
                                 <color key="textColor" name="Aluminium"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dBf-Dn-tM8">
-                                <rect key="frame" x="20" y="306" width="374" height="34"/>
+                                <rect key="frame" x="20" y="293" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJD-G4-TbU">
-                                <rect key="frame" x="20" y="361" width="62" height="16.5"/>
+                                <rect key="frame" x="20" y="348" width="67.5" height="14"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
                                 <color key="textColor" name="Aluminium"/>
                                 <nil key="highlightedColor"/>

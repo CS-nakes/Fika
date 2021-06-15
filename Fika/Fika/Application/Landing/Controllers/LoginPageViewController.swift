@@ -4,6 +4,7 @@ class LoginPageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        hideNavBar()
     }
 
 }

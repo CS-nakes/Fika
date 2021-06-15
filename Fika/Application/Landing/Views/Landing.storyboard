@@ -147,6 +147,84 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome back! Enter your email address and password to login." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjI-dN-nCd">
+                                <rect key="frame" x="20" y="212" width="374" height="37.5"/>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="16"/>
+                                <color key="textColor" name="Aluminium"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpy-TX-zWd">
+                                <rect key="frame" x="20" y="153" width="69.5" height="33"/>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="28"/>
+                                <color key="textColor" name="Ebony"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAE-Qh-YCS">
+                                <rect key="frame" x="20" y="282.5" width="90" height="16.5"/>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
+                                <color key="textColor" name="Aluminium"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJD-G4-TbU">
+                                <rect key="frame" x="20" y="377" width="62" height="16.5"/>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
+                                <color key="textColor" name="Aluminium"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Email Address" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="iqp-aU-3RV" customClass="TextField" customModule="Fika" customModuleProvider="target">
+                                <rect key="frame" x="20" y="306" width="374" height="50"/>
+                                <color key="backgroundColor" name="White"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="n4U-Ze-Ji3"/>
+                                </constraints>
+                                <color key="textColor" name="Ebony"/>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="0.0" height="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="dropShadowColor">
+                                        <color key="value" name="Gallery"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Password" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="Pzd-ie-iqy" customClass="TextField" customModule="Fika" customModuleProvider="target">
+                                <rect key="frame" x="20" y="400.5" width="374" height="50"/>
+                                <color key="backgroundColor" name="White"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5ke-6a-dfE"/>
+                                </constraints>
+                                <color key="textColor" name="Ebony"/>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="0.0" height="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="dropShadowColor">
+                                        <color key="value" name="Gallery"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eh4-YY-sIK">
                                 <rect key="frame" x="20" y="790" width="374" height="52"/>
                                 <color key="backgroundColor" name="Medium Aquamarine"/>
@@ -174,85 +252,10 @@
                                         <color key="value" name="Niagara"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onDidTapLoginButton:" destination="EKN-y5-fbi" eventType="touchUpInside" id="9l5-7y-eHm"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome back! Enter your email address and password to login." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjI-dN-nCd">
-                                <rect key="frame" x="20" y="207" width="374" height="32"/>
-                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="16"/>
-                                <color key="textColor" name="Aluminium"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpy-TX-zWd">
-                                <rect key="frame" x="20" y="153" width="71" height="28"/>
-                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="28"/>
-                                <color key="textColor" name="Ebony"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAE-Qh-YCS">
-                                <rect key="frame" x="20" y="272" width="95" height="14"/>
-                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
-                                <color key="textColor" name="Aluminium"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJD-G4-TbU">
-                                <rect key="frame" x="20" y="364" width="67.5" height="14"/>
-                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
-                                <color key="textColor" name="Aluminium"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Email Address" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="iqp-aU-3RV" customClass="TextField" customModule="Fika" customModuleProvider="target">
-                                <rect key="frame" x="20" y="293" width="374" height="50"/>
-                                <color key="backgroundColor" name="White"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="n4U-Ze-Ji3"/>
-                                </constraints>
-                                <color key="textColor" name="Ebony"/>
-                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" textContentType="email"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
-                                        <integer key="value" value="3"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
-                                        <size key="value" width="0.0" height="3"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                                        <integer key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="dropShadowColor">
-                                        <color key="value" name="Gallery"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Password" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="Pzd-ie-iqy" customClass="TextField" customModule="Fika" customModuleProvider="target">
-                                <rect key="frame" x="20" y="385" width="374" height="50"/>
-                                <color key="backgroundColor" name="White"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="5ke-6a-dfE"/>
-                                </constraints>
-                                <color key="textColor" name="Ebony"/>
-                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" textContentType="password"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
-                                        <integer key="value" value="3"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
-                                        <size key="value" width="0.0" height="3"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                                        <integer key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="dropShadowColor">
-                                        <color key="value" name="Gallery"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="d4T-qU-Ecd"/>
                         <color key="backgroundColor" name="White Lilac"/>
@@ -278,6 +281,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="CvZ-MR-00g"/>
+                    <connections>
+                        <outlet property="emailField" destination="iqp-aU-3RV" id="QXq-oK-KeF"/>
+                        <outlet property="passwordField" destination="Pzd-ie-iqy" id="znZ-bR-0nT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BP5-ZP-vrd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -286,10 +293,10 @@
     </scenes>
     <designables>
         <designable name="Pzd-ie-iqy">
-            <size key="intrinsicContentSize" width="140" height="15.5"/>
+            <size key="intrinsicContentSize" width="151" height="21"/>
         </designable>
         <designable name="iqp-aU-3RV">
-            <size key="intrinsicContentSize" width="167.5" height="15.5"/>
+            <size key="intrinsicContentSize" width="178.5" height="21"/>
         </designable>
     </designables>
     <resources>

@@ -5,14 +5,15 @@ class LandingPageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-    }
-}
 
-// MARK: - IBActions
+        // navigation bar styles
 
-extension LandingPageViewController {
+        self.navigationController!.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController!.navigationBar.shadowImage = UIImage()
+        self.navigationController!.navigationBar.isTranslucent = true
 
-    @IBAction private func onLoginPress(_ sender: UIButton) {
+        self.navigationController?.navigationBar.tintColor = UIColor.black
+        self.navigationController?.navigationBar.topItem?.backButtonDisplayMode = .minimal
 
     }
 

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Otq-pC-h0S">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NexaBold.otf">
+            <string>NexaBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Login Page View Controller-->
+        <scene sceneID="4OQ-PY-oYZ">
+            <objects>
+                <viewController storyboardIdentifier="LoginVC" id="Otq-pC-h0S" customClass="LoginPageViewController" customModule="Fika" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c5p-EY-vgm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ib-br-AbI">
+                                <rect key="frame" x="0.0" y="90" width="111" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="eac-Me-bas"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="28"/>
+                                <color key="textColor" name="Ebony"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Address" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQw-It-giC">
+                                <rect key="frame" x="9" y="230" width="130" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="RJW-S7-YCo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="16"/>
+                                <color key="textColor" name="Aluminium"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Kn-0d-YLr">
+                                <rect key="frame" x="46" y="762" width="323" height="52"/>
+                                <color key="backgroundColor" name="Medium Aquamarine"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="5In-Of-1oJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="20"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" name="White"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="0.0" height="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <real key="value" value="0.29999999999999999"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="dropShadowColor">
+                                        <color key="value" name="Niagara"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oFG-SL-O9h">
+                                <rect key="frame" x="20" y="331" width="71" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="Tw9-qh-eny"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="16"/>
+                                <color key="textColor" name="Aluminium"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome back! Enter your email address and password to login." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ug0-yE-vRk">
+                                <rect key="frame" x="20" y="163" width="367" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="dnY-Zf-MZI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="16"/>
+                                <color key="textColor" name="Aluminium"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter Your Email Address" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5GM-NY-YPl">
+                                <rect key="frame" x="26" y="289" width="190" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter Your Password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HkR-0d-yEZ">
+                                <rect key="frame" x="26" y="390" width="190" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dCZ-op-peE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dCZ-op-peE" firstAttribute="bottom" secondItem="3Ib-br-AbI" secondAttribute="bottom" constant="707" id="03z-jD-i5T"/>
+                            <constraint firstItem="gQw-It-giC" firstAttribute="top" secondItem="ug0-yE-vRk" secondAttribute="bottom" constant="16" id="04r-I8-Njj"/>
+                            <constraint firstItem="5GM-NY-YPl" firstAttribute="leading" secondItem="HkR-0d-yEZ" secondAttribute="leading" id="34R-Ji-0jk"/>
+                            <constraint firstItem="5GM-NY-YPl" firstAttribute="leading" secondItem="dCZ-op-peE" secondAttribute="leading" constant="26" id="4d5-Pt-yZZ"/>
+                            <constraint firstItem="gQw-It-giC" firstAttribute="leading" secondItem="3Ib-br-AbI" secondAttribute="leading" constant="9" id="9ZH-cW-quF"/>
+                            <constraint firstItem="oFG-SL-O9h" firstAttribute="top" secondItem="5GM-NY-YPl" secondAttribute="bottom" constant="8" symbolic="YES" id="9qb-dM-hze"/>
+                            <constraint firstItem="dCZ-op-peE" firstAttribute="bottom" secondItem="0Kn-0d-YLr" secondAttribute="bottom" constant="48" id="KlG-na-QqS"/>
+                            <constraint firstItem="0Kn-0d-YLr" firstAttribute="top" secondItem="ug0-yE-vRk" secondAttribute="bottom" constant="548" id="O1f-cB-6Z0"/>
+                            <constraint firstItem="dCZ-op-peE" firstAttribute="trailing" secondItem="3Ib-br-AbI" secondAttribute="trailing" constant="303" id="Qd2-Gd-dEU"/>
+                            <constraint firstItem="5GM-NY-YPl" firstAttribute="top" secondItem="gQw-It-giC" secondAttribute="bottom" constant="8" symbolic="YES" id="Qha-rn-y9X"/>
+                            <constraint firstItem="gQw-It-giC" firstAttribute="leading" secondItem="oFG-SL-O9h" secondAttribute="leading" constant="-11" id="RDf-nk-o6q"/>
+                            <constraint firstItem="3Ib-br-AbI" firstAttribute="leading" secondItem="dCZ-op-peE" secondAttribute="leading" id="Uxh-89-Dla"/>
+                            <constraint firstItem="dCZ-op-peE" firstAttribute="trailing" secondItem="gQw-It-giC" secondAttribute="trailing" constant="275" id="ZcM-MX-y4t"/>
+                            <constraint firstItem="ug0-yE-vRk" firstAttribute="leading" secondItem="dCZ-op-peE" secondAttribute="leading" constant="20" id="a4d-vv-7uQ"/>
+                            <constraint firstItem="HkR-0d-yEZ" firstAttribute="top" secondItem="oFG-SL-O9h" secondAttribute="bottom" constant="8" symbolic="YES" id="hYO-NX-1pP"/>
+                            <constraint firstItem="ug0-yE-vRk" firstAttribute="centerX" secondItem="3Ib-br-AbI" secondAttribute="centerX" constant="148" id="jI1-1o-Wa9"/>
+                            <constraint firstItem="5GM-NY-YPl" firstAttribute="trailing" secondItem="HkR-0d-yEZ" secondAttribute="trailing" id="nB6-Ta-pBF"/>
+                            <constraint firstItem="0Kn-0d-YLr" firstAttribute="leading" secondItem="ug0-yE-vRk" secondAttribute="leading" constant="26" id="woH-rQ-V9p"/>
+                            <constraint firstItem="0Kn-0d-YLr" firstAttribute="trailing" secondItem="c5p-EY-vgm" secondAttribute="trailingMargin" constant="-25" id="yd4-H1-7hd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Q1-Pc-bJ9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2237.68115942029" y="143.97321428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Aluminium">
+            <color red="0.59600001573562622" green="0.59600001573562622" blue="0.59600001573562622" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Ebony">
+            <color red="0.19599999487400055" green="0.20000000298023224" blue="0.20800000429153442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Medium Aquamarine">
+            <color red="0.33700001239776611" green="0.79600000381469727" blue="0.72200000286102295" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Niagara">
+            <color red="0.075000002980232239" green="0.64300000667572021" blue="0.59200000762939453" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NexaBold.otf">
+            <string>NexaBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Landing Page View Controller-->
+        <scene sceneID="oCX-dV-b9Z">
+            <objects>
+                <viewController storyboardIdentifier="MakeFriends" id="AkR-oo-U1T" customClass="LandingPageViewController" customModule="Fika" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AxY-WQ-uxf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Fika" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahy-0q-YS4">
+                                <rect key="frame" x="19" y="471" width="375" height="88"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="EZa-05-FRi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="28"/>
+                                <color key="textColor" name="Ebony"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login now for an exciting world of one-to-one conversations!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEM-rQ-DSd">
+                                <rect key="frame" x="71" y="547" width="273" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="S22-SD-FsQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="16"/>
+                                <color key="textColor" name="Aluminium"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lps-Tn-agQ">
+                                <rect key="frame" x="39" y="715" width="335" height="56"/>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="16"/>
+                                <color key="textColor" name="Aluminium"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign up now" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecz-e6-NOV">
+                                <rect key="frame" x="39" y="740" width="335" height="56"/>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="16"/>
+                                <color key="textColor" name="Niagara"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="videocall" translatesAutoresizingMaskIntoConstraints="NO" id="PDZ-4H-Onh">
+                                <rect key="frame" x="20" y="140" width="374" height="341"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="341" id="SIo-8Y-6t0"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yRu-YR-RDr">
+                                <rect key="frame" x="19" y="655" width="374" height="52"/>
+                                <color key="backgroundColor" name="Medium Aquamarine"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="1rb-gB-eqB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="20"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" name="White"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="0.0" height="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <real key="value" value="0.29999999999999999"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="dropShadowColor">
+                                        <color key="value" name="Niagara"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4F4-6p-SrC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PDZ-4H-Onh" firstAttribute="leading" secondItem="yRu-YR-RDr" secondAttribute="leading" constant="1" id="05J-G4-JLq"/>
+                            <constraint firstItem="lps-Tn-agQ" firstAttribute="top" secondItem="yRu-YR-RDr" secondAttribute="bottom" constant="8" symbolic="YES" id="07i-eR-0e9"/>
+                            <constraint firstItem="PDZ-4H-Onh" firstAttribute="trailing" secondItem="yRu-YR-RDr" secondAttribute="trailing" constant="1" id="2cK-US-bzn"/>
+                            <constraint firstItem="lps-Tn-agQ" firstAttribute="leading" secondItem="ecz-e6-NOV" secondAttribute="leading" id="3Ot-0W-b7d"/>
+                            <constraint firstItem="lEM-rQ-DSd" firstAttribute="centerX" secondItem="ecz-e6-NOV" secondAttribute="centerX" constant="1" id="4kM-n0-9Mi"/>
+                            <constraint firstItem="lEM-rQ-DSd" firstAttribute="top" secondItem="PDZ-4H-Onh" secondAttribute="bottom" constant="66" id="5Ru-LU-Kg3"/>
+                            <constraint firstItem="lEM-rQ-DSd" firstAttribute="leading" secondItem="4F4-6p-SrC" secondAttribute="leading" constant="71" id="6Qz-8B-Q4K"/>
+                            <constraint firstItem="4F4-6p-SrC" firstAttribute="trailing" secondItem="PDZ-4H-Onh" secondAttribute="trailing" constant="20" id="L2B-fl-FiL"/>
+                            <constraint firstItem="4F4-6p-SrC" firstAttribute="trailing" secondItem="ahy-0q-YS4" secondAttribute="trailing" constant="20" id="MSh-UU-8Ss"/>
+                            <constraint firstItem="PDZ-4H-Onh" firstAttribute="top" secondItem="4F4-6p-SrC" secondAttribute="top" constant="96" id="Mby-hV-hfy"/>
+                            <constraint firstItem="4F4-6p-SrC" firstAttribute="bottom" secondItem="ahy-0q-YS4" secondAttribute="bottom" constant="302.99999999999989" id="YvJ-pH-kEa"/>
+                            <constraint firstItem="4F4-6p-SrC" firstAttribute="bottom" secondItem="ecz-e6-NOV" secondAttribute="bottom" constant="66" id="aYb-Z8-lPz"/>
+                            <constraint firstItem="PDZ-4H-Onh" firstAttribute="leading" secondItem="4F4-6p-SrC" secondAttribute="leading" constant="20" id="dVt-fG-vY6"/>
+                            <constraint firstItem="lEM-rQ-DSd" firstAttribute="centerX" secondItem="ahy-0q-YS4" secondAttribute="centerX" constant="1" id="faI-sV-b5H"/>
+                            <constraint firstItem="lEM-rQ-DSd" firstAttribute="centerX" secondItem="lps-Tn-agQ" secondAttribute="centerX" constant="1" id="if0-7y-aeP"/>
+                            <constraint firstItem="lps-Tn-agQ" firstAttribute="leading" secondItem="4F4-6p-SrC" secondAttribute="leading" constant="39" id="lO8-Pw-mL6"/>
+                            <constraint firstItem="yRu-YR-RDr" firstAttribute="top" secondItem="lEM-rQ-DSd" secondAttribute="bottom" constant="57" id="lWz-2h-2xT"/>
+                            <constraint firstItem="ahy-0q-YS4" firstAttribute="leading" secondItem="4F4-6p-SrC" secondAttribute="leading" constant="19" id="sSz-rX-Vqx"/>
+                            <constraint firstItem="4F4-6p-SrC" firstAttribute="bottom" secondItem="lps-Tn-agQ" secondAttribute="bottom" constant="91" id="vWO-kf-tfC"/>
+                            <constraint firstItem="ecz-e6-NOV" firstAttribute="top" secondItem="yRu-YR-RDr" secondAttribute="bottom" constant="33" id="x0c-ES-FR5"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="STg-xQ-7oU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2237.68115942029" y="143.97321428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="videocall" width="3271.43994140625" height="2402"/>
+        <namedColor name="Aluminium">
+            <color red="0.59600001573562622" green="0.59600001573562622" blue="0.59600001573562622" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Ebony">
+            <color red="0.19599999487400055" green="0.20000000298023224" blue="0.20800000429153442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Medium Aquamarine">
+            <color red="0.33700001239776611" green="0.79600000381469727" blue="0.72200000286102295" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Niagara">
+            <color red="0.075000002980232239" green="0.64300000667572021" blue="0.59200000762939453" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

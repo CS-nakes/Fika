@@ -23,6 +23,8 @@
 		2E7E39332677AAF600034007 /* OnboardingPageViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E39322677AAF600034007 /* OnboardingPageViewControllerDelegate.swift */; };
 		2E7E39352677ACA700034007 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E39342677ACA700034007 /* OnboardingViewController.swift */; };
 		2E7E39372677B08200034007 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E39362677B08200034007 /* PageViewController.swift */; };
+		720742082677C1E100D5502B /* Landing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 720742072677C1E100D5502B /* Landing.storyboard */; };
+		7207420B2677C1F900D5502B /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7207420A2677C1F900D5502B /* LandingPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		2E7E39322677AAF600034007 /* OnboardingPageViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewControllerDelegate.swift; sourceTree = "<group>"; };
 		2E7E39342677ACA700034007 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		2E7E39362677B08200034007 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		720742072677C1E100D5502B /* Landing.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Landing.storyboard; sourceTree = "<group>"; };
+		7207420A2677C1F900D5502B /* LandingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +185,7 @@
 		2E7E391D2677082E00034007 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				720742022677C17400D5502B /* Landing */,
 				2E7E392226779AA600034007 /* Onboarding */,
 				2E7E391F2677086200034007 /* Main */,
 			);
@@ -270,6 +275,31 @@
 				2E7E39362677B08200034007 /* PageViewController.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		720742022677C17400D5502B /* Landing */ = {
+			isa = PBXGroup;
+			children = (
+				720742042677C18A00D5502B /* Controllers */,
+				720742032677C18300D5502B /* Views */,
+			);
+			path = Landing;
+			sourceTree = "<group>";
+		};
+		720742032677C18300D5502B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				720742072677C1E100D5502B /* Landing.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		720742042677C18A00D5502B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7207420A2677C1F900D5502B /* LandingPageViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -376,6 +406,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				720742082677C1E100D5502B /* Landing.storyboard in Resources */,
 				2E7E38F52676FC0C00034007 /* LaunchScreen.storyboard in Resources */,
 				2E7E38F22676FC0C00034007 /* Assets.xcassets in Resources */,
 				2E7E38F02676FC0A00034007 /* Main.storyboard in Resources */,
@@ -431,6 +462,7 @@
 				2E7E39302677A6A700034007 /* OnboardingPageViewController.swift in Sources */,
 				2E7E39332677AAF600034007 /* OnboardingPageViewControllerDelegate.swift in Sources */,
 				2E7E39352677ACA700034007 /* OnboardingViewController.swift in Sources */,
+				7207420B2677C1F900D5502B /* LandingPageViewController.swift in Sources */,
 				2E7E38E92676FC0A00034007 /* AppDelegate.swift in Sources */,
 				2E7E38EB2676FC0A00034007 /* SceneDelegate.swift in Sources */,
 				2E7E39372677B08200034007 /* PageViewController.swift in Sources */,

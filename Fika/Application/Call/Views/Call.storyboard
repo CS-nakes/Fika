@@ -57,6 +57,53 @@
                                     <outlet property="delegate" destination="Y6W-OH-hqX" id="LFe-3v-z2y"/>
                                 </connections>
                             </collectionView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hwn-az-dD2">
+                                <rect key="frame" x="274" y="64" width="120" height="213.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Ohn-IG-Ftd"/>
+                                    <constraint firstAttribute="width" secondItem="hwn-az-dD2" secondAttribute="height" multiplier="9:16" id="dcA-YU-Fa5"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="KF8-BV-Bl2">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SelfVideoCell" id="113-RW-FRt" customClass="VideoCollectionViewCell" customModule="Fika">
+                                        <rect key="frame" x="-4" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="iGX-Zw-MKd">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RWv-Og-bJX">
+                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="RWv-Og-bJX" secondAttribute="bottom" id="9FP-8E-P3I"/>
+                                                <constraint firstAttribute="trailing" secondItem="RWv-Og-bJX" secondAttribute="trailing" id="J2t-RH-7k4"/>
+                                                <constraint firstItem="RWv-Og-bJX" firstAttribute="leading" secondItem="iGX-Zw-MKd" secondAttribute="leading" id="aQg-i0-klY"/>
+                                                <constraint firstItem="RWv-Og-bJX" firstAttribute="top" secondItem="iGX-Zw-MKd" secondAttribute="top" id="df2-cB-CbD"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="videoView" destination="RWv-Og-bJX" id="Lw7-Kp-uHl"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="avx-L2-Qaw"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="meS-oY-ObC"/>
+                                </connections>
+                            </collectionView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2XQ-Fd-141">
                                 <rect key="frame" x="0.0" y="776" width="414" height="200"/>
                                 <subviews>
@@ -123,7 +170,7 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" name="White"/>
                                 <constraints>
                                     <constraint firstItem="mlt-Q8-T3K" firstAttribute="centerX" secondItem="2XQ-Fd-141" secondAttribute="centerX" id="VsI-Ab-5Sq"/>
                                     <constraint firstAttribute="height" constant="200" id="ckJ-tk-sbE"/>
@@ -135,53 +182,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hwn-az-dD2">
-                                <rect key="frame" x="274" y="64" width="120" height="213.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="Ohn-IG-Ftd"/>
-                                    <constraint firstAttribute="width" secondItem="hwn-az-dD2" secondAttribute="height" multiplier="9:16" id="dcA-YU-Fa5"/>
-                                </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="KF8-BV-Bl2">
-                                    <size key="itemSize" width="128" height="128"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SelfVideoCell" id="113-RW-FRt" customClass="VideoCollectionViewCell" customModule="Fika">
-                                        <rect key="frame" x="-4" y="0.0" width="128" height="128"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="iGX-Zw-MKd">
-                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RWv-Og-bJX">
-                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                </view>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="RWv-Og-bJX" secondAttribute="bottom" id="9FP-8E-P3I"/>
-                                                <constraint firstAttribute="trailing" secondItem="RWv-Og-bJX" secondAttribute="trailing" id="J2t-RH-7k4"/>
-                                                <constraint firstItem="RWv-Og-bJX" firstAttribute="leading" secondItem="iGX-Zw-MKd" secondAttribute="leading" id="aQg-i0-klY"/>
-                                                <constraint firstItem="RWv-Og-bJX" firstAttribute="top" secondItem="iGX-Zw-MKd" secondAttribute="top" id="df2-cB-CbD"/>
-                                            </constraints>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                    <integer key="value" value="10"/>
-                                                </userDefinedRuntimeAttribute>
-                                            </userDefinedRuntimeAttributes>
-                                        </collectionViewCellContentView>
-                                        <connections>
-                                            <outlet property="videoView" destination="RWv-Og-bJX" id="Lw7-Kp-uHl"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                </cells>
-                                <connections>
-                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="avx-L2-Qaw"/>
-                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="meS-oY-ObC"/>
-                                </connections>
-                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" name="White Lilac"/>

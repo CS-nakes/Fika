@@ -25,6 +25,23 @@
 		AE867BB32678AC3C007A0EB2 /* HobbiesCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE867BB12678AC3C007A0EB2 /* HobbiesCellView.xib */; };
 		AE867BB52678AFEA007A0EB2 /* HobbyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE867BB42678AFEA007A0EB2 /* HobbyItem.swift */; };
 		AE867BB72678B0A4007A0EB2 /* HobbyTableItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE867BB62678B0A4007A0EB2 /* HobbyTableItems.swift */; };
+		2E7E392626779B8800034007 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E7E392526779B8800034007 /* Onboarding.storyboard */; };
+		2E7E392A26779C0300034007 /* NexaBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2E7E392826779BF100034007 /* NexaBold.otf */; };
+		2E7E392B26779C0800034007 /* NexaLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2E7E392926779BF100034007 /* NexaLight.otf */; };
+		2E7E392E26779EF000034007 /* UIView+ShadowColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E392D26779EF000034007 /* UIView+ShadowColor.swift */; };
+		2E7E39302677A6A700034007 /* OnboardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E392F2677A6A600034007 /* OnboardingPageViewController.swift */; };
+		2E7E39332677AAF600034007 /* OnboardingPageViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E39322677AAF600034007 /* OnboardingPageViewControllerDelegate.swift */; };
+		2E7E39352677ACA700034007 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E39342677ACA700034007 /* OnboardingViewController.swift */; };
+		2E7E39372677B08200034007 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E39362677B08200034007 /* PageViewController.swift */; };
+		2E975DBB2678C88C00907565 /* UIViewController+HideNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E975DBA2678C88C00907565 /* UIViewController+HideNavBar.swift */; };
+		2E975DBE2678D45A00907565 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E975DBD2678D45A00907565 /* UserRepository.swift */; };
+		2EAB40762677B5C800FFF586 /* Registration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EAB40752677B5C800FFF586 /* Registration.storyboard */; };
+		2EAB40782677B7DF00FFF586 /* CompanyCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAB40772677B7DF00FFF586 /* CompanyCodeViewController.swift */; };
+		2EFA3CDB2677BBD8009B2826 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFA3CDA2677BBD8009B2826 /* TextField.swift */; };
+		2EFA3CDE2677BF1C009B2826 /* AccountRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFA3CDD2677BF1C009B2826 /* AccountRegistrationViewController.swift */; };
+		720742082677C1E100D5502B /* Landing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 720742072677C1E100D5502B /* Landing.storyboard */; };
+		7207420B2677C1F900D5502B /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7207420A2677C1F900D5502B /* LandingPageViewController.swift */; };
+		7207421426783E9A00D5502B /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7207421326783E9A00D5502B /* LoginPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +86,23 @@
 		AE867BB12678AC3C007A0EB2 /* HobbiesCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HobbiesCellView.xib; sourceTree = "<group>"; };
 		AE867BB42678AFEA007A0EB2 /* HobbyItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HobbyItem.swift; path = Fika/Application/Profile/Views/HobbyItem.swift; sourceTree = SOURCE_ROOT; };
 		AE867BB62678B0A4007A0EB2 /* HobbyTableItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HobbyTableItems.swift; path = Fika/Application/Profile/Views/HobbyTableItems.swift; sourceTree = SOURCE_ROOT; };
+		2E7E392526779B8800034007 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		2E7E392826779BF100034007 /* NexaBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NexaBold.otf; sourceTree = "<group>"; };
+		2E7E392926779BF100034007 /* NexaLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NexaLight.otf; sourceTree = "<group>"; };
+		2E7E392D26779EF000034007 /* UIView+ShadowColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ShadowColor.swift"; sourceTree = "<group>"; };
+		2E7E392F2677A6A600034007 /* OnboardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewController.swift; sourceTree = "<group>"; };
+		2E7E39322677AAF600034007 /* OnboardingPageViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewControllerDelegate.swift; sourceTree = "<group>"; };
+		2E7E39342677ACA700034007 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		2E7E39362677B08200034007 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		2E975DBA2678C88C00907565 /* UIViewController+HideNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+HideNavBar.swift"; sourceTree = "<group>"; };
+		2E975DBD2678D45A00907565 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		2EAB40752677B5C800FFF586 /* Registration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Registration.storyboard; sourceTree = "<group>"; };
+		2EAB40772677B7DF00FFF586 /* CompanyCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyCodeViewController.swift; sourceTree = "<group>"; };
+		2EFA3CDA2677BBD8009B2826 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		2EFA3CDD2677BF1C009B2826 /* AccountRegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRegistrationViewController.swift; sourceTree = "<group>"; };
+		720742072677C1E100D5502B /* Landing.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Landing.storyboard; sourceTree = "<group>"; };
+		7207420A2677C1F900D5502B /* LandingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
+		7207421326783E9A00D5502B /* LoginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				2E7E38F12676FC0C00034007 /* Assets.xcassets */,
+				2E7E392726779BE100034007 /* Fonts */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -176,6 +211,9 @@
 		2E7E391C2677082500034007 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				2E975DBC2678D44200907565 /* Persistence */,
+				2EFA3CDC2677BBE3009B2826 /* Views */,
+				2E7E392C26779ED900034007 /* Extensions */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -184,6 +222,9 @@
 			isa = PBXGroup;
 			children = (
 				AE867BA126783DF4007A0EB2 /* Profile */,
+				720742022677C17400D5502B /* Landing */,
+				2E7E392226779AA600034007 /* Onboarding */,
+				2EAB40722677B59D00FFF586 /* Registration */,
 				2E7E391F2677086200034007 /* Main */,
 			);
 			path = Application;
@@ -240,6 +281,24 @@
 				AE867BA82678488A007A0EB2 /* TimeSlotView.swift */,
 				AE867BB12678AC3C007A0EB2 /* HobbiesCellView.xib */,
 				AE867BAE2678A44E007A0EB2 /* HobbyCellView.swift */,
+				);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2E7E392226779AA600034007 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				2E7E392326779B3D00034007 /* Views */,
+				2E7E392426779B4100034007 /* Controllers */,
+				2E7E39312677AADC00034007 /* Protocols */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		2E7E392326779B3D00034007 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2E7E392526779B8800034007 /* Onboarding.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -250,6 +309,110 @@
 				AE68628A26777ADB00059414 /* ProfileViewController.swift */,
 				AE867BA626783E82007A0EB2 /* TimingViewController.swift */,
 				AE867BA426783E36007A0EB2 /* HobbyViewController.swift */,
+				);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2E7E392426779B4100034007 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2E7E39342677ACA700034007 /* OnboardingViewController.swift */,
+				2E7E392F2677A6A600034007 /* OnboardingPageViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2E7E392726779BE100034007 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2E7E392826779BF100034007 /* NexaBold.otf */,
+				2E7E392926779BF100034007 /* NexaLight.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		2E7E392C26779ED900034007 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2E7E392D26779EF000034007 /* UIView+ShadowColor.swift */,
+				2E975DBA2678C88C00907565 /* UIViewController+HideNavBar.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2E7E39312677AADC00034007 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2E7E39322677AAF600034007 /* OnboardingPageViewControllerDelegate.swift */,
+				2E7E39362677B08200034007 /* PageViewController.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		2E975DBC2678D44200907565 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				2E975DBD2678D45A00907565 /* UserRepository.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		2EAB40722677B59D00FFF586 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				2EAB40732677B5AF00FFF586 /* Views */,
+				2EAB40742677B5B400FFF586 /* Controllers */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		2EAB40732677B5AF00FFF586 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2EAB40752677B5C800FFF586 /* Registration.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2EAB40742677B5B400FFF586 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2EAB40772677B7DF00FFF586 /* CompanyCodeViewController.swift */,
+				2EFA3CDD2677BF1C009B2826 /* AccountRegistrationViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2EFA3CDC2677BBE3009B2826 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2EFA3CDA2677BBD8009B2826 /* TextField.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		720742022677C17400D5502B /* Landing */ = {
+			isa = PBXGroup;
+			children = (
+				720742042677C18A00D5502B /* Controllers */,
+				720742032677C18300D5502B /* Views */,
+			);
+			path = Landing;
+			sourceTree = "<group>";
+		};
+		720742032677C18300D5502B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				720742072677C1E100D5502B /* Landing.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		720742042677C18A00D5502B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7207420A2677C1F900D5502B /* LandingPageViewController.swift */,
+				7207421326783E9A00D5502B /* LoginPageViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -358,11 +521,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				720742082677C1E100D5502B /* Landing.storyboard in Resources */,
 				2E7E38F52676FC0C00034007 /* LaunchScreen.storyboard in Resources */,
 				2E7E38F22676FC0C00034007 /* Assets.xcassets in Resources */,
 				AE867BB32678AC3C007A0EB2 /* HobbiesCellView.xib in Resources */,
 				AE68628926777A9700059414 /* Profile.storyboard in Resources */,
 				2E7E38F02676FC0A00034007 /* Main.storyboard in Resources */,
+				2EAB40762677B5C800FFF586 /* Registration.storyboard in Resources */,
+				2E7E392A26779C0300034007 /* NexaBold.otf in Resources */,
+				2E7E392626779B8800034007 /* Onboarding.storyboard in Resources */,
+				2E7E392B26779C0800034007 /* NexaLight.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,10 +582,23 @@
 				2E7E38ED2676FC0A00034007 /* ViewController.swift in Sources */,
 				AE867BB52678AFEA007A0EB2 /* HobbyItem.swift in Sources */,
 				AE867BA92678488A007A0EB2 /* TimeSlotView.swift in Sources */,
+				2E7E392E26779EF000034007 /* UIView+ShadowColor.swift in Sources */,
+				2EFA3CDE2677BF1C009B2826 /* AccountRegistrationViewController.swift in Sources */,
+				2E7E38ED2676FC0A00034007 /* ViewController.swift in Sources */,
+				2E7E39302677A6A700034007 /* OnboardingPageViewController.swift in Sources */,
+				7207421426783E9A00D5502B /* LoginPageViewController.swift in Sources */,
+				2E975DBB2678C88C00907565 /* UIViewController+HideNavBar.swift in Sources */,
+				2EFA3CDB2677BBD8009B2826 /* TextField.swift in Sources */,
+				2EAB40782677B7DF00FFF586 /* CompanyCodeViewController.swift in Sources */,
+				2E975DBE2678D45A00907565 /* UserRepository.swift in Sources */,
+				2E7E39332677AAF600034007 /* OnboardingPageViewControllerDelegate.swift in Sources */,
+				2E7E39352677ACA700034007 /* OnboardingViewController.swift in Sources */,
+				7207420B2677C1F900D5502B /* LandingPageViewController.swift in Sources */,
 				2E7E38E92676FC0A00034007 /* AppDelegate.swift in Sources */,
 				AE68628B26777ADB00059414 /* ProfileViewController.swift in Sources */,
 				2E7E38EB2676FC0A00034007 /* SceneDelegate.swift in Sources */,
 				AE867BAF2678A44E007A0EB2 /* HobbyCellView.swift in Sources */,
+				2E7E39372677B08200034007 /* PageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

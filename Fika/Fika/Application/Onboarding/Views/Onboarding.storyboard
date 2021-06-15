@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="153-t4-P0v">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NexaBold.otf">
+            <string>NexaBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Onboarding View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="Onboarding" id="Y6W-OH-hqX" customClass="OnboardingViewController" customModule="Fika" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lwY-FA-VVj">
+                                <rect key="frame" x="0.0" y="44" width="414" height="682"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="6td-R3-GLk" kind="embed" identifier="ToPages" id="O9v-Ad-bb8"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F9o-tN-joP">
+                                <rect key="frame" x="20" y="790" width="374" height="52"/>
+                                <color key="backgroundColor" name="Medium Aquamarine"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="ZgD-0Y-JXY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="20"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" name="White"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="0.0" height="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <real key="value" value="0.29999999999999999"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="dropShadowColor">
+                                        <color key="value" name="Niagara"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onNextButtonPress:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="XIg-gE-u1v"/>
+                                </connections>
+                            </button>
+                            <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="skO-FE-7S9">
+                                <rect key="frame" x="146" y="744" width="122" height="28"/>
+                                <color key="pageIndicatorTintColor" name="Aluminium"/>
+                                <color key="currentPageIndicatorTintColor" name="Ebony"/>
+                            </pageControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="White Lilac"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="F9o-tN-joP" secondAttribute="bottom" constant="20" id="BCd-I3-0mj"/>
+                            <constraint firstItem="skO-FE-7S9" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="DX0-yV-Snm"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="F9o-tN-joP" secondAttribute="trailing" constant="20" id="lfI-Jv-Bbb"/>
+                            <constraint firstItem="F9o-tN-joP" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="rNt-kV-BEG"/>
+                            <constraint firstItem="F9o-tN-joP" firstAttribute="top" secondItem="skO-FE-7S9" secondAttribute="bottom" constant="18" id="sv7-iK-4vd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ppv-df-P5X"/>
+                    <connections>
+                        <outlet property="nextButton" destination="F9o-tN-joP" id="WV5-yK-6yr"/>
+                        <outlet property="pageControl" destination="skO-FE-7S9" id="42e-Mf-OsP"/>
+                        <segue destination="m7b-aG-q1e" kind="show" identifier="ToRegistration" id="n7v-ZJ-l2T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1015.9420289855074" y="97.767857142857139"/>
+        </scene>
+        <!--Onboarding Page View Controller-->
+        <scene sceneID="ZhC-jd-cJQ">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="6td-R3-GLk" customClass="OnboardingPageViewController" customModule="Fika" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LXN-by-nTe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1837.68115942029" y="97.767857142857139"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="eDU-GT-JAJ">
+            <objects>
+                <viewController storyboardIdentifier="MakeFriends" id="eeK-tR-BqS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J9h-Sg-FaF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meet colleagues in a casual one-to-one over a cup of coffee" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2JT-Po-gWr">
+                                <rect key="frame" x="20" y="674" width="374" height="88"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="sLI-02-vyx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="28"/>
+                                <color key="textColor" name="Ebony"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make New Friends" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7sb-pc-6a0">
+                                <rect key="frame" x="20" y="641.5" width="117" height="16.5"/>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
+                                <color key="textColor" name="Aluminium"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="videocall" translatesAutoresizingMaskIntoConstraints="NO" id="Kcn-B0-F0Y">
+                                <rect key="frame" x="20" y="225.5" width="374" height="341"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="341" id="FtO-3l-HMI"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XcQ-hv-M9o"/>
+                        <color key="backgroundColor" name="White Lilac"/>
+                        <constraints>
+                            <constraint firstItem="XcQ-hv-M9o" firstAttribute="bottom" secondItem="2JT-Po-gWr" secondAttribute="bottom" constant="100" id="ETI-lo-J8L"/>
+                            <constraint firstItem="2JT-Po-gWr" firstAttribute="top" secondItem="7sb-pc-6a0" secondAttribute="bottom" constant="16" id="IMd-hJ-q76"/>
+                            <constraint firstItem="7sb-pc-6a0" firstAttribute="top" secondItem="Kcn-B0-F0Y" secondAttribute="bottom" constant="75" id="XnF-DL-6Yw"/>
+                            <constraint firstItem="2JT-Po-gWr" firstAttribute="leading" secondItem="XcQ-hv-M9o" secondAttribute="leading" constant="20" id="ZRm-lf-R9s"/>
+                            <constraint firstItem="Kcn-B0-F0Y" firstAttribute="leading" secondItem="XcQ-hv-M9o" secondAttribute="leading" constant="20" id="dDp-Uh-LXG"/>
+                            <constraint firstItem="XcQ-hv-M9o" firstAttribute="trailing" secondItem="Kcn-B0-F0Y" secondAttribute="trailing" constant="20" id="doy-FJ-pzJ"/>
+                            <constraint firstItem="7sb-pc-6a0" firstAttribute="leading" secondItem="XcQ-hv-M9o" secondAttribute="leading" constant="20" id="xVz-Cy-kwo"/>
+                            <constraint firstItem="XcQ-hv-M9o" firstAttribute="trailing" secondItem="2JT-Po-gWr" secondAttribute="trailing" constant="20" id="zUq-I1-H5u"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fvS-RA-Vjo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2657.971014492754" y="97.767857142857139"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6B1-dt-SQb">
+            <objects>
+                <viewController storyboardIdentifier="AutomatedScheduling" id="nra-of-Fyq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="850-w5-bhn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't worry about not having time - we'll find time for you" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yzb-Fx-lis">
+                                <rect key="frame" x="20" y="674" width="374" height="88"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="8WC-GV-Ihb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="28"/>
+                                <color key="textColor" name="Ebony"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Automated Scheduling" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dlE-N8-ach">
+                                <rect key="frame" x="20" y="641.5" width="143" height="16.5"/>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
+                                <color key="textColor" name="Aluminium"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="schedule" translatesAutoresizingMaskIntoConstraints="NO" id="PgI-SO-ag6">
+                                <rect key="frame" x="20" y="225.5" width="374" height="341"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="341" id="4wj-Ng-be2"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tx3-Nw-jy6"/>
+                        <color key="backgroundColor" name="White Lilac"/>
+                        <constraints>
+                            <constraint firstItem="tx3-Nw-jy6" firstAttribute="trailing" secondItem="PgI-SO-ag6" secondAttribute="trailing" constant="20" id="Egm-OW-njv"/>
+                            <constraint firstItem="tx3-Nw-jy6" firstAttribute="bottom" secondItem="yzb-Fx-lis" secondAttribute="bottom" constant="100" id="FKr-ee-d8o"/>
+                            <constraint firstItem="PgI-SO-ag6" firstAttribute="leading" secondItem="tx3-Nw-jy6" secondAttribute="leading" constant="20" id="Hj5-76-YZA"/>
+                            <constraint firstItem="yzb-Fx-lis" firstAttribute="top" secondItem="dlE-N8-ach" secondAttribute="bottom" constant="16" id="Qrq-X7-bgJ"/>
+                            <constraint firstItem="yzb-Fx-lis" firstAttribute="leading" secondItem="tx3-Nw-jy6" secondAttribute="leading" constant="20" id="RKl-Gb-RPO"/>
+                            <constraint firstItem="tx3-Nw-jy6" firstAttribute="trailing" secondItem="yzb-Fx-lis" secondAttribute="trailing" constant="20" id="Xh8-u4-ZVA"/>
+                            <constraint firstItem="dlE-N8-ach" firstAttribute="top" secondItem="PgI-SO-ag6" secondAttribute="bottom" constant="75" id="YMg-Us-31A"/>
+                            <constraint firstItem="dlE-N8-ach" firstAttribute="leading" secondItem="tx3-Nw-jy6" secondAttribute="leading" constant="20" id="vhA-zJ-IDF"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7AU-qI-j1Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3457.971014492754" y="97.767857142857139"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ewl-Zf-2Zd">
+            <objects>
+                <viewController storyboardIdentifier="TakeBreak" id="AMc-Pa-0Bp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bS9-Wh-3OQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remote work can get tiring... Switch things up with a conversation!" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qVW-ip-Sd8">
+                                <rect key="frame" x="20" y="674" width="374" height="88"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="ErQ-jE-EOB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="28"/>
+                                <color key="textColor" name="Ebony"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take a Break" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ANO-Fe-D9A">
+                                <rect key="frame" x="20" y="641.5" width="80.5" height="16.5"/>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
+                                <color key="textColor" name="Aluminium"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="break" translatesAutoresizingMaskIntoConstraints="NO" id="K1S-qc-Z5d">
+                                <rect key="frame" x="20" y="225.5" width="374" height="341"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="341" id="CgU-Xi-WFH"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TqR-TB-uGE"/>
+                        <color key="backgroundColor" name="White Lilac"/>
+                        <constraints>
+                            <constraint firstItem="qVW-ip-Sd8" firstAttribute="top" secondItem="ANO-Fe-D9A" secondAttribute="bottom" constant="16" id="1TF-Vu-kFh"/>
+                            <constraint firstItem="K1S-qc-Z5d" firstAttribute="leading" secondItem="TqR-TB-uGE" secondAttribute="leading" constant="20" id="8FT-ts-h71"/>
+                            <constraint firstItem="qVW-ip-Sd8" firstAttribute="leading" secondItem="TqR-TB-uGE" secondAttribute="leading" constant="20" id="8IV-cW-gcZ"/>
+                            <constraint firstItem="TqR-TB-uGE" firstAttribute="trailing" secondItem="K1S-qc-Z5d" secondAttribute="trailing" constant="20" id="9hF-iH-3lt"/>
+                            <constraint firstItem="TqR-TB-uGE" firstAttribute="bottom" secondItem="qVW-ip-Sd8" secondAttribute="bottom" constant="100" id="ANi-0e-D8o"/>
+                            <constraint firstItem="TqR-TB-uGE" firstAttribute="trailing" secondItem="qVW-ip-Sd8" secondAttribute="trailing" constant="20" id="Bg2-yV-ws8"/>
+                            <constraint firstItem="ANO-Fe-D9A" firstAttribute="leading" secondItem="TqR-TB-uGE" secondAttribute="leading" constant="20" id="pEC-ig-JnO"/>
+                            <constraint firstItem="ANO-Fe-D9A" firstAttribute="top" secondItem="K1S-qc-Z5d" secondAttribute="bottom" constant="75" id="rJe-LQ-11o"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bzL-Q9-hxT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4239.130434782609" y="97.767857142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="I8T-qV-OJR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="153-t4-P0v" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2Kx-Bs-iZy">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="tLu-uL-Rn4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hbV-mQ-PDb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="105.79710144927537" y="97.767857142857139"/>
+        </scene>
+        <!--Registration-->
+        <scene sceneID="TP3-8U-dKy">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Registration" referencedIdentifier="Registration" id="m7b-aG-q1e" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ONa-hR-sxV"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dLb-55-RZJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1799" y="-287"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="break" width="2559.080078125" height="2500"/>
+        <image name="schedule" width="3695.340087890625" height="2404.97998046875"/>
+        <image name="videocall" width="3271.43994140625" height="2402"/>
+        <namedColor name="Aluminium">
+            <color red="0.59600001573562622" green="0.59600001573562622" blue="0.59600001573562622" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Ebony">
+            <color red="0.19599999487400055" green="0.20000000298023224" blue="0.20800000429153442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Medium Aquamarine">
+            <color red="0.33700001239776611" green="0.79600000381469727" blue="0.72200000286102295" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Niagara">
+            <color red="0.075000002980232239" green="0.64300000667572021" blue="0.59200000762939453" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White Lilac">
+            <color red="0.98000001907348633" green="0.98400002717971802" blue="0.99199998378753662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

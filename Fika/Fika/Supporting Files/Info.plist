@@ -45,6 +45,11 @@
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Profile</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>NexaBold.otf</string>
+		<string>NexaLight.otf</string>
+	</array>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

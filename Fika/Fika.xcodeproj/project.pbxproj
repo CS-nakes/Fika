@@ -23,19 +23,19 @@
 		2E7E39332677AAF600034007 /* OnboardingPageViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E39322677AAF600034007 /* OnboardingPageViewControllerDelegate.swift */; };
 		2E7E39352677ACA700034007 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E39342677ACA700034007 /* OnboardingViewController.swift */; };
 		2E7E39372677B08200034007 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E39362677B08200034007 /* PageViewController.swift */; };
-		43FDBB3252382918CA4E26C8 /* Pods_FikaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82FE8AD2105AE4B93C9E4599 /* Pods_FikaTests.framework */; };
-		9F193FC9C56C2C6BD55BD961 /* Pods_Fika_FikaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B51D6AE426B7D89A7F5A4CB7 /* Pods_Fika_FikaUITests.framework */; };
-		E5D49AC90F8388F2D3A5DE63 /* Pods_Fika.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC78CC5679FB143CE9C3E13 /* Pods_Fika.framework */; };
-		EBE8CD0926789D5C0092338E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EBE8CD0826789D5C0092338E /* GoogleService-Info.plist */; };
 		2E975DBB2678C88C00907565 /* UIViewController+HideNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E975DBA2678C88C00907565 /* UIViewController+HideNavBar.swift */; };
 		2E975DBE2678D45A00907565 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E975DBD2678D45A00907565 /* UserRepository.swift */; };
 		2EAB40762677B5C800FFF586 /* Registration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EAB40752677B5C800FFF586 /* Registration.storyboard */; };
 		2EAB40782677B7DF00FFF586 /* CompanyCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAB40772677B7DF00FFF586 /* CompanyCodeViewController.swift */; };
 		2EFA3CDB2677BBD8009B2826 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFA3CDA2677BBD8009B2826 /* TextField.swift */; };
 		2EFA3CDE2677BF1C009B2826 /* AccountRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFA3CDD2677BF1C009B2826 /* AccountRegistrationViewController.swift */; };
+		43FDBB3252382918CA4E26C8 /* Pods_FikaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82FE8AD2105AE4B93C9E4599 /* Pods_FikaTests.framework */; };
 		720742082677C1E100D5502B /* Landing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 720742072677C1E100D5502B /* Landing.storyboard */; };
 		7207420B2677C1F900D5502B /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7207420A2677C1F900D5502B /* LandingPageViewController.swift */; };
 		7207421426783E9A00D5502B /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7207421326783E9A00D5502B /* LoginPageViewController.swift */; };
+		9F193FC9C56C2C6BD55BD961 /* Pods_Fika_FikaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B51D6AE426B7D89A7F5A4CB7 /* Pods_Fika_FikaUITests.framework */; };
+		E5D49AC90F8388F2D3A5DE63 /* Pods_Fika.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC78CC5679FB143CE9C3E13 /* Pods_Fika.framework */; };
+		EBE8CD0926789D5C0092338E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EBE8CD0826789D5C0092338E /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,7 +78,16 @@
 		2E7E39322677AAF600034007 /* OnboardingPageViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageViewControllerDelegate.swift; sourceTree = "<group>"; };
 		2E7E39342677ACA700034007 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		2E7E39362677B08200034007 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		2E975DBA2678C88C00907565 /* UIViewController+HideNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+HideNavBar.swift"; sourceTree = "<group>"; };
+		2E975DBD2678D45A00907565 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		2EAB40752677B5C800FFF586 /* Registration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Registration.storyboard; sourceTree = "<group>"; };
+		2EAB40772677B7DF00FFF586 /* CompanyCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyCodeViewController.swift; sourceTree = "<group>"; };
+		2EFA3CDA2677BBD8009B2826 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		2EFA3CDD2677BF1C009B2826 /* AccountRegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRegistrationViewController.swift; sourceTree = "<group>"; };
 		70436F19B4FBE6ED76BD591F /* Pods-Fika-FikaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fika-FikaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Fika-FikaUITests/Pods-Fika-FikaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		720742072677C1E100D5502B /* Landing.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Landing.storyboard; sourceTree = "<group>"; };
+		7207420A2677C1F900D5502B /* LandingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
+		7207421326783E9A00D5502B /* LoginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
 		82FE8AD2105AE4B93C9E4599 /* Pods_FikaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FikaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BC78CC5679FB143CE9C3E13 /* Pods_Fika.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fika.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEF0D9D1D503747D9433E32E /* Pods-FikaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FikaTests.release.xcconfig"; path = "Target Support Files/Pods-FikaTests/Pods-FikaTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -88,15 +97,6 @@
 		DE4D78AC547ADF636F5B5921 /* Pods-Fika-FikaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fika-FikaUITests.release.xcconfig"; path = "Target Support Files/Pods-Fika-FikaUITests/Pods-Fika-FikaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		EBE8CD0826789D5C0092338E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FA095752999F0DCE1639BE34 /* Pods-Fika.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fika.debug.xcconfig"; path = "Target Support Files/Pods-Fika/Pods-Fika.debug.xcconfig"; sourceTree = "<group>"; };
-		2E975DBA2678C88C00907565 /* UIViewController+HideNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+HideNavBar.swift"; sourceTree = "<group>"; };
-		2E975DBD2678D45A00907565 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
-		2EAB40752677B5C800FFF586 /* Registration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Registration.storyboard; sourceTree = "<group>"; };
-		2EAB40772677B7DF00FFF586 /* CompanyCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyCodeViewController.swift; sourceTree = "<group>"; };
-		2EFA3CDA2677BBD8009B2826 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
-		2EFA3CDD2677BF1C009B2826 /* AccountRegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRegistrationViewController.swift; sourceTree = "<group>"; };
-		720742072677C1E100D5502B /* Landing.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Landing.storyboard; sourceTree = "<group>"; };
-		7207420A2677C1F900D5502B /* LandingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
-		7207421326783E9A00D5502B /* LoginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -329,16 +329,6 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
-		A137C56809719A0BB58FB5FE /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				8BC78CC5679FB143CE9C3E13 /* Pods_Fika.framework */,
-				B51D6AE426B7D89A7F5A4CB7 /* Pods_Fika_FikaUITests.framework */,
-				82FE8AD2105AE4B93C9E4599 /* Pods_FikaTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		2E975DBC2678D44200907565 /* Persistence */ = {
 			isa = PBXGroup;
 			children = (
@@ -407,6 +397,16 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		A137C56809719A0BB58FB5FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BC78CC5679FB143CE9C3E13 /* Pods_Fika.framework */,
+				B51D6AE426B7D89A7F5A4CB7 /* Pods_Fika_FikaUITests.framework */,
+				82FE8AD2105AE4B93C9E4599 /* Pods_FikaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -420,6 +420,7 @@
 				2E7E38E22676FC0A00034007 /* Frameworks */,
 				2E7E38E32676FC0A00034007 /* Resources */,
 				B428AC31FED9E0742E2002D6 /* [CP] Embed Pods Frameworks */,
+				7E01B7F2C961C781A5F9F5AE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -458,6 +459,7 @@
 				2E7E39032676FC0C00034007 /* Frameworks */,
 				2E7E39042676FC0C00034007 /* Resources */,
 				4E2183F54E5EE388C0C59AB2 /* [CP] Embed Pods Frameworks */,
+				E7D9376FE560472D5FE9D850 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -532,7 +534,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBE8CD0A26789D5C0092338E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,7 +541,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBE8CD0B26789D5C0092338E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,6 +579,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fika-FikaUITests/Pods-Fika-FikaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E01B7F2C961C781A5F9F5AE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fika/Pods-Fika-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fika/Pods-Fika-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fika/Pods-Fika-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		85946C6ADAE4CC08CB6F67A6 /* [CP] Check Pods Manifest.lock */ = {
@@ -640,6 +657,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7D9376FE560472D5FE9D850 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fika-FikaUITests/Pods-Fika-FikaUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fika-FikaUITests/Pods-Fika-FikaUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fika-FikaUITests/Pods-Fika-FikaUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E95F2DE93FBBFF46B0224EB3 /* [CP] Check Pods Manifest.lock */ = {

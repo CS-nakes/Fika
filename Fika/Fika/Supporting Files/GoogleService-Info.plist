@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>361819376634-264r78lisvh1d2jiriq8rlqs0hc9k20p.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.361819376634-264r78lisvh1d2jiriq8rlqs0hc9k20p</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBjEYByiiw0qIjGZ6iFbKbTRdjKmJBPDH4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>361819376634</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.hanmingdev.Fika</string>
+	<key>PROJECT_ID</key>
+	<string>fika-4939a</string>
+	<key>STORAGE_BUCKET</key>
+	<string>fika-4939a.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:361819376634:ios:032ee317c89c70b3e93243</string>
+</dict>
+</plist>

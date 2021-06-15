@@ -5,7 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -39,7 +38,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login now for an exciting world of one-to-one conversations!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEM-rQ-DSd">
-                                <rect key="frame" x="40" y="582" width="334" height="32"/>
+                                <rect key="frame" x="40" y="587" width="334" height="37.5"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="16"/>
                                 <color key="textColor" name="Aluminium"/>
                                 <nil key="highlightedColor"/>
@@ -51,7 +50,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yRu-YR-RDr">
-                                <rect key="frame" x="20" y="675" width="374" height="52"/>
+                                <rect key="frame" x="20" y="669" width="374" height="52"/>
                                 <color key="backgroundColor" name="Medium Aquamarine"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="FiX-Kr-2rg"/>
@@ -82,19 +81,19 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lps-Tn-agQ">
-                                <rect key="frame" x="119" y="754" width="176" height="16"/>
+                                <rect key="frame" x="122" y="748" width="170.5" height="19"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="16"/>
                                 <color key="textColor" name="Aluminium"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Fika" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahy-0q-YS4">
-                                <rect key="frame" x="99.5" y="519" width="215.5" height="28"/>
+                                <rect key="frame" x="103" y="519" width="208" height="33"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="28"/>
                                 <color key="textColor" name="Ebony"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jEc-8z-TzW">
-                                <rect key="frame" x="161" y="774" width="92" height="28"/>
+                                <rect key="frame" x="162" y="771" width="90" height="31"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="16"/>
                                 <state key="normal" title="Sign up now">
                                     <color key="titleColor" name="Medium Aquamarine"/>
@@ -105,7 +104,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4F4-6p-SrC"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="White Lilac"/>
                         <constraints>
                             <constraint firstItem="4F4-6p-SrC" firstAttribute="trailing" secondItem="yRu-YR-RDr" secondAttribute="trailing" constant="20" id="GW4-yc-8O0"/>
                             <constraint firstAttribute="trailing" secondItem="lEM-rQ-DSd" secondAttribute="trailing" constant="40" id="KFF-jx-FtC"/>
@@ -256,7 +255,7 @@
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="d4T-qU-Ecd"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="White Lilac"/>
                         <constraints>
                             <constraint firstItem="d4T-qU-Ecd" firstAttribute="trailing" secondItem="iqp-aU-3RV" secondAttribute="trailing" constant="20" id="1bz-Lk-Mmb"/>
                             <constraint firstItem="jjI-dN-nCd" firstAttribute="leading" secondItem="d4T-qU-Ecd" secondAttribute="leading" constant="20" id="747-ig-KBN"/>
@@ -313,8 +312,8 @@
         <namedColor name="White">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <namedColor name="White Lilac">
+            <color red="0.98000001907348633" green="0.98400002717971802" blue="0.99199998378753662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

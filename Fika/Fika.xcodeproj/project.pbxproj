@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		2E7E38E92676FC0A00034007 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E38E82676FC0A00034007 /* AppDelegate.swift */; };
 		2E7E38EB2676FC0A00034007 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E38EA2676FC0A00034007 /* SceneDelegate.swift */; };
-		2E7E38ED2676FC0A00034007 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E38EC2676FC0A00034007 /* ViewController.swift */; };
-		2E7E38F02676FC0A00034007 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E7E38EE2676FC0A00034007 /* Main.storyboard */; };
+		2E7E38ED2676FC0A00034007 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E38EC2676FC0A00034007 /* HomeViewController.swift */; };
+		2E7E38F02676FC0A00034007 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E7E38EE2676FC0A00034007 /* Home.storyboard */; };
 		2E7E38F22676FC0C00034007 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E7E38F12676FC0C00034007 /* Assets.xcassets */; };
 		2E7E38F52676FC0C00034007 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E7E38F32676FC0C00034007 /* LaunchScreen.storyboard */; };
 		2E7E39002676FC0C00034007 /* FikaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E38FF2676FC0C00034007 /* FikaTests.swift */; };
@@ -55,8 +55,8 @@
 		2E7E38E52676FC0A00034007 /* Fika.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fika.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E7E38E82676FC0A00034007 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E7E38EA2676FC0A00034007 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2E7E38EC2676FC0A00034007 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2E7E38EF2676FC0A00034007 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2E7E38EC2676FC0A00034007 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2E7E38EF2676FC0A00034007 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
 		2E7E38F12676FC0C00034007 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E7E38F42676FC0C00034007 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E7E38F62676FC0C00034007 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -204,7 +204,7 @@
 				720742022677C17400D5502B /* Landing */,
 				2E7E392226779AA600034007 /* Onboarding */,
 				2EAB40722677B59D00FFF586 /* Registration */,
-				2E7E391F2677086200034007 /* Main */,
+				2E7E391F2677086200034007 /* Home */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -216,19 +216,19 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		2E7E391F2677086200034007 /* Main */ = {
+		2E7E391F2677086200034007 /* Home */ = {
 			isa = PBXGroup;
 			children = (
 				2E7E39202677086A00034007 /* Views */,
 				2E7E39212677087100034007 /* Controllers */,
 			);
-			path = Main;
+			path = Home;
 			sourceTree = "<group>";
 		};
 		2E7E39202677086A00034007 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				2E7E38EE2676FC0A00034007 /* Main.storyboard */,
+				2E7E38EE2676FC0A00034007 /* Home.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -236,7 +236,7 @@
 		2E7E39212677087100034007 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				2E7E38EC2676FC0A00034007 /* ViewController.swift */,
+				2E7E38EC2676FC0A00034007 /* HomeViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -340,8 +340,8 @@
 		720742022677C17400D5502B /* Landing */ = {
 			isa = PBXGroup;
 			children = (
-				720742042677C18A00D5502B /* Controllers */,
 				720742032677C18300D5502B /* Views */,
+				720742042677C18A00D5502B /* Controllers */,
 			);
 			path = Landing;
 			sourceTree = "<group>";
@@ -470,7 +470,7 @@
 				720742082677C1E100D5502B /* Landing.storyboard in Resources */,
 				2E7E38F52676FC0C00034007 /* LaunchScreen.storyboard in Resources */,
 				2E7E38F22676FC0C00034007 /* Assets.xcassets in Resources */,
-				2E7E38F02676FC0A00034007 /* Main.storyboard in Resources */,
+				2E7E38F02676FC0A00034007 /* Home.storyboard in Resources */,
 				2EAB40762677B5C800FFF586 /* Registration.storyboard in Resources */,
 				2E7E392A26779C0300034007 /* NexaBold.otf in Resources */,
 				2E7E392626779B8800034007 /* Onboarding.storyboard in Resources */,
@@ -521,7 +521,7 @@
 			files = (
 				2E7E392E26779EF000034007 /* UIView+ShadowColor.swift in Sources */,
 				2EFA3CDE2677BF1C009B2826 /* AccountRegistrationViewController.swift in Sources */,
-				2E7E38ED2676FC0A00034007 /* ViewController.swift in Sources */,
+				2E7E38ED2676FC0A00034007 /* HomeViewController.swift in Sources */,
 				2E7E39302677A6A700034007 /* OnboardingPageViewController.swift in Sources */,
 				7207421426783E9A00D5502B /* LoginPageViewController.swift in Sources */,
 				2E975DBB2678C88C00907565 /* UIViewController+HideNavBar.swift in Sources */,
@@ -569,12 +569,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2E7E38EE2676FC0A00034007 /* Main.storyboard */ = {
+		2E7E38EE2676FC0A00034007 /* Home.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				2E7E38EF2676FC0A00034007 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Home.storyboard;
 			sourceTree = "<group>";
 		};
 		2E7E38F32676FC0C00034007 /* LaunchScreen.storyboard */ = {

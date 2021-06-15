@@ -20,8 +20,11 @@
 		AE867BA526783E36007A0EB2 /* HobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE867BA426783E36007A0EB2 /* HobbyViewController.swift */; };
 		AE867BA726783E82007A0EB2 /* TimingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE867BA626783E82007A0EB2 /* TimingViewController.swift */; };
 		AE867BA92678488A007A0EB2 /* TimeSlotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE867BA82678488A007A0EB2 /* TimeSlotView.swift */; };
-		AE867BAB26784EE4007A0EB2 /* TimeSlotView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE867BAA26784EE4007A0EB2 /* TimeSlotView.xib */; };
 		AE867BAD26788FDB007A0EB2 /* TimeSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE867BAC26788FDB007A0EB2 /* TimeSlot.swift */; };
+		AE867BAF2678A44E007A0EB2 /* HobbyCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE867BAE2678A44E007A0EB2 /* HobbyCellView.swift */; };
+		AE867BB32678AC3C007A0EB2 /* HobbiesCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE867BB12678AC3C007A0EB2 /* HobbiesCellView.xib */; };
+		AE867BB52678AFEA007A0EB2 /* HobbyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE867BB42678AFEA007A0EB2 /* HobbyItem.swift */; };
+		AE867BB72678B0A4007A0EB2 /* HobbyTableItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE867BB62678B0A4007A0EB2 /* HobbyTableItems.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,8 +64,11 @@
 		AE867BA426783E36007A0EB2 /* HobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbyViewController.swift; sourceTree = "<group>"; };
 		AE867BA626783E82007A0EB2 /* TimingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimingViewController.swift; sourceTree = "<group>"; };
 		AE867BA82678488A007A0EB2 /* TimeSlotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSlotView.swift; sourceTree = "<group>"; };
-		AE867BAA26784EE4007A0EB2 /* TimeSlotView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeSlotView.xib; sourceTree = "<group>"; };
 		AE867BAC26788FDB007A0EB2 /* TimeSlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TimeSlot.swift; path = Fika/Application/Profile/Views/TimeSlot.swift; sourceTree = SOURCE_ROOT; };
+		AE867BAE2678A44E007A0EB2 /* HobbyCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbyCellView.swift; sourceTree = "<group>"; };
+		AE867BB12678AC3C007A0EB2 /* HobbiesCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HobbiesCellView.xib; sourceTree = "<group>"; };
+		AE867BB42678AFEA007A0EB2 /* HobbyItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HobbyItem.swift; path = Fika/Application/Profile/Views/HobbyItem.swift; sourceTree = SOURCE_ROOT; };
+		AE867BB62678B0A4007A0EB2 /* HobbyTableItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HobbyTableItems.swift; path = Fika/Application/Profile/Views/HobbyTableItems.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +193,8 @@
 			isa = PBXGroup;
 			children = (
 				AE867BAC26788FDB007A0EB2 /* TimeSlot.swift */,
+				AE867BB42678AFEA007A0EB2 /* HobbyItem.swift */,
+				AE867BB62678B0A4007A0EB2 /* HobbyTableItems.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -230,7 +238,8 @@
 			children = (
 				AE68628826777A9700059414 /* Profile.storyboard */,
 				AE867BA82678488A007A0EB2 /* TimeSlotView.swift */,
-				AE867BAA26784EE4007A0EB2 /* TimeSlotView.xib */,
+				AE867BB12678AC3C007A0EB2 /* HobbiesCellView.xib */,
+				AE867BAE2678A44E007A0EB2 /* HobbyCellView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -350,8 +359,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E7E38F52676FC0C00034007 /* LaunchScreen.storyboard in Resources */,
-				AE867BAB26784EE4007A0EB2 /* TimeSlotView.xib in Resources */,
 				2E7E38F22676FC0C00034007 /* Assets.xcassets in Resources */,
+				AE867BB32678AC3C007A0EB2 /* HobbiesCellView.xib in Resources */,
 				AE68628926777A9700059414 /* Profile.storyboard in Resources */,
 				2E7E38F02676FC0A00034007 /* Main.storyboard in Resources */,
 			);
@@ -400,12 +409,15 @@
 			files = (
 				AE867BA726783E82007A0EB2 /* TimingViewController.swift in Sources */,
 				AE867BA526783E36007A0EB2 /* HobbyViewController.swift in Sources */,
+				AE867BB72678B0A4007A0EB2 /* HobbyTableItems.swift in Sources */,
 				AE867BAD26788FDB007A0EB2 /* TimeSlot.swift in Sources */,
 				2E7E38ED2676FC0A00034007 /* ViewController.swift in Sources */,
+				AE867BB52678AFEA007A0EB2 /* HobbyItem.swift in Sources */,
 				AE867BA92678488A007A0EB2 /* TimeSlotView.swift in Sources */,
 				2E7E38E92676FC0A00034007 /* AppDelegate.swift in Sources */,
 				AE68628B26777ADB00059414 /* ProfileViewController.swift in Sources */,
 				2E7E38EB2676FC0A00034007 /* SceneDelegate.swift in Sources */,
+				AE867BAF2678A44E007A0EB2 /* HobbyCellView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

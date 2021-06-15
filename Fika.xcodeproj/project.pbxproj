@@ -29,15 +29,15 @@
 		2EAB40782677B7DF00FFF586 /* CompanyCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAB40772677B7DF00FFF586 /* CompanyCodeViewController.swift */; };
 		2EFA3CDB2677BBD8009B2826 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFA3CDA2677BBD8009B2826 /* TextField.swift */; };
 		2EFA3CDE2677BF1C009B2826 /* AccountRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFA3CDD2677BF1C009B2826 /* AccountRegistrationViewController.swift */; };
-		43FDBB3252382918CA4E26C8 /* Pods_FikaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82FE8AD2105AE4B93C9E4599 /* Pods_FikaTests.framework */; };
 		720742082677C1E100D5502B /* Landing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 720742072677C1E100D5502B /* Landing.storyboard */; };
 		7207420B2677C1F900D5502B /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7207420A2677C1F900D5502B /* LandingPageViewController.swift */; };
 		7207421426783E9A00D5502B /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7207421326783E9A00D5502B /* LoginPageViewController.swift */; };
-		9F193FC9C56C2C6BD55BD961 /* Pods_Fika_FikaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B51D6AE426B7D89A7F5A4CB7 /* Pods_Fika_FikaUITests.framework */; };
+		7633D95931701ED80FB10C53 /* Pods_Fika.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89CCA8B38AD2B1972628860B /* Pods_Fika.framework */; };
+		A6226FCB045949A80AFD8C28 /* Pods_Fika_FikaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CEC1E71191AF86975A1FF0F /* Pods_Fika_FikaUITests.framework */; };
 		AE68628926777A9700059414 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE68628826777A9700059414 /* Profile.storyboard */; };
 		AE68628B26777ADB00059414 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE68628A26777ADB00059414 /* ProfileViewController.swift */; };
 		AE867BA726783E82007A0EB2 /* TimingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE867BA626783E82007A0EB2 /* TimingViewController.swift */; };
-		E5D49AC90F8388F2D3A5DE63 /* Pods_Fika.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC78CC5679FB143CE9C3E13 /* Pods_Fika.framework */; };
+		D4A236D5EB437462A607686D /* Pods_FikaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFDE14CD30CA2A56116A3864 /* Pods_FikaTests.framework */; };
 		EBE8CD0926789D5C0092338E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EBE8CD0826789D5C0092338E /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +59,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D3610B65682502887E3FE54 /* Pods-Fika-FikaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fika-FikaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Fika-FikaUITests/Pods-Fika-FikaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2E7E38E52676FC0A00034007 /* Fika.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fika.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E7E38E82676FC0A00034007 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E7E38EA2676FC0A00034007 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,22 +88,21 @@
 		2EAB40772677B7DF00FFF586 /* CompanyCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyCodeViewController.swift; sourceTree = "<group>"; };
 		2EFA3CDA2677BBD8009B2826 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		2EFA3CDD2677BF1C009B2826 /* AccountRegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRegistrationViewController.swift; sourceTree = "<group>"; };
-		70436F19B4FBE6ED76BD591F /* Pods-Fika-FikaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fika-FikaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Fika-FikaUITests/Pods-Fika-FikaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		477E98C98EF240C6F55195BA /* Pods-Fika.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fika.debug.xcconfig"; path = "Target Support Files/Pods-Fika/Pods-Fika.debug.xcconfig"; sourceTree = "<group>"; };
+		4CEC1E71191AF86975A1FF0F /* Pods_Fika_FikaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fika_FikaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		720742072677C1E100D5502B /* Landing.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Landing.storyboard; sourceTree = "<group>"; };
 		7207420A2677C1F900D5502B /* LandingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
 		7207421326783E9A00D5502B /* LoginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
-		82FE8AD2105AE4B93C9E4599 /* Pods_FikaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FikaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8BC78CC5679FB143CE9C3E13 /* Pods_Fika.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fika.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D062D7F631673D8E70DE3D5 /* Pods-Fika-FikaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fika-FikaUITests.release.xcconfig"; path = "Target Support Files/Pods-Fika-FikaUITests/Pods-Fika-FikaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		89CCA8B38AD2B1972628860B /* Pods_Fika.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fika.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C1D270DE54533AF1D03D78F /* Pods-FikaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FikaTests.debug.xcconfig"; path = "Target Support Files/Pods-FikaTests/Pods-FikaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ABBC825B86CFB69FEEABD285 /* Pods-Fika.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fika.release.xcconfig"; path = "Target Support Files/Pods-Fika/Pods-Fika.release.xcconfig"; sourceTree = "<group>"; };
 		AE68628826777A9700059414 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		AE68628A26777ADB00059414 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		AE867BA626783E82007A0EB2 /* TimingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimingViewController.swift; sourceTree = "<group>"; };
-		AEF0D9D1D503747D9433E32E /* Pods-FikaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FikaTests.release.xcconfig"; path = "Target Support Files/Pods-FikaTests/Pods-FikaTests.release.xcconfig"; sourceTree = "<group>"; };
-		B05D362E0536D6330DD57161 /* Pods-FikaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FikaTests.debug.xcconfig"; path = "Target Support Files/Pods-FikaTests/Pods-FikaTests.debug.xcconfig"; sourceTree = "<group>"; };
-		B51D6AE426B7D89A7F5A4CB7 /* Pods_Fika_FikaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fika_FikaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D77C4D296D803C238E1249B3 /* Pods-Fika.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fika.release.xcconfig"; path = "Target Support Files/Pods-Fika/Pods-Fika.release.xcconfig"; sourceTree = "<group>"; };
-		DE4D78AC547ADF636F5B5921 /* Pods-Fika-FikaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fika-FikaUITests.release.xcconfig"; path = "Target Support Files/Pods-Fika-FikaUITests/Pods-Fika-FikaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CFDE14CD30CA2A56116A3864 /* Pods_FikaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FikaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBE8CD0826789D5C0092338E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		FA095752999F0DCE1639BE34 /* Pods-Fika.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fika.debug.xcconfig"; path = "Target Support Files/Pods-Fika/Pods-Fika.debug.xcconfig"; sourceTree = "<group>"; };
+		F1B535850BA8503C8A8BB8A5 /* Pods-FikaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FikaTests.release.xcconfig"; path = "Target Support Files/Pods-FikaTests/Pods-FikaTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5D49AC90F8388F2D3A5DE63 /* Pods_Fika.framework in Frameworks */,
+				7633D95931701ED80FB10C53 /* Pods_Fika.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,7 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43FDBB3252382918CA4E26C8 /* Pods_FikaTests.framework in Frameworks */,
+				D4A236D5EB437462A607686D /* Pods_FikaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,7 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F193FC9C56C2C6BD55BD961 /* Pods_Fika_FikaUITests.framework in Frameworks */,
+				A6226FCB045949A80AFD8C28 /* Pods_Fika_FikaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,12 +136,12 @@
 		25262C475ABC931A00ED5E9B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FA095752999F0DCE1639BE34 /* Pods-Fika.debug.xcconfig */,
-				D77C4D296D803C238E1249B3 /* Pods-Fika.release.xcconfig */,
-				70436F19B4FBE6ED76BD591F /* Pods-Fika-FikaUITests.debug.xcconfig */,
-				DE4D78AC547ADF636F5B5921 /* Pods-Fika-FikaUITests.release.xcconfig */,
-				B05D362E0536D6330DD57161 /* Pods-FikaTests.debug.xcconfig */,
-				AEF0D9D1D503747D9433E32E /* Pods-FikaTests.release.xcconfig */,
+				477E98C98EF240C6F55195BA /* Pods-Fika.debug.xcconfig */,
+				ABBC825B86CFB69FEEABD285 /* Pods-Fika.release.xcconfig */,
+				0D3610B65682502887E3FE54 /* Pods-Fika-FikaUITests.debug.xcconfig */,
+				7D062D7F631673D8E70DE3D5 /* Pods-Fika-FikaUITests.release.xcconfig */,
+				8C1D270DE54533AF1D03D78F /* Pods-FikaTests.debug.xcconfig */,
+				F1B535850BA8503C8A8BB8A5 /* Pods-FikaTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -154,7 +154,7 @@
 				2E7E39092676FC0C00034007 /* FikaUITests */,
 				2E7E38E62676FC0A00034007 /* Products */,
 				25262C475ABC931A00ED5E9B /* Pods */,
-				A137C56809719A0BB58FB5FE /* Frameworks */,
+				B9C7528BA9B240988906B1EF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -403,16 +403,6 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		A137C56809719A0BB58FB5FE /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				8BC78CC5679FB143CE9C3E13 /* Pods_Fika.framework */,
-				B51D6AE426B7D89A7F5A4CB7 /* Pods_Fika_FikaUITests.framework */,
-				82FE8AD2105AE4B93C9E4599 /* Pods_FikaTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		AE867BA126783DF4007A0EB2 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
@@ -439,6 +429,16 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		B9C7528BA9B240988906B1EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89CCA8B38AD2B1972628860B /* Pods_Fika.framework */,
+				4CEC1E71191AF86975A1FF0F /* Pods_Fika_FikaUITests.framework */,
+				CFDE14CD30CA2A56116A3864 /* Pods_FikaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -446,12 +446,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E7E390F2676FC0C00034007 /* Build configuration list for PBXNativeTarget "Fika" */;
 			buildPhases = (
-				CC2CE750A2D37B0BE7D9B059 /* [CP] Check Pods Manifest.lock */,
+				19D9EBFD679A3378B43F2543 /* [CP] Check Pods Manifest.lock */,
 				2E7E39182677041A00034007 /* ShellScript */,
 				2E7E38E12676FC0A00034007 /* Sources */,
 				2E7E38E22676FC0A00034007 /* Frameworks */,
 				2E7E38E32676FC0A00034007 /* Resources */,
-				B428AC31FED9E0742E2002D6 /* [CP] Embed Pods Frameworks */,
+				807ADB440F02B23AF631FF7D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -466,7 +466,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E7E39122676FC0C00034007 /* Build configuration list for PBXNativeTarget "FikaTests" */;
 			buildPhases = (
-				E95F2DE93FBBFF46B0224EB3 /* [CP] Check Pods Manifest.lock */,
+				6F4D96D7AA5A1C05DB8F8053 /* [CP] Check Pods Manifest.lock */,
 				2E7E38F72676FC0C00034007 /* Sources */,
 				2E7E38F82676FC0C00034007 /* Frameworks */,
 				2E7E38F92676FC0C00034007 /* Resources */,
@@ -485,11 +485,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E7E39152676FC0C00034007 /* Build configuration list for PBXNativeTarget "FikaUITests" */;
 			buildPhases = (
-				85946C6ADAE4CC08CB6F67A6 /* [CP] Check Pods Manifest.lock */,
+				F419AF310B64FEB15684535A /* [CP] Check Pods Manifest.lock */,
 				2E7E39022676FC0C00034007 /* Sources */,
 				2E7E39032676FC0C00034007 /* Frameworks */,
 				2E7E39042676FC0C00034007 /* Resources */,
-				4E2183F54E5EE388C0C59AB2 /* [CP] Embed Pods Frameworks */,
+				DB74E439F1B33C0A4BBB7995 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -578,80 +578,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2E7E39182677041A00034007 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint autocorrect && swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
-		};
-		4E2183F54E5EE388C0C59AB2 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Fika-FikaUITests/Pods-Fika-FikaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Fika-FikaUITests/Pods-Fika-FikaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fika-FikaUITests/Pods-Fika-FikaUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		85946C6ADAE4CC08CB6F67A6 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Fika-FikaUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B428AC31FED9E0742E2002D6 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Fika/Pods-Fika-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Fika/Pods-Fika-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fika/Pods-Fika-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CC2CE750A2D37B0BE7D9B059 /* [CP] Check Pods Manifest.lock */ = {
+		19D9EBFD679A3378B43F2543 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -673,7 +600,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E95F2DE93FBBFF46B0224EB3 /* [CP] Check Pods Manifest.lock */ = {
+		2E7E39182677041A00034007 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint autocorrect && swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		6F4D96D7AA5A1C05DB8F8053 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -689,6 +633,62 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-FikaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		807ADB440F02B23AF631FF7D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fika/Pods-Fika-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fika/Pods-Fika-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fika/Pods-Fika-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB74E439F1B33C0A4BBB7995 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fika-FikaUITests/Pods-Fika-FikaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fika-FikaUITests/Pods-Fika-FikaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fika-FikaUITests/Pods-Fika-FikaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F419AF310B64FEB15684535A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fika-FikaUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -891,7 +891,7 @@
 		};
 		2E7E39102676FC0C00034007 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA095752999F0DCE1639BE34 /* Pods-Fika.debug.xcconfig */;
+			baseConfigurationReference = 477E98C98EF240C6F55195BA /* Pods-Fika.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -911,7 +911,7 @@
 		};
 		2E7E39112676FC0C00034007 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D77C4D296D803C238E1249B3 /* Pods-Fika.release.xcconfig */;
+			baseConfigurationReference = ABBC825B86CFB69FEEABD285 /* Pods-Fika.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -931,7 +931,7 @@
 		};
 		2E7E39132676FC0C00034007 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B05D362E0536D6330DD57161 /* Pods-FikaTests.debug.xcconfig */;
+			baseConfigurationReference = 8C1D270DE54533AF1D03D78F /* Pods-FikaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -954,7 +954,7 @@
 		};
 		2E7E39142676FC0C00034007 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AEF0D9D1D503747D9433E32E /* Pods-FikaTests.release.xcconfig */;
+			baseConfigurationReference = F1B535850BA8503C8A8BB8A5 /* Pods-FikaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -977,7 +977,7 @@
 		};
 		2E7E39162676FC0C00034007 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 70436F19B4FBE6ED76BD591F /* Pods-Fika-FikaUITests.debug.xcconfig */;
+			baseConfigurationReference = 0D3610B65682502887E3FE54 /* Pods-Fika-FikaUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K9H85859Q4;
@@ -997,7 +997,7 @@
 		};
 		2E7E39172676FC0C00034007 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE4D78AC547ADF636F5B5921 /* Pods-Fika-FikaUITests.release.xcconfig */;
+			baseConfigurationReference = 7D062D7F631673D8E70DE3D5 /* Pods-Fika-FikaUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K9H85859Q4;

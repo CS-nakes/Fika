@@ -182,7 +182,7 @@
                                 <color key="textColor" name="Aluminium"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Email Address" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="oAH-gq-9OH" customClass="TextField" customModule="Fika" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Password" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="oAH-gq-9OH" customClass="TextField" customModule="Fika" customModuleProvider="target">
                                 <rect key="frame" x="20" y="440" width="374" height="50"/>
                                 <color key="backgroundColor" name="White"/>
                                 <constraints>
@@ -209,7 +209,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Email Address" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="B6C-FU-In8" customClass="TextField" customModule="Fika" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm Your Password" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="B6C-FU-In8" customClass="TextField" customModule="Fika" customModuleProvider="target">
                                 <rect key="frame" x="20" y="501" width="374" height="50"/>
                                 <color key="backgroundColor" name="White"/>
                                 <constraints>
@@ -325,13 +325,13 @@
     </scenes>
     <designables>
         <designable name="B6C-FU-In8">
-            <size key="intrinsicContentSize" width="167.5" height="15.5"/>
+            <size key="intrinsicContentSize" width="157" height="15.5"/>
         </designable>
         <designable name="GaC-dS-wOP">
             <size key="intrinsicContentSize" width="173.5" height="15.5"/>
         </designable>
         <designable name="oAH-gq-9OH">
-            <size key="intrinsicContentSize" width="167.5" height="15.5"/>
+            <size key="intrinsicContentSize" width="140" height="15.5"/>
         </designable>
         <designable name="oKC-8Q-9NP">
             <size key="intrinsicContentSize" width="167.5" height="15.5"/>

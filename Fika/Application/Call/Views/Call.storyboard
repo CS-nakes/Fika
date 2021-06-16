@@ -71,7 +71,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Relax and enjoy this casual chat with your colleague!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YJv-sv-VcV">
-                                        <rect key="frame" x="20" y="518" width="374" height="40"/>
+                                        <rect key="frame" x="20" y="518" width="374" height="47"/>
                                         <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="20"/>
                                         <color key="textColor" name="Aluminium"/>
                                         <nil key="highlightedColor"/>

@@ -37,7 +37,7 @@ struct FirebaseConnection {
             "position": position,
             // no company id
             "introduction": user.introduction ?? "",
-            "profilePictureId": user.profilePictureId as Any,
+            "profilePictureId": user.profilePictureId,
             "preferredTimeslots": encodedPreferredTimeslots
         ] as [String: Any?]
 
@@ -47,7 +47,7 @@ struct FirebaseConnection {
         // }
 
         for (fieldName, value) in userValues where value != nil {
-            UserRepository.saveValue(forKey: fieldName, value: value)
+            UserRepository.saveValue(forKey: fieldName, value: value!)
         }
 
     }

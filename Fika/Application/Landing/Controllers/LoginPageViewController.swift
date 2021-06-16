@@ -22,7 +22,7 @@ class LoginPageViewController: UIViewController {
     }
 
     private func signInCompletion(authResult: AuthDataResult?, error: Error?) {
-        guard let strongSelf = authResult else {
+        guard authResult != nil else {
             return
         }
 

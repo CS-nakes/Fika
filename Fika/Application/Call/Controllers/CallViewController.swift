@@ -34,11 +34,21 @@ class CallViewController: UIViewController {
     var user: User?
     var otherUserId: UInt?
 
+    var conversationStarters = [String]()
+    var hasStartedConversationStarter = false
+    var conversationTimer: Timer?
+    var conversationIndex = 0
+    @IBOutlet private var conversationLabel: UILabel!
+    @IBOutlet private var conversationConstraint: NSLayoutConstraint!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.setHidesBackButton(true, animated: true)
         getAgoraEngine().setChannelProfile(.communication)
         setUpVideo()
+        conversationStarters = ConversationConstants.starters.shuffled()
+        conversationConstraint.constant = -20
+        view.layoutIfNeeded()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -160,6 +170,23 @@ extension CallViewController {
 
     }
 
+    @IBAction private func hideConvoButtonDidTap(_ sender: UIButton) {
+        conversationTimer?.invalidate()
+        self.conversationConstraint.constant = -20
+        UIView.animate(withDuration: 1) {
+            self.view.layoutIfNeeded()
+        } completion: { _ in
+            self.conversationTimer = Timer.scheduledTimer(withTimeInterval: 180.0, repeats: false) { _ in
+                self.conversationConstraint.constant = 100
+                self.conversationLabel.text = self.conversationStarters[self.conversationIndex]
+                self.conversationIndex += 1
+                UIView.animate(withDuration: 1, delay: 0, options: .curveEaseInOut) {
+                    self.view.layoutIfNeeded()
+                }
+            }
+        }
+    }
+
 }
 
 // MARK: - Collection Extensions
@@ -200,6 +227,18 @@ extension CallViewController: UICollectionViewDelegate, UICollectionViewDataSour
             videoCanvas.renderMode = .hidden
             getAgoraEngine().setupRemoteVideo(videoCanvas)
             loadingView.isHidden = true
+
+            if !hasStartedConversationStarter {
+                self.hasStartedConversationStarter = true
+                conversationTimer = Timer.scheduledTimer(withTimeInterval: 10.0, repeats: false) { _ in
+                    self.conversationConstraint.constant = 100
+                    self.conversationLabel.text = self.conversationStarters[self.conversationIndex]
+                    self.conversationIndex += 1
+                    UIView.animate(withDuration: 1, delay: 0, options: .curveEaseInOut) {
+                        self.view.layoutIfNeeded()
+                    }
+                }
+            }
         }
 
         if otherUserId == nil {

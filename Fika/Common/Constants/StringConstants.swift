@@ -9,7 +9,6 @@ enum StringConstants {
         "What was the first thing you bought with your own money?",
         "How would you spend a million dollars in 24 hours?",
         "What's one thing that would make your day better right now?",
-        "What do you know a surprising amount of that most people don't?",
         "What's the nicest thing someone has ever done for you?",
         "What's one thing you won't ever do again?",
         "If you could move anywhere, where would you go?",

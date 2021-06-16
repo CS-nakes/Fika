@@ -84,6 +84,8 @@ class TimingViewController: UIViewController {
     @IBAction private func onFinish(_ sender: UIButton) {
         print(user)
         // save to firebase
+
+        performSegue(withIdentifier: "ToHome", sender: nil)
     }
 }
 

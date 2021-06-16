@@ -70,6 +70,7 @@ struct FirebaseConnection {
             }
 
             guard let userId: String = UserRepository.readValue(forKey: "userId") else {
+                completion([], nil)
                 return
             }
 
@@ -101,6 +102,18 @@ struct FirebaseConnection {
             completion(user, nil)
         }
 
+    }
+
+    func upcomingSessionsListener(completion: @escaping ([Session]?, Error?) -> Void) {
+        guard let userId: String = UserRepository.readValue(forKey: "userId") else {
+            completion([], nil)
+            return
+        }
+
+        db.collection(userPath).document(userId)
+            .addSnapshotListener { documentSnapshot, _ in
+                fetchUpcomingSessions(completion: completion)
+            }
     }
 
     // MARK: - FirebaseAuth

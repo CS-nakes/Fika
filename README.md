@@ -59,4 +59,4 @@ All assets used in this application were properly licensed via Envato Elements.
 
 <br/>
 
-<p align="center"><img width="50%" src="docs/images/videocall.png" alt="Splash" /></p>
+<p align="center"><img width="30%" src="docs/images/videocall.png" alt="Splash" /></p>

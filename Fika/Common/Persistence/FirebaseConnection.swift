@@ -39,14 +39,14 @@ struct FirebaseConnection {
             "introduction": user.introduction ?? "",
             "profilePictureId": user.profilePictureId,
             "preferredTimeslots": encodedPreferredTimeslots
-        ] as [String: Any]
+        ] as [String: Any?]
 
         // decode code
         // if let data = UserDefaults.standard.data(forKey: "dataType") {
         //    let array = try JSONDecoder().decode([DataType].self, from: data)
         // }
 
-        for (fieldName, value) in userValues {
+        for (fieldName, value) in userValues where value != nil {
             UserRepository.saveValue(forKey: fieldName, value: value)
         }
 
@@ -121,19 +121,17 @@ struct FirebaseConnection {
     private let compressionQuality: CGFloat = 0.3
 
     /// Uploads compressed jpg image to Storage
-    func uploadImage(image: UIImage, name: String) {
-        let uploadRef = getStorageRef(name)
+    func uploadImage(image: Data, completion: @escaping (String?, Error?) -> Void) {
+        let id = UUID().uuidString
+        let uploadRef = getStorageRef(id)
         // compresses image for faster upload
-        guard let uploadData = image.jpegData(compressionQuality: compressionQuality) else {
-            return
-        }
         let metaData = StorageMetadata()
         metaData.contentType = "image/jpg"
-        uploadRef.putData(uploadData, metadata: metaData) { _, error in
+        uploadRef.putData(image, metadata: metaData) { _, error in
             if error != nil {
-                debugPrint("error")
+                completion(nil, error)
             } else {
-                return
+                completion(id, nil)
             }
         }
     }

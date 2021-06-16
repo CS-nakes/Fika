@@ -124,6 +124,7 @@ Please enter your company code to continue.</string>
                     </view>
                     <navigationItem key="navigationItem" id="bp4-xm-hEb"/>
                     <connections>
+                        <outlet property="companyCode" destination="GaC-dS-wOP" id="fZR-Sj-YJ0"/>
                         <outlet property="titleLabel" destination="lJn-7e-OrA" id="bZV-mR-N5A"/>
                     </connections>
                 </viewController>
@@ -163,7 +164,7 @@ Please enter your company code to continue.</string>
                                 </constraints>
                                 <color key="textColor" name="Ebony"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="email"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="10"/>
@@ -196,7 +197,7 @@ Please enter your company code to continue.</string>
                                 </constraints>
                                 <color key="textColor" name="Ebony"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" textContentType="new-password"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="new-password"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="10"/>
@@ -223,7 +224,7 @@ Please enter your company code to continue.</string>
                                 </constraints>
                                 <color key="textColor" name="Ebony"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" textContentType="new-password"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="new-password"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="10"/>
@@ -275,6 +276,10 @@ Please enter your company code to continue.</string>
                                         <color key="value" name="Niagara"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onDidTapRegisterButton:" destination="2lx-eb-8JL" eventType="touchUpInside" id="de5-NR-Yyq"/>
+                                    <segue destination="dJ9-EV-Vgk" kind="show" identifier="ToProfile" id="71v-Jg-QUi"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6fC-Ek-KCr"/>
@@ -305,10 +310,25 @@ Please enter your company code to continue.</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1Fn-hc-8l7"/>
+                    <connections>
+                        <outlet property="emailField" destination="oKC-8Q-9NP" id="MOm-BJ-rn6"/>
+                        <outlet property="firstPasswordField" destination="oAH-gq-9OH" id="Xbs-46-Km3"/>
+                        <outlet property="secondPasswordField" destination="B6C-FU-In8" id="Vgi-dq-BDK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q3T-T0-HH8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1879.7101449275365" y="77.678571428571431"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="OaN-vi-pI0">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" referencedIdentifier="Profile" id="dJ9-EV-Vgk" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="meN-fi-HVE"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fuq-pr-WOm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2641" y="78"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qzo-fp-6Ee">

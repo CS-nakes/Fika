@@ -23,56 +23,44 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Your Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UnX-2n-OSK">
-                                <rect key="frame" x="20" y="153" width="233.5" height="33"/>
+                                <rect key="frame" x="20" y="153" width="250.5" height="28"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="28"/>
                                 <color key="textColor" name="Ebony"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="FQF-dZ-LZV">
-                                <rect key="frame" x="130.5" y="252.5" width="153" height="113.5"/>
+                                <rect key="frame" x="130.5" y="244.5" width="153" height="113.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="FQF-dZ-LZV" secondAttribute="height" multiplier="161:122" id="wid-ZX-nU4"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cb1-YU-GlX">
-                                <rect key="frame" x="162.5" y="374.5" width="89" height="30"/>
+                                <rect key="frame" x="162.5" y="366.5" width="89" height="30"/>
                                 <state key="normal" title="Select image"/>
                                 <connections>
                                     <action selector="selectImage:" destination="Y6W-OH-hqX" eventType="touchDown" id="97c-dA-XsM"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="USU-1o-oGY">
-                                <rect key="frame" x="20" y="412.5" width="37.5" height="16.5"/>
+                                <rect key="frame" x="20" y="404.5" width="39.5" height="14"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
                                 <color key="textColor" name="Aluminium"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dz-bI-dNV">
-                                <rect key="frame" x="20" y="780" width="374" height="36"/>
-                                <color key="backgroundColor" red="0.39781038718084483" green="0.7693973183631897" blue="0.65752826990156366" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <state key="normal" title="Continue">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="onSave:" destination="Y6W-OH-hqX" eventType="touchDown" id="6Hl-o5-lXY"/>
-                                    <segue destination="vbq-Zx-nTG" kind="show" id="tVw-Y8-9CQ"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help your colleagues get to know you better!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9GF-Q5-v4z">
-                                <rect key="frame" x="20" y="214" width="374" height="19"/>
+                                <rect key="frame" x="20" y="209" width="374" height="16"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="16"/>
                                 <color key="textColor" name="Aluminium"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Position" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xt7-5U-1D2">
-                                <rect key="frame" x="20" y="507" width="51" height="16.5"/>
+                                <rect key="frame" x="20" y="496.5" width="53" height="14"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
                                 <color key="textColor" name="Aluminium"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Name" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="sZT-ls-n5r" customClass="TextField" customModule="Fika">
-                                <rect key="frame" x="20" y="436" width="374" height="50"/>
+                                <rect key="frame" x="20" y="425.5" width="374" height="50"/>
                                 <color key="backgroundColor" name="White"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Wbo-lE-ePw"/>
@@ -99,7 +87,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Position" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="viA-Vp-cJk" customClass="TextField" customModule="Fika">
-                                <rect key="frame" x="20" y="530.5" width="374" height="50"/>
+                                <rect key="frame" x="20" y="517.5" width="374" height="50"/>
                                 <color key="backgroundColor" name="White"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="XVc-Lp-elY"/>
@@ -126,11 +114,69 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Introduction (Optional)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Avb-0k-Xbl">
-                                <rect key="frame" x="20" y="601.5" width="139.5" height="16.5"/>
+                                <rect key="frame" x="20" y="588.5" width="150" height="14"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
                                 <color key="textColor" red="0.60626382540000001" green="0.60626382540000001" blue="0.60626382540000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" placeholder="Introduce Yourself Here!" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="xjg-Tc-J5Y" customClass="TextField" customModule="Fika">
+                                <rect key="frame" x="20" y="609.5" width="374" height="100"/>
+                                <color key="backgroundColor" name="White"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="HPd-Ko-Mbq"/>
+                                </constraints>
+                                <color key="textColor" name="Ebony"/>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="0.0" height="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="dropShadowColor">
+                                        <color key="value" name="Gallery"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFB-5z-qFK">
+                                <rect key="frame" x="20" y="790" width="374" height="52"/>
+                                <color key="backgroundColor" name="Medium Aquamarine"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="IVy-Z6-bnl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="20"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" name="White"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="0.0" height="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <real key="value" value="0.29999999999999999"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="dropShadowColor">
+                                        <color key="value" name="Niagara"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="vbq-Zx-nTG" kind="show" identifier="ToTimeSlots" id="YGy-yM-EfX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -138,33 +184,39 @@
                             <constraint firstItem="viA-Vp-cJk" firstAttribute="top" secondItem="xt7-5U-1D2" secondAttribute="bottom" constant="7" id="3RT-0W-l8r"/>
                             <constraint firstItem="FQF-dZ-LZV" firstAttribute="height" secondItem="vDu-zF-Fre" secondAttribute="height" multiplier="0.15" id="3TO-XE-E8g"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="9GF-Q5-v4z" secondAttribute="trailing" constant="20" id="727-DY-14v"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="gFB-5z-qFK" secondAttribute="trailing" constant="20" id="7V7-Lx-NI0"/>
                             <constraint firstItem="9GF-Q5-v4z" firstAttribute="top" secondItem="UnX-2n-OSK" secondAttribute="bottom" constant="28" id="7to-KX-tFH"/>
                             <constraint firstItem="FQF-dZ-LZV" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="81B-KZ-dfH"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="xjg-Tc-J5Y" secondAttribute="trailing" constant="20" id="8mv-6n-jwA"/>
                             <constraint firstItem="UnX-2n-OSK" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="65" id="A3r-W8-4Vz"/>
                             <constraint firstItem="UnX-2n-OSK" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="AbD-Zs-KW9"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="viA-Vp-cJk" secondAttribute="trailing" constant="20" id="Dw1-MF-9Sl"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="6dz-bI-dNV" secondAttribute="trailing" constant="20" id="Dxl-vb-BjA"/>
                             <constraint firstItem="xt7-5U-1D2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="FPc-Lp-Hhj"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="6dz-bI-dNV" secondAttribute="bottom" constant="46" id="Hrh-2w-Dco"/>
+                            <constraint firstItem="xjg-Tc-J5Y" firstAttribute="top" secondItem="Avb-0k-Xbl" secondAttribute="bottom" constant="7" id="Hpa-Or-s9c"/>
                             <constraint firstItem="cb1-YU-GlX" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="JBc-U5-mKR"/>
                             <constraint firstItem="viA-Vp-cJk" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="Q3w-XP-evK"/>
                             <constraint firstItem="FQF-dZ-LZV" firstAttribute="top" secondItem="9GF-Q5-v4z" secondAttribute="bottom" constant="18" id="Sou-uI-iFe"/>
                             <constraint firstItem="xt7-5U-1D2" firstAttribute="top" secondItem="sZT-ls-n5r" secondAttribute="bottom" constant="21" id="TID-Pp-wZ2"/>
                             <constraint firstItem="Avb-0k-Xbl" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="ZMu-0Q-Y4F"/>
+                            <constraint firstItem="xjg-Tc-J5Y" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="agX-x0-v6b"/>
                             <constraint firstItem="sZT-ls-n5r" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="cwb-AQ-FoS"/>
                             <constraint firstItem="USU-1o-oGY" firstAttribute="top" secondItem="cb1-YU-GlX" secondAttribute="bottom" constant="8" symbolic="YES" id="d51-o6-yKr"/>
+                            <constraint firstItem="gFB-5z-qFK" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="gkX-gt-Heo"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="gFB-5z-qFK" secondAttribute="bottom" constant="20" id="nHT-gb-zND"/>
                             <constraint firstItem="Avb-0k-Xbl" firstAttribute="top" secondItem="viA-Vp-cJk" secondAttribute="bottom" constant="21" id="nHU-EU-c3v"/>
                             <constraint firstItem="Avb-0k-Xbl" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="pbO-ME-Bgl"/>
                             <constraint firstItem="9GF-Q5-v4z" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="qBi-lO-u1O"/>
                             <constraint firstItem="cb1-YU-GlX" firstAttribute="top" secondItem="FQF-dZ-LZV" secondAttribute="bottom" constant="7.5" id="qLm-0y-rwf"/>
                             <constraint firstItem="sZT-ls-n5r" firstAttribute="top" secondItem="USU-1o-oGY" secondAttribute="bottom" constant="7" id="qO7-TU-VwF"/>
-                            <constraint firstItem="6dz-bI-dNV" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="qid-if-XXt"/>
                             <constraint firstItem="USU-1o-oGY" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="rw1-yQ-OLa"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="sZT-ls-n5r" secondAttribute="trailing" constant="20" id="u5e-tL-ka9"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="VjC-2G-XcK"/>
                     <connections>
+                        <outlet property="introductionField" destination="xjg-Tc-J5Y" id="kBu-KY-k8G"/>
+                        <outlet property="nameField" destination="sZT-ls-n5r" id="ZQe-Il-D6F"/>
+                        <outlet property="positionField" destination="viA-Vp-cJk" id="hg5-eG-2PG"/>
                         <outlet property="profileImage" destination="FQF-dZ-LZV" id="nLk-tM-3v9"/>
                     </connections>
                 </viewController>
@@ -263,14 +315,6 @@
                                 <color key="textColor" red="0.60626382540000001" green="0.60626382540000001" blue="0.60626382540000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Rw-Dz-YWH">
-                                <rect key="frame" x="20" y="780" width="374" height="36"/>
-                                <color key="backgroundColor" red="0.3978103872" green="0.76939731840000003" blue="0.65752826990000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <state key="normal" title="Finish">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VmA-Zf-c7Q" userLabel="BreakfastCard">
                                 <rect key="frame" x="20" y="275" width="374" height="90"/>
                                 <subviews>
@@ -349,26 +393,54 @@
                                     <outletCollection property="gestureRecognizers" destination="e0P-GN-X22" appends="YES" id="9Lg-bG-vFG"/>
                                 </connections>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="75c-aY-keo">
+                                <rect key="frame" x="20" y="790" width="374" height="52"/>
+                                <color key="backgroundColor" name="Medium Aquamarine"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="DED-WS-1IB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="20"/>
+                                <state key="normal" title="Finish">
+                                    <color key="titleColor" name="White"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="0.0" height="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <real key="value" value="0.29999999999999999"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="dropShadowColor">
+                                        <color key="value" name="Niagara"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Zr3-dB-sLt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="VmA-Zf-c7Q" firstAttribute="leading" secondItem="Zr3-dB-sLt" secondAttribute="leading" constant="20" id="BuU-Gn-bCD"/>
-                            <constraint firstItem="Zr3-dB-sLt" firstAttribute="trailing" secondItem="9Rw-Dz-YWH" secondAttribute="trailing" constant="20" id="CAB-z3-EmE"/>
                             <constraint firstItem="hYW-Na-M6P" firstAttribute="top" secondItem="Zr3-dB-sLt" secondAttribute="top" constant="63" id="HOb-3R-jYu"/>
                             <constraint firstItem="VmA-Zf-c7Q" firstAttribute="top" secondItem="oS0-do-iO9" secondAttribute="bottom" constant="54.5" id="IMN-SJ-5Ze"/>
                             <constraint firstItem="oS0-do-iO9" firstAttribute="leading" secondItem="Zr3-dB-sLt" secondAttribute="leading" constant="20" id="K5o-jg-UvY"/>
-                            <constraint firstItem="Zr3-dB-sLt" firstAttribute="bottom" secondItem="9Rw-Dz-YWH" secondAttribute="bottom" constant="46" id="LVX-Wh-Sky"/>
+                            <constraint firstItem="Zr3-dB-sLt" firstAttribute="bottom" secondItem="75c-aY-keo" secondAttribute="bottom" constant="20" id="OAL-rK-Mzh"/>
                             <constraint firstItem="oS0-do-iO9" firstAttribute="top" secondItem="hYW-Na-M6P" secondAttribute="bottom" constant="21.5" id="PMR-uL-qsf"/>
                             <constraint firstItem="Zr3-dB-sLt" firstAttribute="trailing" secondItem="VmA-Zf-c7Q" secondAttribute="trailing" constant="20" id="QUm-hg-mkm"/>
                             <constraint firstItem="OIm-5D-KIh" firstAttribute="top" secondItem="lQJ-kr-8pt" secondAttribute="bottom" constant="22" id="S6C-C5-LyR"/>
                             <constraint firstItem="lQJ-kr-8pt" firstAttribute="top" secondItem="VmA-Zf-c7Q" secondAttribute="bottom" constant="22" id="Ude-sO-NCe"/>
                             <constraint firstItem="hYW-Na-M6P" firstAttribute="leading" secondItem="Zr3-dB-sLt" secondAttribute="leading" constant="20" id="Uin-Hr-fhf"/>
+                            <constraint firstItem="75c-aY-keo" firstAttribute="leading" secondItem="Zr3-dB-sLt" secondAttribute="leading" constant="20" id="VhN-qb-WnM"/>
                             <constraint firstItem="OIm-5D-KIh" firstAttribute="leading" secondItem="Zr3-dB-sLt" secondAttribute="leading" constant="20" id="Vwb-wp-C4l"/>
-                            <constraint firstItem="9Rw-Dz-YWH" firstAttribute="leading" secondItem="Zr3-dB-sLt" secondAttribute="leading" constant="20" id="fSd-pI-Apu"/>
                             <constraint firstItem="Zr3-dB-sLt" firstAttribute="trailing" secondItem="lQJ-kr-8pt" secondAttribute="trailing" constant="20" id="gtz-DD-Z1q"/>
                             <constraint firstItem="Zr3-dB-sLt" firstAttribute="trailing" secondItem="OIm-5D-KIh" secondAttribute="trailing" constant="20" id="hQf-so-k2v"/>
+                            <constraint firstItem="Zr3-dB-sLt" firstAttribute="trailing" secondItem="75c-aY-keo" secondAttribute="trailing" constant="20" id="hrg-Xm-xIi"/>
                             <constraint firstItem="lQJ-kr-8pt" firstAttribute="leading" secondItem="Zr3-dB-sLt" secondAttribute="leading" constant="20" id="tou-rX-1oG"/>
                             <constraint firstAttribute="trailing" secondItem="oS0-do-iO9" secondAttribute="trailing" constant="20" id="wmB-Qu-pdl"/>
                         </constraints>
@@ -480,10 +552,13 @@
     </scenes>
     <designables>
         <designable name="sZT-ls-n5r">
-            <size key="intrinsicContentSize" width="106" height="18"/>
+            <size key="intrinsicContentSize" width="112.5" height="15.5"/>
         </designable>
         <designable name="viA-Vp-cJk">
-            <size key="intrinsicContentSize" width="119.5" height="18"/>
+            <size key="intrinsicContentSize" width="125.5" height="15.5"/>
+        </designable>
+        <designable name="xjg-Tc-J5Y">
+            <size key="intrinsicContentSize" width="160.5" height="15.5"/>
         </designable>
     </designables>
     <resources>
@@ -496,6 +571,12 @@
         </namedColor>
         <namedColor name="Gallery">
             <color red="0.94499999284744263" green="0.95300000905990601" blue="0.94900000095367432" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Medium Aquamarine">
+            <color red="0.33700001239776611" green="0.79600000381469727" blue="0.72200000286102295" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Niagara">
+            <color red="0.075000002980232239" green="0.64300000667572021" blue="0.59200000762939453" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="White">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

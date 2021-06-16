@@ -33,6 +33,7 @@ struct FirebaseConnection {
         }
 
         let userValues = [
+            "userId": docRef.documentID,
             "name": name,
             "position": position,
             // no company id
@@ -52,16 +53,10 @@ struct FirebaseConnection {
 
     }
 
-    // TODO @clara
-    func createSession(completion: @escaping (Session?, Error?) -> Void) {
-        // grab data from UserRepository and send to firebase functions
-        // firebase function should return a session
-    }
-
     // MARK: - FirebaseDatabase: Get
 
     // could also remove userId and grab userid from UserDefaults
-    func fetchUpcomingSessions(userId: String, completion: @escaping ([Session]?, Error?) -> Void) {
+    func fetchUpcomingSessions(completion: @escaping ([Session]?, Error?) -> Void) {
 
         // only get the last 1, because u might finish the call early.
         // if fetch all, may show the call that you just ended
@@ -71,6 +66,10 @@ struct FirebaseConnection {
                                             .compactMap { try? $0.data(as: SessionRecord.self) }),
                   err == nil else {
                 completion([], err)
+                return
+            }
+
+            guard let userId: String = UserRepository.readValue(forKey: "userId") else {
                 return
             }
 

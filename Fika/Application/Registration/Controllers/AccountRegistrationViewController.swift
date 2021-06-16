@@ -1,10 +1,3 @@
-//
-//  AccountRegistrationViewController.swift
-//  Fika
-//
-//  Created by Hanming on 15/6/21.
-//
-
 import UIKit
 import Firebase
 
@@ -35,11 +28,10 @@ class AccountRegistrationViewController: UIViewController {
     }
 
     private func createAuthCompletion(authResult: AuthDataResult?, error: Error?) {
-        guard let user = authResult?.user, error == nil else {
+        guard authResult?.user != nil, error == nil else {
             print("Error \(error?.localizedDescription ?? "")")
             return
         }
-
         // Registration successful
         print("User is created successfully!")
 

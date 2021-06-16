@@ -8,6 +8,11 @@ class CallViewController: UIViewController {
     @IBOutlet private var otherCollectionView: UICollectionView!
     @IBOutlet private var muteButton: UIButton!
     @IBOutlet private var videoButton: UIButton!
+    @IBOutlet private var hideSelfVideoButton: UIButton!
+    @IBOutlet private var selfVideoConstraint: NSLayoutConstraint!
+
+    var isSelfViewHidden = false
+    var selfViewHidingTimer: Timer?
 
     var callId: UInt = 0 // Int based IDs for Agora
     var muted = false {
@@ -38,10 +43,6 @@ class CallViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-//        guard let user = self.user else {
-//            // Dismiss current screen
-//            return
-//        }
         joinChannel(channelName: "Temporary")
     }
 
@@ -80,6 +81,19 @@ class CallViewController: UIViewController {
         otherUserId = nil
         otherCollectionView.reloadData()
         selfCollectionView.reloadData()
+    }
+
+    func initialiseTimer() {
+        self.selfViewHidingTimer?.invalidate()
+        self.selfViewHidingTimer =
+            Timer.scheduledTimer(withTimeInterval: 5.0, repeats: false) { _ in
+                self.isSelfViewHidden = true
+                self.selfVideoConstraint.constant = -120
+                UIView.animate(withDuration: 1, delay: 0, options: .curveEaseInOut) {
+                    self.view.layoutIfNeeded()
+                    self.hideSelfVideoButton.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
+                }
+            }
     }
 
 }
@@ -132,6 +146,20 @@ extension CallViewController {
         getAgoraEngine().switchCamera()
     }
 
+    @IBAction private func selfViewButtonDidTap(_ sender: UIButton) {
+        self.selfViewHidingTimer?.invalidate()
+        isSelfViewHidden = true
+        self.selfVideoConstraint.constant = 20
+
+        UIView.animate(withDuration: 0.5) {
+            self.view.layoutIfNeeded()
+            self.hideSelfVideoButton.transform = CGAffineTransform(rotationAngle: CGFloat.pi * 2.0)
+        } completion: { _ in
+            self.initialiseTimer()
+        }
+
+    }
+
 }
 
 // MARK: - Collection Extensions
@@ -153,7 +181,13 @@ extension CallViewController: UICollectionViewDelegate, UICollectionViewDataSour
                 videoCanvas.view = videoCell.videoView
                 videoCanvas.renderMode = .fit
                 getAgoraEngine().setupLocalVideo(videoCanvas)
+                hideSelfVideoButton.isHidden = false
+
+                if !isSelfViewHidden && selfViewHidingTimer == nil {
+                    initialiseTimer()
+                }
             }
+
             return cell
         }
 

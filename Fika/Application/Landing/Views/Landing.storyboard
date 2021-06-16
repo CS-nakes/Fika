@@ -171,7 +171,7 @@
                                 <color key="textColor" name="Aluminium"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Email Address" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="iqp-aU-3RV" customClass="TextField" customModule="Fika" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Email Address" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="iqp-aU-3RV" customClass="TextField" customModule="Fika">
                                 <rect key="frame" x="20" y="306" width="374" height="50"/>
                                 <color key="backgroundColor" name="White"/>
                                 <constraints>
@@ -198,7 +198,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Password" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="Pzd-ie-iqy" customClass="TextField" customModule="Fika" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Password" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="Pzd-ie-iqy" customClass="TextField" customModule="Fika">
                                 <rect key="frame" x="20" y="400.5" width="374" height="50"/>
                                 <color key="backgroundColor" name="White"/>
                                 <constraints>
@@ -293,10 +293,10 @@
     </scenes>
     <designables>
         <designable name="Pzd-ie-iqy">
-            <size key="intrinsicContentSize" width="151" height="21"/>
+            <size key="intrinsicContentSize" width="131" height="18"/>
         </designable>
         <designable name="iqp-aU-3RV">
-            <size key="intrinsicContentSize" width="178.5" height="21"/>
+            <size key="intrinsicContentSize" width="158.5" height="18"/>
         </designable>
     </designables>
     <resources>

@@ -3,13 +3,16 @@ import Firebase
 
 class LoginPageViewController: UIViewController {
 
+    @IBOutlet private var emailField: UITextField!
+    @IBOutlet private var passwordField: UITextField!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         hideNavBar()
-    }
 
-    @IBOutlet private var emailField: UITextField!
-    @IBOutlet private var passwordField: UITextField!
+        emailField.delegate = self
+        passwordField.delegate = self
+    }
 
     @IBAction private func onDidTapLoginButton(_ sender: UIButton) {
         let email = emailField.text!

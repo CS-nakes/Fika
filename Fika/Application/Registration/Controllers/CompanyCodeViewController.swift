@@ -6,13 +6,16 @@ class CompanyCodeViewController: UIViewController {
     var titleText = "Welcome to Fika"
 
     @IBOutlet private var titleLabel: UILabel!
-    @IBOutlet private var companyCode: UITextField!
+    @IBOutlet private var companyCodeTextField: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         hideNavBar()
-        self.navigationItem.hidesBackButton = hidesBackButton
+        if hidesBackButton {
+            self.navigationItem.setHidesBackButton(true, animated: true)
+        }
         titleLabel.text = titleText
+        companyCodeTextField.delegate = self
     }
 
 }

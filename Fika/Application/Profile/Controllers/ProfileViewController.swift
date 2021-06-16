@@ -14,9 +14,13 @@ class ProfileViewController: UIViewController, UITextViewDelegate,
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         nameField.text = user.name
+        nameField.delegate = self
         positionField.text = user.position
+        positionField.delegate = self
         introductionField.text = user.introduction
+        introductionField.delegate = self
         validateFields()
 
         imagePicker.delegate = self

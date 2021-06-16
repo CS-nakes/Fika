@@ -9,6 +9,7 @@ struct UserRecord {
     private(set) var profilePictureId: String?
     @ExplicitNull private(set) var introduction: String?
     private(set) var preferredTimeslots: [Timeslot]
+    private(set) var isAvailable: Bool
 
 }
 

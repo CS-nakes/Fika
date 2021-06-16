@@ -7,6 +7,7 @@ class ProfileViewController: UIViewController, UITextViewDelegate,
     @IBOutlet private var introductionField: TextField!
     @IBOutlet private var profileImage: UIImageView!
     @IBOutlet private var continueButton: UIButton!
+    @IBOutlet private var topConstraint: NSLayoutConstraint!
 
     var selectedImage: UIImage?
 
@@ -16,6 +17,7 @@ class ProfileViewController: UIViewController, UITextViewDelegate,
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        hideNavBar()
 
         nameField.text = user.name
         nameField.delegate = self
@@ -31,8 +33,11 @@ class ProfileViewController: UIViewController, UITextViewDelegate,
         }
 
         imagePicker.delegate = self
-        introductionField.contentVerticalAlignment = .top
-        hideNavBar()
+
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(self.keyboardNotification(notification:)),
+                                               name: UIResponder.keyboardWillChangeFrameNotification,
+                                               object: nil)
     }
 
     @IBAction private func selectImage(_ sender: UIButton) {
@@ -91,5 +96,38 @@ class ProfileViewController: UIViewController, UITextViewDelegate,
             return
         }
         performSegue(withIdentifier: "ToTimeSlots", sender: nil)
+    }
+
+    @objc
+    func keyboardNotification(notification: NSNotification) {
+        guard let userInfo = notification.userInfo else {
+            return
+        }
+
+        let endFrame = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue
+        let endFrameY = endFrame?.origin.y ?? 0
+        let duration: TimeInterval =
+            (userInfo[UIResponder.keyboardAnimationDurationUserInfoKey] as? NSNumber)?.doubleValue ?? 0
+        let animationCurveRawNSN = userInfo[UIResponder.keyboardAnimationCurveUserInfoKey] as? NSNumber
+        let animationCurveRaw = animationCurveRawNSN?.uintValue ?? UIView.AnimationOptions.curveEaseInOut.rawValue
+        let animationCurve: UIView.AnimationOptions = UIView.AnimationOptions(rawValue: animationCurveRaw)
+
+        if endFrameY >= UIScreen.main.bounds.size.height {
+            // Keyboard down
+            topConstraint.constant = 65
+            self.navigationItem.setHidesBackButton(false, animated: true)
+        } else {
+            // Keyboard up
+            topConstraint.constant = -30
+            self.navigationItem.setHidesBackButton(true, animated: true)
+        }
+
+        UIView.animate(
+            withDuration: duration,
+            delay: TimeInterval(0),
+            options: animationCurve,
+            animations: { self.view.layoutIfNeeded() },
+            completion: nil
+        )
     }
 }

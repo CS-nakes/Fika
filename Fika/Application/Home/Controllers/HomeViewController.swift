@@ -9,7 +9,7 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        hideNavBar()
+        self.navigationItem.setHidesBackButton(true, animated: true)
 
         // Clear all "past controllers".
         guard let navigationController = self.navigationController else {

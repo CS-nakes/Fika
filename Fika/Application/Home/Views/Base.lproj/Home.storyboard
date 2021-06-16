@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="XHq-d3-xRV">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="XHq-d3-xRV">
                                 <rect key="frame" x="347" y="54" width="47" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="47" id="TRI-kh-EeE"/>
@@ -83,7 +83,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sXe-TI-lXi">
                                 <rect key="frame" x="20" y="186" width="374" height="141"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="69f-jB-NFi">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="69f-jB-NFi">
                                         <rect key="frame" x="18" y="18" width="47" height="47"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="47" id="1sp-Bh-VZG"/>
@@ -271,7 +271,9 @@
                     <connections>
                         <outlet property="dateLabel" destination="7D3-au-bc6" id="aUn-9o-owh"/>
                         <outlet property="nameLabel" destination="lZc-V8-95W" id="UUs-Gg-teR"/>
+                        <outlet property="otherImageView" destination="69f-jB-NFi" id="eK0-eE-wcw"/>
                         <outlet property="positionLabel" destination="jUC-48-5mW" id="yE9-NU-v3c"/>
+                        <outlet property="selfImageView" destination="XHq-d3-xRV" id="WvN-g4-mKD"/>
                         <outlet property="timeLabel" destination="cpg-7b-OfI" id="LIV-Qg-mKf"/>
                     </connections>
                 </viewController>

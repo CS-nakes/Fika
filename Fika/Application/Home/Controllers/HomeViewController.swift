@@ -6,6 +6,8 @@ class HomeViewController: UIViewController {
     @IBOutlet private var positionLabel: UILabel!
     @IBOutlet private var dateLabel: UILabel!
     @IBOutlet private var timeLabel: UILabel!
+    @IBOutlet private var selfImageView: UIImageView!
+    @IBOutlet private var otherImageView: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +22,61 @@ class HomeViewController: UIViewController {
         navigationArray.removeAll()
         navigationArray.append(temp!)
         self.navigationController?.viewControllers = navigationArray
+
+        loadSelf()
+        loadSession()
     }
 
+    func loadSelf() {
+        guard let profileImageId: String = UserRepository.readValue(forKey: "profilePictureId") else {
+            return
+        }
+        FirebaseConnection().fetchImage(name: profileImageId) { data, error in
+            guard error == nil, let data = data else {
+                return
+            }
+            self.selfImageView.image = UIImage(data: data)
+        }
+    }
+
+    func loadSession() {
+        // swiftlint:disable:next closure_body_length
+        FirebaseConnection().fetchUpcomingSessions { sessions, error in
+            guard error == nil, let session = sessions?.first,
+                  let userId: String = UserRepository.readValue(forKey: "userId"),
+                  let participantId = session.participants.first(where: { $0 != userId }) else {
+                return
+            }
+
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "d MMMM, E"
+
+            // swiftlint:disable:next closure_body_length
+            FirebaseConnection().fetchUser(userId: participantId) { otherUser, error in
+                guard error == nil, let otherUser = otherUser else {
+                    return
+                }
+
+                let setUserAttributes = {
+                    self.nameLabel.text = otherUser.name
+                    self.positionLabel.text = otherUser.position
+                    self.dateLabel.text = dateFormatter.string(from: session.date)
+                    self.timeLabel.text = session.timeslot.rangeString
+                }
+
+                if let profilePictureId = otherUser.profilePictureId {
+                    FirebaseConnection().fetchImage(name: profilePictureId) { data, error in
+                        guard error == nil, let data = data else {
+                            setUserAttributes()
+                            return
+                        }
+                        self.otherImageView.image = UIImage(data: data)
+                        setUserAttributes()
+                    }
+                } else {
+                    setUserAttributes()
+                }
+            }
+        }
+    }
 }

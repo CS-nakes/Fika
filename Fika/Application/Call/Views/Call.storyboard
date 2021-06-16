@@ -87,29 +87,55 @@
                                     <constraint firstAttribute="trailing" secondItem="YJv-sv-VcV" secondAttribute="trailing" constant="20" id="rt9-RU-O6H"/>
                                 </constraints>
                             </view>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4P-Zq-y1c">
+                                <rect key="frame" x="244" y="145.5" width="30" height="30"/>
+                                <color key="backgroundColor" name="White"/>
+                                <inset key="contentEdgeInsets" minX="3" minY="3" maxX="3" maxY="3"/>
+                                <state key="normal" image="back"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="0.0" height="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <real key="value" value="0.20000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="dropShadowColor">
+                                        <color key="value" name="Ebony"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="selfViewButtonDidTap:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="DlM-Na-wMR"/>
+                                </connections>
+                            </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hwn-az-dD2">
-                                <rect key="frame" x="274" y="64" width="120" height="213.5"/>
+                                <rect key="frame" x="284" y="54" width="120" height="213.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="Ohn-IG-Ftd"/>
                                     <constraint firstAttribute="width" secondItem="hwn-az-dD2" secondAttribute="height" multiplier="9:16" id="dcA-YU-Fa5"/>
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="KF8-BV-Bl2">
-                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="itemSize" width="120" height="213.5"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SelfVideoCell" id="113-RW-FRt" customClass="VideoCollectionViewCell" customModule="Fika">
-                                        <rect key="frame" x="-4" y="0.0" width="128" height="128"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="213.5"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="iGX-Zw-MKd">
-                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="120" height="213.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RWv-Og-bJX">
-                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="120" height="213.5"/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -312,24 +338,28 @@
                         <constraints>
                             <constraint firstItem="2XQ-Fd-141" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="3GR-1B-HH0"/>
                             <constraint firstAttribute="bottom" secondItem="XX0-ix-6sm" secondAttribute="bottom" id="9hQ-h9-Hm0"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="hwn-az-dD2" secondAttribute="trailing" constant="20" id="BQD-Eb-aaG"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="hwn-az-dD2" secondAttribute="trailing" constant="10" id="BQD-Eb-aaG"/>
                             <constraint firstItem="Of4-lZ-bv4" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="Obj-GK-JhE"/>
+                            <constraint firstItem="hwn-az-dD2" firstAttribute="leading" secondItem="s4P-Zq-y1c" secondAttribute="trailing" constant="10" id="U3x-GZ-qCb"/>
                             <constraint firstItem="XX0-ix-6sm" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="UCi-5g-IXw"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="XX0-ix-6sm" secondAttribute="trailing" id="VNg-oc-w2I"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="2XQ-Fd-141" secondAttribute="trailing" id="dIN-VK-XXw"/>
                             <constraint firstItem="2XQ-Fd-141" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="bottom" constant="-120" id="gNo-fG-zvE"/>
                             <constraint firstAttribute="bottom" secondItem="Of4-lZ-bv4" secondAttribute="bottom" id="hcR-a0-5BU"/>
                             <constraint firstItem="XX0-ix-6sm" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="pu7-aN-7jw"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="top" secondItem="hwn-az-dD2" secondAttribute="top" constant="-20" id="sck-wF-Ltl"/>
+                            <constraint firstItem="hwn-az-dD2" firstAttribute="centerY" secondItem="s4P-Zq-y1c" secondAttribute="centerY" id="q2A-CO-Ohg"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="top" secondItem="hwn-az-dD2" secondAttribute="top" constant="-10" id="sck-wF-Ltl"/>
                             <constraint firstAttribute="trailing" secondItem="Of4-lZ-bv4" secondAttribute="trailing" id="wmx-be-xKE"/>
                             <constraint firstItem="Of4-lZ-bv4" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="zJC-zG-n9R"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="hideSelfVideoButton" destination="s4P-Zq-y1c" id="MCb-r1-z76"/>
                         <outlet property="loadingView" destination="XX0-ix-6sm" id="f2A-sg-fhs"/>
                         <outlet property="muteButton" destination="m7D-Ft-Bhs" id="EN7-6F-DAX"/>
                         <outlet property="otherCollectionView" destination="Of4-lZ-bv4" id="MBp-QH-8vL"/>
                         <outlet property="selfCollectionView" destination="hwn-az-dD2" id="Qn4-rd-0xk"/>
+                        <outlet property="selfVideoConstraint" destination="BQD-Eb-aaG" id="kMg-hd-GoY"/>
                         <outlet property="videoButton" destination="1Z4-AV-8Uh" id="RUj-Wj-YSX"/>
                     </connections>
                 </viewController>
@@ -340,6 +370,7 @@
     </scenes>
     <resources>
         <image name="arrow.triangle.2.circlepath.camera.fill" catalog="system" width="128" height="94"/>
+        <image name="back" width="24" height="24"/>
         <image name="loading" width="2804.06005859375" height="2500"/>
         <image name="mic.fill" catalog="system" width="108" height="128"/>
         <image name="mic.slash.fill" catalog="system" width="108" height="128"/>
@@ -353,7 +384,7 @@
             <color red="0.91399997472763062" green="0.31400001049041748" blue="0.28600001335144043" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Ebony">
-            <color red="0.19599999487400055" green="0.20000000298023224" blue="0.20800000429153442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.1959999949" green="0.20000000300000001" blue="0.20800000430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Gallery">
             <color red="0.94499999284744263" green="0.95300000905990601" blue="0.94900000095367432" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -23,44 +23,44 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Your Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UnX-2n-OSK">
-                                <rect key="frame" x="20" y="153" width="233.5" height="33"/>
+                                <rect key="frame" x="20" y="153" width="250.5" height="28"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="28"/>
                                 <color key="textColor" name="Ebony"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="FQF-dZ-LZV">
-                                <rect key="frame" x="130.5" y="252.5" width="153" height="113.5"/>
+                                <rect key="frame" x="130.5" y="244.5" width="153" height="113.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="FQF-dZ-LZV" secondAttribute="height" multiplier="161:122" id="wid-ZX-nU4"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cb1-YU-GlX">
-                                <rect key="frame" x="162.5" y="374.5" width="89" height="30"/>
+                                <rect key="frame" x="162.5" y="366.5" width="89" height="30"/>
                                 <state key="normal" title="Select image"/>
                                 <connections>
                                     <action selector="selectImage:" destination="Y6W-OH-hqX" eventType="touchDown" id="97c-dA-XsM"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="USU-1o-oGY">
-                                <rect key="frame" x="20" y="412.5" width="37.5" height="16.5"/>
+                                <rect key="frame" x="20" y="404.5" width="39.5" height="14"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
                                 <color key="textColor" name="Aluminium"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help your colleagues get to know you better!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9GF-Q5-v4z">
-                                <rect key="frame" x="20" y="214" width="374" height="19"/>
+                                <rect key="frame" x="20" y="209" width="374" height="16"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="16"/>
                                 <color key="textColor" name="Aluminium"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Position" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xt7-5U-1D2">
-                                <rect key="frame" x="20" y="507" width="51" height="16.5"/>
+                                <rect key="frame" x="20" y="496.5" width="53" height="14"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
                                 <color key="textColor" name="Aluminium"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Name" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="sZT-ls-n5r" customClass="TextField" customModule="Fika">
-                                <rect key="frame" x="20" y="436" width="374" height="50"/>
+                                <rect key="frame" x="20" y="425.5" width="374" height="50"/>
                                 <color key="backgroundColor" name="White"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Wbo-lE-ePw"/>
@@ -87,7 +87,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Position" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="viA-Vp-cJk" customClass="TextField" customModule="Fika">
-                                <rect key="frame" x="20" y="530.5" width="374" height="50"/>
+                                <rect key="frame" x="20" y="517.5" width="374" height="50"/>
                                 <color key="backgroundColor" name="White"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="XVc-Lp-elY"/>
@@ -114,20 +114,20 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Introduction (Optional)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Avb-0k-Xbl">
-                                <rect key="frame" x="20" y="601.5" width="139.5" height="16.5"/>
+                                <rect key="frame" x="20" y="588.5" width="150" height="14"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
                                 <color key="textColor" red="0.60626382540000001" green="0.60626382540000001" blue="0.60626382540000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" placeholder="Introduce Yourself!" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="xjg-Tc-J5Y" customClass="TextField" customModule="Fika">
-                                <rect key="frame" x="20" y="625" width="374" height="100"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" placeholder="Introduce Yourself Here!" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="xjg-Tc-J5Y" customClass="TextField" customModule="Fika">
+                                <rect key="frame" x="20" y="609.5" width="374" height="100"/>
                                 <color key="backgroundColor" name="White"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="HPd-Ko-Mbq"/>
                                 </constraints>
                                 <color key="textColor" name="Ebony"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="10"/>
@@ -211,6 +211,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="VjC-2G-XcK"/>
                     <connections>
+                        <outlet property="introductionField" destination="xjg-Tc-J5Y" id="kBu-KY-k8G"/>
+                        <outlet property="nameField" destination="sZT-ls-n5r" id="ZQe-Il-D6F"/>
+                        <outlet property="positionField" destination="viA-Vp-cJk" id="hg5-eG-2PG"/>
                         <outlet property="profileImage" destination="FQF-dZ-LZV" id="nLk-tM-3v9"/>
                     </connections>
                 </viewController>
@@ -546,13 +549,13 @@
     </scenes>
     <designables>
         <designable name="sZT-ls-n5r">
-            <size key="intrinsicContentSize" width="106" height="18"/>
+            <size key="intrinsicContentSize" width="112.5" height="15.5"/>
         </designable>
         <designable name="viA-Vp-cJk">
-            <size key="intrinsicContentSize" width="119.5" height="18"/>
+            <size key="intrinsicContentSize" width="125.5" height="15.5"/>
         </designable>
         <designable name="xjg-Tc-J5Y">
-            <size key="intrinsicContentSize" width="117" height="18"/>
+            <size key="intrinsicContentSize" width="160.5" height="15.5"/>
         </designable>
     </designables>
     <resources>

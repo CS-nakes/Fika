@@ -82,11 +82,55 @@ class TimingViewController: UIViewController {
         validate()
     }
 
-    @IBAction private func onFinish(_ sender: UIButton) {
-        // TODO: Validate selection
-        // TODO: Save user to firebase
+    func createUser(db: FirebaseConnection, user: User) {
+        do {
+            try db.createUser(user: user, completion: { (err: Error?) in
+                if let err = err {
+                    print(err.localizedDescription)
+                } else {
+                    print("Success!")
+                    self.performSegue(withIdentifier: "ToHome", sender: nil)
+                }
 
-        performSegue(withIdentifier: "ToHome", sender: nil)
+            })
+        } catch {
+            print(error)
+        }
+    }
+
+    @IBAction private func onFinish(_ sender: UIButton) {
+
+        // Validate
+        guard let name = user.name, let position = user.position else {
+            return
+        }
+
+        if name.trimmingCharacters(in: .whitespaces).isEmpty || position.trimmingCharacters(in: .whitespaces).isEmpty ||
+            user.preferredTimeslots.isEmpty {
+            return
+        }
+
+        print("Validation Success")
+
+        // Save user to firebase
+        let db = FirebaseConnection()
+        let compressionQuality: CGFloat = 0.3
+
+        if let profileImage = image, let imageData = profileImage.jpegData(compressionQuality: compressionQuality) {
+            db.uploadImage(image: imageData, completion: { (id: String?, _: Error?) in
+                if let imageId = id {
+                    print("Upload Success")
+                    self.user.profilePictureId = imageId
+                } else {
+                    print("Upload failed")
+                }
+
+                self.createUser(db: db, user: self.user)
+            })
+        } else {
+            createUser(db: db, user: user)
+        }
+
     }
 }
 

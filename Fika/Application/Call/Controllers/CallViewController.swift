@@ -11,6 +11,8 @@ class CallViewController: UIViewController {
     @IBOutlet private var hideSelfVideoButton: UIButton!
     @IBOutlet private var selfVideoConstraint: NSLayoutConstraint!
 
+    var sessionId: String = "SESSION_ID"
+    
     var isSelfViewHidden = false
     var selfViewHidingTimer: Timer?
 
@@ -139,6 +141,11 @@ extension CallViewController: AgoraRtcEngineDelegate {
 extension CallViewController {
 
     @IBAction private func didTapExit(_ sender: UIButton) {
+        FirebaseConnection().completeSession(sessionId: sessionId) { err in
+            if let _ = err {
+                print("Could not schedule another call")
+            }
+        }
         _ = navigationController?.popViewController(animated: true)
     }
 

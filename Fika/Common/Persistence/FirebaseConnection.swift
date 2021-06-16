@@ -58,7 +58,7 @@ struct FirebaseConnection {
 
             let involvedSessionRecords = sessionRecords.filter { $0.participants.contains(userId) }
 
-            let upcomingSessionRecords = involvedSessionRecords.filter {
+            let upcomingSessionRecords = involvedSessionRecords.filter { !$0.isCompleted &&
                 Calendar.current.date(bySettingHour: $0.timeslot.endHour,
                                       minute: $0.timeslot.endMinute, second: 0, of: $0.date)! > Date()
             }
@@ -96,6 +96,30 @@ struct FirebaseConnection {
             .addSnapshotListener { _, _ in
                 fetchUpcomingSessions(completion: completion)
             }
+    }
+
+    func completeSession(sessionId: String, completion: @escaping (Error?) -> Void) {
+        guard let userId: String = UserRepository.readValue(forKey: "userId") else {
+            completion(DatabaseError.noUserId)
+            return
+        }
+
+        db.collection(sessionPath).document(sessionId).updateData(["isCompleted": true]) { err in
+            guard err == nil else {
+                completion(err)
+                return
+            }
+            
+            db.collection(userPath).document(userId).updateData(["isAvailable": true]) { err in
+                guard err == nil else {
+                    completion(err)
+                    return
+                }
+                completion(nil)
+            }
+
+        }
+
     }
 
     // MARK: - FirebaseAuth

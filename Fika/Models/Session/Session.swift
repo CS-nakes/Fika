@@ -5,6 +5,7 @@ struct Session {
     let participants: [String] // array of user ids
     let date: Date
     let timeslot: Timeslot
+    let isCompleted: Bool
 }
 
 extension Session {
@@ -13,7 +14,8 @@ extension Session {
             id: record.id,
             participants: record.participants,
             date: record.date,
-            timeslot: record.timeslot
+            timeslot: record.timeslot,
+            isCompleted: record.isCompleted
         )
     }
 }

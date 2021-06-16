@@ -21,7 +21,6 @@ class ProfileViewController: UIViewController, UITextViewDelegate,
         positionField.delegate = self
         introductionField.text = user.introduction
         introductionField.delegate = self
-        validateFields()
 
         imagePicker.delegate = self
         introductionField.contentVerticalAlignment = .top
@@ -62,22 +61,26 @@ class ProfileViewController: UIViewController, UITextViewDelegate,
     }
 
     @IBAction private func onNameEditingEnd(_ sender: UITextField) {
-        validateFields()
         user.name = nameField.text
     }
 
     @IBAction private func onPositionEditingEnd(_ sender: UITextField) {
-        validateFields()
         user.position = positionField.text
     }
 
-    func validateFields() {
-        if nameField.text?.trimmingCharacters(in: .whitespaces).isEmpty ?? false ||
-            positionField.text?.trimmingCharacters(in: .whitespaces).isEmpty ?? false {
-            continueButton.isHidden = true
-        } else {
-            continueButton.isHidden = false
+    func areFieldsValid() -> Bool {
+        guard let name = nameField.text, let position = positionField.text else {
+            return false
         }
+        return !name.trimmingCharacters(in: .whitespaces).isEmpty &&
+            !position.trimmingCharacters(in: .whitespaces).isEmpty
     }
-
+    
+    
+    @IBAction func onContinueDidPress(_ sender: UIButton) {
+        if !areFieldsValid() {
+            return
+        }
+        performSegue(withIdentifier: "ToTimeSlots", sender: nil)
+    }
 }

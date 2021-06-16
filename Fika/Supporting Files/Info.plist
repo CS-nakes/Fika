@@ -61,9 +61,10 @@
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationPortraitUpsideDown</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>Fika will need access to your camera solely for video calling purposes.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Fika will need access to your microphone solely for video calling purposes.</string>
 </dict>
 </plist>

@@ -1,4 +1,4 @@
-<p align="center"><img width="40%" src="docs/images/logo.png" alt="Fika Logo" /></p>
+<p align="center"><img width="25%" src="docs/images/logo.png" alt="Fika Logo" /></p>
 
 <h1 align="center">Fika</h1>
 
@@ -8,7 +8,7 @@
 
 With working from home becoming the new normal and more companies encouraging remote hires, it is easy to feel disconnected from not knowing your fellow colleagues on a more personal level. Our daily interactions become more work-driven and we no longer have the luxury of casual chit-chats happening spontaneously in a shared physical workplace.
 
-Fika aims to solve this problem by providing a platform for such one-to-one conversations with colleagues beyond your department and functional group as a first step to building lasting connections.
+Fika aims to solve this problem by providing a platform for such one-to-one conversations with random colleagues, even those beyond your department or functional group, as a first step to building lasting connections.
 
 Fika was build over 3 days for the [CODE_EXP Hackathon 2021](https://codeexp.tk.sg/), which is part of [BrainHack 2021](https://www.dsta.gov.sg/brainhack).
 

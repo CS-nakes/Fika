@@ -18,7 +18,7 @@ class CompanyCodeViewController: UIViewController {
         companyCodeTextField.delegate = self
     }
 
-    @IBAction func onContinueDidPress(_ sender: UIButton) {
+    @IBAction private func onContinueDidPress(_ sender: UIButton) {
         // TODO: Validation + Logic
         performSegue(withIdentifier: "ToRegistration", sender: nil)
     }

@@ -18,7 +18,7 @@ struct FirebaseConnection {
         }
 
         let userDoc = UserRecord(name: name, position: position, profilePictureId: user.profilePictureId,
-            introduction: user.introduction, preferredTimeslots: user.preferredTimeslots)
+                                 introduction: user.introduction, preferredTimeslots: user.preferredTimeslots)
 
         try batch.setData(from: userDoc, forDocument: docRef)
 
@@ -37,7 +37,7 @@ struct FirebaseConnection {
             "position": position,
             // no company id
             "introduction": user.introduction ?? "",
-            "profilePictureId": user.profilePictureId,
+            "profilePictureId": user.profilePictureId as Any,
             "preferredTimeslots": encodedPreferredTimeslots
         ] as [String: Any]
 

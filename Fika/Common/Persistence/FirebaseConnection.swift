@@ -105,12 +105,13 @@ struct FirebaseConnection {
         }
 
         db.collection(sessionPath).document(sessionId).updateData(["isCompleted": true]) { err in
-            guard let _ = err else {
+            guard err == nil else {
                 completion(err)
                 return
             }
+            
             db.collection(userPath).document(userId).updateData(["isAvailable": true]) { err in
-                guard let _ = err else {
+                guard err == nil else {
                     completion(err)
                     return
                 }

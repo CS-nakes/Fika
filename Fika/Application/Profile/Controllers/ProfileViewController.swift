@@ -12,6 +12,7 @@ class ProfileViewController: UIViewController, UITextViewDelegate,
     override func viewDidLoad() {
         super.viewDidLoad()
         introductionField.contentVerticalAlignment = .top
+        hideNavBar()
     }
 
     @IBAction private func selectImage(_ sender: UIButton) {

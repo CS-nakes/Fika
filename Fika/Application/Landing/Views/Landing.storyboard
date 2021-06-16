@@ -254,6 +254,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="onDidTapLoginButton:" destination="EKN-y5-fbi" eventType="touchUpInside" id="9l5-7y-eHm"/>
+                                    <segue destination="SxI-st-wKh" kind="show" id="gvI-Yv-gRU"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -289,6 +290,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BP5-ZP-vrd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3147.826086956522" y="143.97321428571428"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="nAW-1W-XeJ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" referencedIdentifier="Home" id="SxI-st-wKh" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="iu9-Ab-6VV"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oeN-co-FmH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3798" y="144"/>
         </scene>
     </scenes>
     <designables>

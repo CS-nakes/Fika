@@ -5,19 +5,265 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="NexaBold.otf">
+            <string>NexaBold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="Fika" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Home" id="BYZ-38-t0r" customClass="HomeViewController" customModule="Fika" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="XHq-d3-xRV">
+                                <rect key="frame" x="347" y="54" width="47" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="47" id="TRI-kh-EeE"/>
+                                    <constraint firstAttribute="height" constant="47" id="mSb-Tp-ZYR"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16 June 2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hEk-kp-Wf6">
+                                <rect key="frame" x="20" y="54" width="88" height="14"/>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
+                                <color key="textColor" name="Aluminium"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Jg-Ve-Oai">
+                                <rect key="frame" x="20" y="76" width="122" height="28"/>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="28"/>
+                                <color key="textColor" name="Ebony"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="avq-mT-Zwg">
+                                <rect key="frame" x="20" y="122" width="374" height="42"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your body hears everything your mind says." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oAS-Hg-g5r">
+                                        <rect key="frame" x="14" y="14" width="346" height="14"/>
+                                        <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
+                                        <color key="textColor" name="Aluminium"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="White"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="oAS-Hg-g5r" secondAttribute="trailing" constant="14" id="6c4-EB-E9T"/>
+                                    <constraint firstAttribute="bottom" secondItem="oAS-Hg-g5r" secondAttribute="bottom" constant="14" id="Baa-zr-Q4Y"/>
+                                    <constraint firstItem="oAS-Hg-g5r" firstAttribute="top" secondItem="avq-mT-Zwg" secondAttribute="top" constant="14" id="Bg6-ua-jQs"/>
+                                    <constraint firstItem="oAS-Hg-g5r" firstAttribute="leading" secondItem="avq-mT-Zwg" secondAttribute="leading" constant="14" id="eVl-90-qhK"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="0.0" height="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="dropShadowColor">
+                                        <color key="value" name="Gallery"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sXe-TI-lXi">
+                                <rect key="frame" x="20" y="186" width="374" height="141"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="69f-jB-NFi">
+                                        <rect key="frame" x="18" y="18" width="47" height="47"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="47" id="1sp-Bh-VZG"/>
+                                            <constraint firstAttribute="width" constant="47" id="UKb-oP-5o1"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upcoming Call" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ald-17-u94">
+                                        <rect key="frame" x="79" y="18" width="80" height="12"/>
+                                        <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="12"/>
+                                        <color key="textColor" name="Aluminium"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TBA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7D3-au-bc6">
+                                        <rect key="frame" x="41" y="85" width="25" height="12"/>
+                                        <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="12"/>
+                                        <color key="textColor" name="Aluminium"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We'll let you know once we find one!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jUC-48-5mW">
+                                        <rect key="frame" x="79" y="56" width="201.5" height="12"/>
+                                        <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="12"/>
+                                        <color key="textColor" name="Ebony"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Finding You a Match..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZc-V8-95W">
+                                        <rect key="frame" x="79" y="34" width="201" height="20"/>
+                                        <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="20"/>
+                                        <color key="textColor" name="Ebony"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar" translatesAutoresizingMaskIntoConstraints="NO" id="vpT-9T-hzd">
+                                        <rect key="frame" x="18" y="82" width="16" height="16"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="16" id="iuE-GH-IM6"/>
+                                            <constraint firstAttribute="width" constant="16" id="zo6-Vg-BXo"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TBA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpg-7b-OfI">
+                                        <rect key="frame" x="41" y="110" width="25" height="12"/>
+                                        <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="12"/>
+                                        <color key="textColor" name="Aluminium"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock" translatesAutoresizingMaskIntoConstraints="NO" id="EZa-D4-KdJ">
+                                        <rect key="frame" x="18" y="107" width="16" height="16"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="16" id="Q55-Bh-Zrg"/>
+                                            <constraint firstAttribute="height" constant="16" id="WSD-fR-Vjz"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" name="White"/>
+                                <constraints>
+                                    <constraint firstItem="jUC-48-5mW" firstAttribute="top" secondItem="lZc-V8-95W" secondAttribute="bottom" constant="2" id="04p-Ud-Nod"/>
+                                    <constraint firstItem="7D3-au-bc6" firstAttribute="leading" secondItem="vpT-9T-hzd" secondAttribute="trailing" constant="7" id="4Nv-bd-5CU"/>
+                                    <constraint firstItem="lZc-V8-95W" firstAttribute="top" secondItem="ald-17-u94" secondAttribute="bottom" constant="4" id="5rz-9Z-YPC"/>
+                                    <constraint firstItem="ald-17-u94" firstAttribute="top" secondItem="sXe-TI-lXi" secondAttribute="top" constant="18" id="8oA-SM-TMe"/>
+                                    <constraint firstItem="cpg-7b-OfI" firstAttribute="leading" secondItem="EZa-D4-KdJ" secondAttribute="trailing" constant="7" id="HQD-x7-lVL"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="jUC-48-5mW" secondAttribute="trailing" constant="18" id="I8f-Vu-qsR"/>
+                                    <constraint firstItem="7D3-au-bc6" firstAttribute="centerY" secondItem="vpT-9T-hzd" secondAttribute="centerY" constant="1" id="J4M-Ii-POb"/>
+                                    <constraint firstItem="lZc-V8-95W" firstAttribute="leading" secondItem="69f-jB-NFi" secondAttribute="trailing" constant="14" id="NpW-du-9za"/>
+                                    <constraint firstItem="cpg-7b-OfI" firstAttribute="centerY" secondItem="EZa-D4-KdJ" secondAttribute="centerY" constant="1" id="P65-mV-bhT"/>
+                                    <constraint firstItem="69f-jB-NFi" firstAttribute="leading" secondItem="sXe-TI-lXi" secondAttribute="leading" constant="18" id="UcG-xf-v21"/>
+                                    <constraint firstItem="EZa-D4-KdJ" firstAttribute="leading" secondItem="sXe-TI-lXi" secondAttribute="leading" constant="18" id="bIb-m3-m6V"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="7D3-au-bc6" secondAttribute="trailing" constant="18" id="bie-mp-IrW"/>
+                                    <constraint firstItem="69f-jB-NFi" firstAttribute="top" secondItem="sXe-TI-lXi" secondAttribute="top" constant="18" id="ek7-qU-reK"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ald-17-u94" secondAttribute="trailing" constant="18" id="fUZ-Tg-HB0"/>
+                                    <constraint firstItem="EZa-D4-KdJ" firstAttribute="top" secondItem="vpT-9T-hzd" secondAttribute="bottom" constant="9" id="gSL-5i-hFS"/>
+                                    <constraint firstItem="vpT-9T-hzd" firstAttribute="top" secondItem="jUC-48-5mW" secondAttribute="bottom" constant="14" id="lWs-2P-icu"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cpg-7b-OfI" secondAttribute="trailing" constant="18" id="pdk-4M-Xff"/>
+                                    <constraint firstItem="jUC-48-5mW" firstAttribute="leading" secondItem="69f-jB-NFi" secondAttribute="trailing" constant="14" id="sFP-Hz-N0P"/>
+                                    <constraint firstItem="ald-17-u94" firstAttribute="leading" secondItem="69f-jB-NFi" secondAttribute="trailing" constant="14" id="tqQ-3f-r5Y"/>
+                                    <constraint firstAttribute="bottom" secondItem="EZa-D4-KdJ" secondAttribute="bottom" constant="18" id="vrc-K1-8pO"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="lZc-V8-95W" secondAttribute="trailing" constant="18" id="xO5-k0-rTH"/>
+                                    <constraint firstItem="vpT-9T-hzd" firstAttribute="leading" secondItem="sXe-TI-lXi" secondAttribute="leading" constant="18" id="ydK-ia-sms"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="0.0" height="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="dropShadowColor">
+                                        <color key="value" name="Gallery"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eAt-k1-n66">
+                                <rect key="frame" x="20" y="416" width="374" height="52"/>
+                                <color key="backgroundColor" name="Fantasy"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="r7M-Fz-j9V"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="20"/>
+                                <state key="normal" title="Postpone by one day">
+                                    <color key="titleColor" name="Carmine Pink"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="0.0" height="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="dropShadowColor">
+                                        <color key="value" name="Gallery"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfv-Ce-8Zz">
+                                <rect key="frame" x="20" y="349" width="374" height="52"/>
+                                <color key="backgroundColor" name="Medium Aquamarine"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="bJg-Yi-jPG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="20"/>
+                                <state key="normal" title="Start Call">
+                                    <color key="titleColor" name="White"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="0.0" height="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <real key="value" value="0.29999999999999999"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="dropShadowColor">
+                                        <color key="value" name="Niagara"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="White Lilac"/>
+                        <constraints>
+                            <constraint firstItem="eAt-k1-n66" firstAttribute="top" secondItem="cfv-Ce-8Zz" secondAttribute="bottom" constant="15" id="3P7-7q-oJo"/>
+                            <constraint firstItem="cfv-Ce-8Zz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4kC-ni-6q8"/>
+                            <constraint firstItem="4Jg-Ve-Oai" firstAttribute="top" secondItem="hEk-kp-Wf6" secondAttribute="bottom" constant="8" id="5ik-GS-1yJ"/>
+                            <constraint firstItem="sXe-TI-lXi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="73O-0l-9Ee"/>
+                            <constraint firstItem="4Jg-Ve-Oai" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="AiO-YX-dpb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sXe-TI-lXi" secondAttribute="trailing" constant="20" id="BAm-Zj-Bfc"/>
+                            <constraint firstItem="sXe-TI-lXi" firstAttribute="top" secondItem="avq-mT-Zwg" secondAttribute="bottom" constant="22" id="BwB-Uw-zgo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XHq-d3-xRV" secondAttribute="trailing" constant="20" id="F8v-gR-vOD"/>
+                            <constraint firstItem="avq-mT-Zwg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="HhR-6r-LyZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cfv-Ce-8Zz" secondAttribute="trailing" constant="20" id="LX4-MV-5Fp"/>
+                            <constraint firstItem="XHq-d3-xRV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="hEk-kp-Wf6" secondAttribute="trailing" constant="20" id="Q9i-h6-fcK"/>
+                            <constraint firstItem="hEk-kp-Wf6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="Vxf-i3-dr7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="avq-mT-Zwg" secondAttribute="trailing" constant="20" id="ZLg-cD-pqS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eAt-k1-n66" secondAttribute="trailing" constant="20" id="b3o-oW-Gcr"/>
+                            <constraint firstItem="XHq-d3-xRV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="4Jg-Ve-Oai" secondAttribute="trailing" constant="20" id="d3X-Be-2hF"/>
+                            <constraint firstItem="XHq-d3-xRV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="gzj-ki-uWa"/>
+                            <constraint firstItem="hEk-kp-Wf6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="jpT-yv-yat"/>
+                            <constraint firstItem="eAt-k1-n66" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="tW7-xZ-VVL"/>
+                            <constraint firstItem="avq-mT-Zwg" firstAttribute="top" secondItem="4Jg-Ve-Oai" secondAttribute="bottom" constant="18" id="wBG-DG-tQG"/>
+                            <constraint firstItem="cfv-Ce-8Zz" firstAttribute="top" secondItem="sXe-TI-lXi" secondAttribute="bottom" constant="22" id="ywc-XL-ija"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -26,6 +272,33 @@
         </scene>
     </scenes>
     <resources>
+        <image name="calendar" width="15.354000091552734" height="15.354000091552734"/>
+        <image name="clock" width="15.354000091552734" height="15.354000091552734"/>
+        <image name="profile" width="483.32998657226562" height="483.32998657226562"/>
+        <namedColor name="Aluminium">
+            <color red="0.59600001573562622" green="0.59600001573562622" blue="0.59600001573562622" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Carmine Pink">
+            <color red="0.91399997472763062" green="0.31400001049041748" blue="0.28600001335144043" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Ebony">
+            <color red="0.19599999487400055" green="0.20000000298023224" blue="0.20800000429153442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Fantasy">
+            <color red="1" green="0.93699997663497925" blue="0.94099998474121094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Gallery">
+            <color red="0.94499999284744263" green="0.95300000905990601" blue="0.94900000095367432" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Medium Aquamarine">
+            <color red="0.33700001239776611" green="0.79600000381469727" blue="0.72200000286102295" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Niagara">
+            <color red="0.075000002980232239" green="0.64300000667572021" blue="0.59200000762939453" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="White Lilac">
             <color red="0.98000001907348633" green="0.98400002717971802" blue="0.99199998378753662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

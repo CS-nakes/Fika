@@ -420,6 +420,9 @@
                                         <color key="value" name="Niagara"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="css-0H-yVc" kind="show" id="DCT-1u-EK0"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Zr3-dB-sLt"/>
@@ -473,6 +476,16 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="980" y="838"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="Eab-ra-nZN">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" referencedIdentifier="Home" id="css-0H-yVc" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="n5f-w8-lbp"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dTL-Gv-uLI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1810" y="838"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="TDV-pJ-g2u">

@@ -71,7 +71,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Relax and enjoy this casual chat with your colleague!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YJv-sv-VcV">
-                                        <rect key="frame" x="20" y="518" width="374" height="47"/>
+                                        <rect key="frame" x="20" y="518" width="374" height="40"/>
                                         <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="20"/>
                                         <color key="textColor" name="Aluminium"/>
                                         <nil key="highlightedColor"/>
@@ -136,7 +136,7 @@
                                             <subviews>
                                                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RWv-Og-bJX">
                                                     <rect key="frame" x="0.0" y="0.0" width="120" height="213.5"/>
-                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="backgroundColor" name="Ebony"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                             <integer key="value" value="15"/>
@@ -173,6 +173,46 @@
                                     <outlet property="delegate" destination="Y6W-OH-hqX" id="meS-oY-ObC"/>
                                 </connections>
                             </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XNL-5F-C8Q" userLabel="Convo View">
+                                <rect key="frame" x="20" y="675" width="374" height="87"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSM-Ha-MUi">
+                                        <rect key="frame" x="175" y="10" width="24" height="24"/>
+                                        <state key="normal" image="back"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.transform.rotation.z">
+                                                <real key="value" value="-1.571"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="hideConvoButtonDidTap:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="gzU-Mf-VEP"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a placeholder" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vWc-TF-4P2">
+                                        <rect key="frame" x="14" y="37" width="346" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="I1Y-Iw-Tso"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="16"/>
+                                        <color key="textColor" name="Ebony"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="White"/>
+                                <constraints>
+                                    <constraint firstItem="vWc-TF-4P2" firstAttribute="leading" secondItem="XNL-5F-C8Q" secondAttribute="leading" constant="14" id="1vc-dd-QwM"/>
+                                    <constraint firstAttribute="trailing" secondItem="vWc-TF-4P2" secondAttribute="trailing" constant="14" id="QuW-UG-fZh"/>
+                                    <constraint firstAttribute="bottom" secondItem="vWc-TF-4P2" secondAttribute="bottom" constant="10" id="X60-jb-TDr"/>
+                                    <constraint firstItem="PSM-Ha-MUi" firstAttribute="top" secondItem="XNL-5F-C8Q" secondAttribute="top" constant="10" id="ckN-va-SGz"/>
+                                    <constraint firstItem="PSM-Ha-MUi" firstAttribute="centerX" secondItem="XNL-5F-C8Q" secondAttribute="centerX" id="g8j-j6-n1a"/>
+                                    <constraint firstItem="vWc-TF-4P2" firstAttribute="top" secondItem="PSM-Ha-MUi" secondAttribute="bottom" constant="3" id="ukf-AB-N0d"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2XQ-Fd-141">
                                 <rect key="frame" x="0.0" y="776" width="414" height="200"/>
                                 <subviews>
@@ -339,11 +379,14 @@
                             <constraint firstItem="2XQ-Fd-141" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="3GR-1B-HH0"/>
                             <constraint firstAttribute="bottom" secondItem="XX0-ix-6sm" secondAttribute="bottom" id="9hQ-h9-Hm0"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="hwn-az-dD2" secondAttribute="trailing" constant="10" id="BQD-Eb-aaG"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="XNL-5F-C8Q" secondAttribute="bottom" constant="100" id="J0n-YU-pCr"/>
+                            <constraint firstItem="XNL-5F-C8Q" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="Mqk-sp-OBl"/>
                             <constraint firstItem="Of4-lZ-bv4" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="Obj-GK-JhE"/>
                             <constraint firstItem="hwn-az-dD2" firstAttribute="leading" secondItem="s4P-Zq-y1c" secondAttribute="trailing" constant="10" id="U3x-GZ-qCb"/>
                             <constraint firstItem="XX0-ix-6sm" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="UCi-5g-IXw"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="XX0-ix-6sm" secondAttribute="trailing" id="VNg-oc-w2I"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="2XQ-Fd-141" secondAttribute="trailing" id="dIN-VK-XXw"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="XNL-5F-C8Q" secondAttribute="trailing" constant="20" id="dmG-zE-t8Z"/>
                             <constraint firstItem="2XQ-Fd-141" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="bottom" constant="-120" id="gNo-fG-zvE"/>
                             <constraint firstAttribute="bottom" secondItem="Of4-lZ-bv4" secondAttribute="bottom" id="hcR-a0-5BU"/>
                             <constraint firstItem="XX0-ix-6sm" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="pu7-aN-7jw"/>
@@ -354,6 +397,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="conversationConstraint" destination="J0n-YU-pCr" id="yql-nv-n8g"/>
+                        <outlet property="conversationLabel" destination="vWc-TF-4P2" id="X9y-rs-wQ5"/>
                         <outlet property="hideSelfVideoButton" destination="s4P-Zq-y1c" id="MCb-r1-z76"/>
                         <outlet property="loadingView" destination="XX0-ix-6sm" id="f2A-sg-fhs"/>
                         <outlet property="muteButton" destination="m7D-Ft-Bhs" id="EN7-6F-DAX"/>
@@ -384,7 +429,7 @@
             <color red="0.91399997472763062" green="0.31400001049041748" blue="0.28600001335144043" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Ebony">
-            <color red="0.1959999949" green="0.20000000300000001" blue="0.20800000430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.19599999487400055" green="0.20000000298023224" blue="0.20800000429153442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Gallery">
             <color red="0.94499999284744263" green="0.95300000905990601" blue="0.94900000095367432" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

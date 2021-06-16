@@ -626,7 +626,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2E7E38E02676FC0A00034007 /* Build configuration list for PBXProject "fika" */;
+			buildConfigurationList = 2E7E38E02676FC0A00034007 /* Build configuration list for PBXProject "Fika" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -1136,7 +1136,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2E7E38E02676FC0A00034007 /* Build configuration list for PBXProject "fika" */ = {
+		2E7E38E02676FC0A00034007 /* Build configuration list for PBXProject "Fika" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2E7E390D2676FC0C00034007 /* Debug */,

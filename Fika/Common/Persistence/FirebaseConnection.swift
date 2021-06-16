@@ -13,9 +13,12 @@ struct FirebaseConnection {
         let docRef = db.collection(userPath).document()
         let batch = db.batch()
 
-        let userDoc = UserRecord(name: user.name ?? "No name", position: user.position ?? "No position",
-             profilePicture: user.profilePicture ?? "No profile picture",
-                 introduction: user.introduction, preferredTimeslots: user.preferredTimeslots)
+        guard let name = user.name, let position = user.position, let profilePicture = user.profilePicture else {
+            throw DatabaseError.invalidUser
+        }
+
+        let userDoc = UserRecord(name: name, position: position, profilePicture: profilePicture,
+            introduction: user.introduction, preferredTimeslots: user.preferredTimeslots)
 
         try batch.setData(from: userDoc, forDocument: docRef)
 
@@ -30,11 +33,11 @@ struct FirebaseConnection {
         }
 
         let userValues = [
-            "name": user.name,
-            "position": user.position,
+            "name": name,
+            "position": position,
             // no company id
-            "introduction": user.introduction,
-            "profilePicture": user.profilePicture,
+            "introduction": user.introduction ?? "",
+            "profilePicture": profilePicture,
             "preferredTimeslots": encodedPreferredTimeslots
         ] as [String: Any]
 
@@ -49,6 +52,7 @@ struct FirebaseConnection {
 
     }
 
+    // TODO @clara
     func createSession(completion: @escaping (Session?, Error?) -> Void) {
         // grab data from UserRepository and send to firebase functions
         // firebase function should return a session
@@ -74,7 +78,7 @@ struct FirebaseConnection {
 
             let upcomingSessionRecords = involvedSessionRecords.filter {
                 Calendar.current.date(bySettingHour: $0.timeslot.endHour,
-                minute: $0.timeslot.endMinute, second: 0, of: $0.date)! > Date()
+                                      minute: $0.timeslot.endMinute, second: 0, of: $0.date)! > Date()
             }
 
             guard let lastSessionRecord = upcomingSessionRecords.max(by: { $0.date > $1.date }),
@@ -98,6 +102,16 @@ struct FirebaseConnection {
             completion(user, nil)
         }
 
+    }
+
+    // MARK: - FirebaseAuth
+
+    func signIn(email: String, password: String, completion: @escaping (AuthDataResult?, Error?) -> Void) {
+        Auth.auth().signIn(withEmail: email, password: password, completion: completion)
+    }
+
+    func createAuth(email: String, password: String, completion: @escaping (AuthDataResult?, Error?) -> Void) {
+        Auth.auth().createUser(withEmail: email, password: password, completion: completion)
     }
 
     // MARK: - FirebaseCloudStorage
@@ -140,4 +154,8 @@ struct FirebaseConnection {
         storageRef.child("userImages/\(fileName).jpg")
     }
 
+}
+
+enum DatabaseError: Error {
+    case invalidUser
 }

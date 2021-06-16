@@ -9,7 +9,7 @@ class HomeViewController: UIViewController {
     @IBOutlet private var selfImageView: UIImageView!
     @IBOutlet private var otherImageView: UIImageView!
     @IBOutlet private var quoteLabel: UILabel!
-    
+
     var sessionId = "SESSION_ID"
 
     override func viewDidLoad() {
@@ -30,7 +30,7 @@ class HomeViewController: UIViewController {
         loadSelf()
         loadSession()
     }
-    
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let vc = segue.destination as? CallViewController {
             vc.sessionId = sessionId
@@ -57,7 +57,7 @@ class HomeViewController: UIViewController {
                   let participantId = session.participants.first(where: { $0 != userId }) else {
                 return
             }
-            
+
             self.sessionId = sessionId
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "d MMMM, E"

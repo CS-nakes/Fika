@@ -22,8 +22,11 @@ struct FirebaseConnection {
             return
         }
 
-        let userDoc = UserRecord(name: name, position: position, profilePictureId: user.profilePictureId,
-                                 introduction: user.introduction, preferredTimeslots: user.preferredTimeslots, isAvailable: true)
+        let userDoc = UserRecord(name: name, position: position,
+                                 profilePictureId: user.profilePictureId,
+                                 introduction: user.introduction,
+                                 preferredTimeslots: user.preferredTimeslots,
+                                 isAvailable: true)
 
         try db.collection(userPath).document(userId).setData(from: userDoc) { err in
             if let err = err {
@@ -109,7 +112,7 @@ struct FirebaseConnection {
                 completion(err)
                 return
             }
-            
+
             db.collection(userPath).document(userId).updateData(["isAvailable": true]) { err in
                 guard err == nil else {
                     completion(err)

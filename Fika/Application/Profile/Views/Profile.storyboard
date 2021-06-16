@@ -29,7 +29,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="FQF-dZ-LZV">
-                                <rect key="frame" x="137.5" y="251" width="139" height="139.5"/>
+                                <rect key="frame" x="149" y="251" width="116" height="116"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="FQF-dZ-LZV" secondAttribute="height" id="wid-ZX-nU4"/>
                                 </constraints>
@@ -40,7 +40,7 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="USU-1o-oGY">
-                                <rect key="frame" x="20" y="426" width="37.5" height="16.5"/>
+                                <rect key="frame" x="20" y="382" width="37.5" height="16.5"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
                                 <color key="textColor" name="Aluminium"/>
                                 <nil key="highlightedColor"/>
@@ -52,13 +52,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Position" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xt7-5U-1D2">
-                                <rect key="frame" x="20" y="520.5" width="51" height="16.5"/>
+                                <rect key="frame" x="20" y="476.5" width="51" height="16.5"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
                                 <color key="textColor" name="Aluminium"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Name" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="sZT-ls-n5r" customClass="TextField" customModule="Fika">
-                                <rect key="frame" x="20" y="449.5" width="374" height="50"/>
+                                <rect key="frame" x="20" y="405.5" width="374" height="50"/>
                                 <color key="backgroundColor" name="White"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Wbo-lE-ePw"/>
@@ -88,7 +88,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Position" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="viA-Vp-cJk" customClass="TextField" customModule="Fika">
-                                <rect key="frame" x="20" y="544" width="374" height="50"/>
+                                <rect key="frame" x="20" y="500" width="374" height="50"/>
                                 <color key="backgroundColor" name="White"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="XVc-Lp-elY"/>
@@ -118,38 +118,11 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Introduction (Optional)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Avb-0k-Xbl">
-                                <rect key="frame" x="20" y="615" width="139.5" height="16.5"/>
+                                <rect key="frame" x="20" y="571" width="139.5" height="16.5"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
                                 <color key="textColor" red="0.60626382540000001" green="0.60626382540000001" blue="0.60626382540000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" placeholder="Introduce Yourself Here!" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="xjg-Tc-J5Y" customClass="TextField" customModule="Fika">
-                                <rect key="frame" x="20" y="638.5" width="374" height="100"/>
-                                <color key="backgroundColor" name="White"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="HPd-Ko-Mbq"/>
-                                </constraints>
-                                <color key="textColor" name="Ebony"/>
-                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
-                                        <integer key="value" value="3"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
-                                        <size key="value" width="0.0" height="3"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                                        <integer key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="dropShadowColor">
-                                        <color key="value" name="Gallery"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFB-5z-qFK">
                                 <rect key="frame" x="20" y="790" width="374" height="52"/>
                                 <color key="backgroundColor" name="Medium Aquamarine"/>
@@ -182,7 +155,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cb1-YU-GlX">
-                                <rect key="frame" x="235.5" y="350" width="41" height="40"/>
+                                <rect key="frame" x="224" y="326.5" width="41" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="41" id="Jn2-YC-aVN"/>
                                     <constraint firstAttribute="height" constant="41" id="VUp-7R-L1d"/>
@@ -193,29 +166,55 @@
                                     <action selector="selectImage:" destination="Y6W-OH-hqX" eventType="touchDown" id="97c-dA-XsM"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Short Bio Here!" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="f8p-8E-PyA" customClass="TextField" customModule="Fika">
+                                <rect key="frame" x="20" y="594.5" width="374" height="50"/>
+                                <color key="backgroundColor" name="White"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="W6c-Zw-5Ar"/>
+                                </constraints>
+                                <color key="textColor" name="Ebony"/>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="organization-title"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="0.0" height="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="dropShadowColor">
+                                        <color key="value" name="Gallery"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" name="White Lilac"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="viA-Vp-cJk" firstAttribute="top" secondItem="xt7-5U-1D2" secondAttribute="bottom" constant="7" id="3RT-0W-l8r"/>
-                            <constraint firstItem="FQF-dZ-LZV" firstAttribute="height" secondItem="vDu-zF-Fre" secondAttribute="height" multiplier="0.18" id="3TO-XE-E8g"/>
+                            <constraint firstItem="FQF-dZ-LZV" firstAttribute="height" secondItem="vDu-zF-Fre" secondAttribute="height" multiplier="0.15" id="3TO-XE-E8g"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="9GF-Q5-v4z" secondAttribute="trailing" constant="20" id="727-DY-14v"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="gFB-5z-qFK" secondAttribute="trailing" constant="20" id="7V7-Lx-NI0"/>
                             <constraint firstItem="9GF-Q5-v4z" firstAttribute="top" secondItem="UnX-2n-OSK" secondAttribute="bottom" constant="28" id="7to-KX-tFH"/>
                             <constraint firstItem="FQF-dZ-LZV" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="81B-KZ-dfH"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="xjg-Tc-J5Y" secondAttribute="trailing" constant="20" id="8mv-6n-jwA"/>
                             <constraint firstItem="UnX-2n-OSK" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="65" id="A3r-W8-4Vz"/>
                             <constraint firstItem="UnX-2n-OSK" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="AbD-Zs-KW9"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="viA-Vp-cJk" secondAttribute="trailing" constant="20" id="Dw1-MF-9Sl"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="f8p-8E-PyA" secondAttribute="trailing" constant="20" id="Ep7-ns-L8f"/>
                             <constraint firstItem="xt7-5U-1D2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="FPc-Lp-Hhj"/>
-                            <constraint firstItem="xjg-Tc-J5Y" firstAttribute="top" secondItem="Avb-0k-Xbl" secondAttribute="bottom" constant="7" id="Hpa-Or-s9c"/>
                             <constraint firstItem="cb1-YU-GlX" firstAttribute="top" secondItem="FQF-dZ-LZV" secondAttribute="bottom" constant="-41" id="J8F-6c-fF1"/>
                             <constraint firstItem="viA-Vp-cJk" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="Q3w-XP-evK"/>
+                            <constraint firstItem="f8p-8E-PyA" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="SP7-aS-J6u"/>
                             <constraint firstItem="FQF-dZ-LZV" firstAttribute="top" secondItem="9GF-Q5-v4z" secondAttribute="bottom" constant="18" id="Sou-uI-iFe"/>
                             <constraint firstItem="xt7-5U-1D2" firstAttribute="top" secondItem="sZT-ls-n5r" secondAttribute="bottom" constant="21" id="TID-Pp-wZ2"/>
                             <constraint firstItem="Avb-0k-Xbl" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="ZMu-0Q-Y4F"/>
-                            <constraint firstItem="xjg-Tc-J5Y" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="agX-x0-v6b"/>
                             <constraint firstItem="sZT-ls-n5r" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="cwb-AQ-FoS"/>
                             <constraint firstItem="cb1-YU-GlX" firstAttribute="trailing" secondItem="FQF-dZ-LZV" secondAttribute="trailing" id="fbT-7h-GKc"/>
                             <constraint firstItem="gFB-5z-qFK" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="gkX-gt-Heo"/>
@@ -224,18 +223,20 @@
                             <constraint firstItem="Avb-0k-Xbl" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="pbO-ME-Bgl"/>
                             <constraint firstItem="9GF-Q5-v4z" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="qBi-lO-u1O"/>
                             <constraint firstItem="sZT-ls-n5r" firstAttribute="top" secondItem="USU-1o-oGY" secondAttribute="bottom" constant="7" id="qO7-TU-VwF"/>
+                            <constraint firstItem="f8p-8E-PyA" firstAttribute="top" secondItem="Avb-0k-Xbl" secondAttribute="bottom" constant="7" id="rP3-JP-bcs"/>
                             <constraint firstItem="USU-1o-oGY" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="rw1-yQ-OLa"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="sZT-ls-n5r" secondAttribute="trailing" constant="20" id="u5e-tL-ka9"/>
-                            <constraint firstItem="USU-1o-oGY" firstAttribute="top" secondItem="FQF-dZ-LZV" secondAttribute="bottom" constant="35.5" id="zxh-sA-5CQ"/>
+                            <constraint firstItem="USU-1o-oGY" firstAttribute="top" secondItem="FQF-dZ-LZV" secondAttribute="bottom" constant="15" id="zxh-sA-5CQ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="VjC-2G-XcK"/>
                     <connections>
                         <outlet property="continueButton" destination="gFB-5z-qFK" id="Nhe-20-OAG"/>
-                        <outlet property="introductionField" destination="xjg-Tc-J5Y" id="kBu-KY-k8G"/>
+                        <outlet property="introductionField" destination="f8p-8E-PyA" id="neg-kM-vEU"/>
                         <outlet property="nameField" destination="sZT-ls-n5r" id="ZQe-Il-D6F"/>
                         <outlet property="positionField" destination="viA-Vp-cJk" id="hg5-eG-2PG"/>
                         <outlet property="profileImage" destination="FQF-dZ-LZV" id="nLk-tM-3v9"/>
+                        <outlet property="topConstraint" destination="A3r-W8-4Vz" id="axB-pn-QMt"/>
                         <segue destination="vbq-Zx-nTG" kind="show" identifier="ToTimeSlots" id="oL8-n3-5jb"/>
                     </connections>
                 </viewController>
@@ -650,14 +651,14 @@
         </scene>
     </scenes>
     <designables>
+        <designable name="f8p-8E-PyA">
+            <size key="intrinsicContentSize" width="164.5" height="18"/>
+        </designable>
         <designable name="sZT-ls-n5r">
             <size key="intrinsicContentSize" width="106" height="18"/>
         </designable>
         <designable name="viA-Vp-cJk">
             <size key="intrinsicContentSize" width="119.5" height="18"/>
-        </designable>
-        <designable name="xjg-Tc-J5Y">
-            <size key="intrinsicContentSize" width="150.5" height="18"/>
         </designable>
     </designables>
     <resources>

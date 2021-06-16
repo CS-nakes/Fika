@@ -1,10 +1,3 @@
-//
-//  SceneDelegate.swift
-//  Fika
-//
-//  Created by Hanming on 14/6/21.
-//
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {

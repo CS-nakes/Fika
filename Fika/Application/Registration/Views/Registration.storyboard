@@ -198,7 +198,7 @@ Please enter your company code to continue.</string>
                                 </constraints>
                                 <color key="textColor" name="Ebony"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" textContentType="new-password"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="new-password"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="10"/>
@@ -225,7 +225,7 @@ Please enter your company code to continue.</string>
                                 </constraints>
                                 <color key="textColor" name="Ebony"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" textContentType="new-password"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="new-password"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="10"/>
@@ -352,13 +352,13 @@ Please enter your company code to continue.</string>
     </scenes>
     <designables>
         <designable name="B6C-FU-In8">
-            <size key="intrinsicContentSize" width="148" height="18"/>
+            <size key="intrinsicContentSize" width="148" height="17"/>
         </designable>
         <designable name="GaC-dS-wOP">
             <size key="intrinsicContentSize" width="167.5" height="18"/>
         </designable>
         <designable name="oAH-gq-9OH">
-            <size key="intrinsicContentSize" width="131" height="18"/>
+            <size key="intrinsicContentSize" width="131" height="17"/>
         </designable>
         <designable name="oKC-8Q-9NP">
             <size key="intrinsicContentSize" width="158.5" height="18"/>

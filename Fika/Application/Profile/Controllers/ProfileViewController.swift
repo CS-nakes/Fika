@@ -84,8 +84,7 @@ class ProfileViewController: UIViewController, UITextViewDelegate,
         return !name.trimmingCharacters(in: .whitespaces).isEmpty &&
             !position.trimmingCharacters(in: .whitespaces).isEmpty
     }
-    
-    
+
     @IBAction func onContinueDidPress(_ sender: UIButton) {
         if !areFieldsValid() {
             return

@@ -206,7 +206,7 @@
                                 </constraints>
                                 <color key="textColor" name="Ebony"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="10"/>
@@ -304,7 +304,7 @@
     </scenes>
     <designables>
         <designable name="Pzd-ie-iqy">
-            <size key="intrinsicContentSize" width="131" height="18"/>
+            <size key="intrinsicContentSize" width="131" height="17"/>
         </designable>
         <designable name="iqp-aU-3RV">
             <size key="intrinsicContentSize" width="158.5" height="18"/>

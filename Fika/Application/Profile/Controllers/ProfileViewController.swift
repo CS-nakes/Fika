@@ -35,12 +35,6 @@ class ProfileViewController: UIViewController, UITextViewDelegate,
         hideNavBar()
     }
 
-//    @IBAction func selectImage(_ sender: UITapGestureRecognizer) {
-//        imagePicker.allowsEditing = true
-//        imagePicker.sourceType = .photoLibrary
-//
-//        present(imagePicker, animated: true)
-//    }
     @IBAction private func selectImage(_ sender: UIButton) {
         imagePicker.allowsEditing = true
         imagePicker.sourceType = .photoLibrary

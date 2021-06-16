@@ -519,6 +519,7 @@
                         <outlet property="lunchSlot" destination="lQJ-kr-8pt" id="xhZ-Gd-w03"/>
                         <outlet property="teaSlot" destination="OIm-5D-KIh" id="Wlj-4q-dMW"/>
                         <segue destination="lMx-Fd-mrc" kind="unwind" identifier="backToProfile" unwindAction="unwindToPresentingViewControllerWithSegue:" id="xhO-a9-tF2"/>
+                        <segue destination="css-0H-yVc" kind="show" identifier="ToHome" id="QhK-Hc-Jdf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RSe-OS-EwZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

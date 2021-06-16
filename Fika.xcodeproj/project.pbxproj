@@ -28,6 +28,7 @@
 		2E7E39372677B08200034007 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E39362677B08200034007 /* PageViewController.swift */; };
 		2E975DBB2678C88C00907565 /* UIViewController+HideNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E975DBA2678C88C00907565 /* UIViewController+HideNavBar.swift */; };
 		2E975DBE2678D45A00907565 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E975DBD2678D45A00907565 /* UserRepository.swift */; };
+		2E9FB1B12679A0FA00EAAF78 /* ColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9FB1B02679A0FA00EAAF78 /* ColorConstants.swift */; };
 		2EA6E4C926793AEB00889F78 /* AgoraConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA6E4C826793AEB00889F78 /* AgoraConstants.swift */; };
 		2EAB40762677B5C800FFF586 /* Registration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EAB40752677B5C800FFF586 /* Registration.storyboard */; };
 		2EAB40782677B7DF00FFF586 /* CompanyCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAB40772677B7DF00FFF586 /* CompanyCodeViewController.swift */; };
@@ -95,6 +96,7 @@
 		2E7E39362677B08200034007 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		2E975DBA2678C88C00907565 /* UIViewController+HideNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+HideNavBar.swift"; sourceTree = "<group>"; };
 		2E975DBD2678D45A00907565 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		2E9FB1B02679A0FA00EAAF78 /* ColorConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConstants.swift; sourceTree = "<group>"; };
 		2EA6E4C826793AEB00889F78 /* AgoraConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgoraConstants.swift; sourceTree = "<group>"; };
 		2EAB40752677B5C800FFF586 /* Registration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Registration.storyboard; sourceTree = "<group>"; };
 		2EAB40772677B7DF00FFF586 /* CompanyCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyCodeViewController.swift; sourceTree = "<group>"; };
@@ -394,6 +396,7 @@
 			isa = PBXGroup;
 			children = (
 				2EA6E4C826793AEB00889F78 /* AgoraConstants.swift */,
+				2E9FB1B02679A0FA00EAAF78 /* ColorConstants.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -796,6 +799,7 @@
 				2E6D6A7E267917A600FA7600 /* CallViewController.swift in Sources */,
 				2E975DBE2678D45A00907565 /* UserRepository.swift in Sources */,
 				2E7E39332677AAF600034007 /* OnboardingPageViewControllerDelegate.swift in Sources */,
+				2E9FB1B12679A0FA00EAAF78 /* ColorConstants.swift in Sources */,
 				726E41372679020B00DA377F /* Session.swift in Sources */,
 				2EA6E4C926793AEB00889F78 /* AgoraConstants.swift in Sources */,
 				726E4134267901EE00DA377F /* Company.swift in Sources */,

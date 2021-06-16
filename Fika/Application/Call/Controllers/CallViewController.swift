@@ -13,11 +13,13 @@ class CallViewController: UIViewController {
     var muted = false {
         didSet {
             muteButton.isSelected = muted
+            muteButton.tintColor = muted ? ColorConstants.carminePink : ColorConstants.mediumAquamarine
         }
     }
     var cameraOff = false {
         didSet {
             videoButton.isSelected = cameraOff
+            videoButton.tintColor = cameraOff ? ColorConstants.carminePink : ColorConstants.mediumAquamarine
         }
     }
     var inCall = false

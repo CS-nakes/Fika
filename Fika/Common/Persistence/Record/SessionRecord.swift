@@ -6,7 +6,7 @@ struct SessionRecord {
     private(set) var participants: [String]
     private(set) var date: Date
     private(set) var timeslot: Timeslot
-
+    private(set) var isCompleted: Bool
 }
 
 extension SessionRecord: Codable {

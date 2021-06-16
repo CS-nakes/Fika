@@ -140,6 +140,12 @@ extension CallViewController {
 
     @IBAction private func didTapExit(_ sender: UIButton) {
         _ = navigationController?.popViewController(animated: true)
+        // TODO get SESSION_ID
+        FirebaseConnection().completeSession(sessionId: "SESSION_ID") { err in
+            if let _ = err {
+                print("Could not schedule another call")
+            }
+        }
     }
 
     @IBAction private func didToggleMute(_ sender: UIButton) {

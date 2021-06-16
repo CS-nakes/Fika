@@ -13,11 +13,11 @@ struct FirebaseConnection {
         let docRef = db.collection(userPath).document()
         let batch = db.batch()
 
-        guard let name = user.name, let position = user.position, let profilePicture = user.profilePicture else {
+        guard let name = user.name, let position = user.position else {
             throw DatabaseError.invalidUser
         }
 
-        let userDoc = UserRecord(name: name, position: position, profilePicture: profilePicture,
+        let userDoc = UserRecord(name: name, position: position, profilePictureId: user.profilePictureId,
             introduction: user.introduction, preferredTimeslots: user.preferredTimeslots)
 
         try batch.setData(from: userDoc, forDocument: docRef)
@@ -37,7 +37,7 @@ struct FirebaseConnection {
             "position": position,
             // no company id
             "introduction": user.introduction ?? "",
-            "profilePicture": profilePicture,
+            "profilePictureId": user.profilePictureId,
             "preferredTimeslots": encodedPreferredTimeslots
         ] as [String: Any]
 

@@ -33,7 +33,7 @@ struct FirebaseConnection {
         }
 
         let userValues = [
-            "userId": user.id,
+            "userId": docRef.documentID,
             "name": name,
             "position": position,
             // no company id

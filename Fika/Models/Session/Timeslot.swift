@@ -25,4 +25,15 @@ enum Timeslot: String, Codable {
         }
     }
 
+    var rangeString: String {
+        switch self {
+        case .breakfast:
+            return "9:00AM - 9:30AM"
+        case .lunch:
+            return "12:30PM - 1:00PM"
+        case .tea:
+            return "3:00PM - 3:30PM"
+        }
+    }
+
 }

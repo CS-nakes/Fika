@@ -23,13 +23,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Your Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UnX-2n-OSK">
-                                <rect key="frame" x="20" y="153" width="233.5" height="33"/>
+                                <rect key="frame" x="20" y="153" width="250.5" height="28"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="28"/>
                                 <color key="textColor" name="Ebony"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="FQF-dZ-LZV">
-                                <rect key="frame" x="149" y="251" width="116" height="116"/>
+                                <rect key="frame" x="149" y="243" width="116" height="116"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="FQF-dZ-LZV" secondAttribute="height" id="wid-ZX-nU4"/>
                                 </constraints>
@@ -40,25 +40,25 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="USU-1o-oGY">
-                                <rect key="frame" x="20" y="382" width="37.5" height="16.5"/>
+                                <rect key="frame" x="20" y="374" width="39.5" height="14"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
                                 <color key="textColor" name="Aluminium"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help your colleagues get to know you better!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9GF-Q5-v4z">
-                                <rect key="frame" x="20" y="214" width="374" height="19"/>
+                                <rect key="frame" x="20" y="209" width="374" height="16"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="16"/>
                                 <color key="textColor" name="Aluminium"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Position" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xt7-5U-1D2">
-                                <rect key="frame" x="20" y="476.5" width="51" height="16.5"/>
+                                <rect key="frame" x="20" y="466" width="53" height="14"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
                                 <color key="textColor" name="Aluminium"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Name" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="sZT-ls-n5r" customClass="TextField" customModule="Fika">
-                                <rect key="frame" x="20" y="405.5" width="374" height="50"/>
+                                <rect key="frame" x="20" y="395" width="374" height="50"/>
                                 <color key="backgroundColor" name="White"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Wbo-lE-ePw"/>
@@ -88,7 +88,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Position" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="viA-Vp-cJk" customClass="TextField" customModule="Fika">
-                                <rect key="frame" x="20" y="500" width="374" height="50"/>
+                                <rect key="frame" x="20" y="487" width="374" height="50"/>
                                 <color key="backgroundColor" name="White"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="XVc-Lp-elY"/>
@@ -118,7 +118,7 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Introduction (Optional)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Avb-0k-Xbl">
-                                <rect key="frame" x="20" y="571" width="139.5" height="16.5"/>
+                                <rect key="frame" x="20" y="558" width="150" height="14"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
                                 <color key="textColor" red="0.60626382540000001" green="0.60626382540000001" blue="0.60626382540000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -155,7 +155,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cb1-YU-GlX">
-                                <rect key="frame" x="224" y="326.5" width="41" height="40"/>
+                                <rect key="frame" x="224" y="318.5" width="41" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="41" id="Jn2-YC-aVN"/>
                                     <constraint firstAttribute="height" constant="41" id="VUp-7R-L1d"/>
@@ -167,7 +167,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Short Bio Here!" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="f8p-8E-PyA" customClass="TextField" customModule="Fika">
-                                <rect key="frame" x="20" y="594.5" width="374" height="50"/>
+                                <rect key="frame" x="20" y="579" width="374" height="50"/>
                                 <color key="backgroundColor" name="White"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="W6c-Zw-5Ar"/>
@@ -330,28 +330,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Preferred Slots" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYW-Na-M6P">
-                                <rect key="frame" x="20" y="153" width="272.5" height="33"/>
+                                <rect key="frame" x="20" y="153" width="293" height="28"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="28"/>
                                 <color key="textColor" name="Ebony"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We'll try to match you during these time slots!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oS0-do-iO9">
-                                <rect key="frame" x="20" y="214" width="374" height="19"/>
+                                <rect key="frame" x="20" y="209" width="374" height="16"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="16"/>
                                 <color key="textColor" name="Aluminium"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VmA-Zf-c7Q" userLabel="BreakfastCard">
-                                <rect key="frame" x="20" y="267" width="374" height="100"/>
+                                <rect key="frame" x="20" y="259" width="374" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Breakfast" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7x-hX-sgq">
-                                        <rect key="frame" x="24" y="26" width="68" height="19"/>
+                                        <rect key="frame" x="24" y="26" width="76" height="16"/>
                                         <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="16"/>
                                         <color key="textColor" name="Aluminium"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9:00AM - 9:30AM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ilF-Rr-goN">
-                                        <rect key="frame" x="24" y="49" width="221" height="33"/>
+                                        <rect key="frame" x="24" y="46" width="242.5" height="28"/>
                                         <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="28"/>
                                         <color key="textColor" name="Ebony"/>
                                         <nil key="highlightedColor"/>
@@ -387,16 +387,16 @@
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lQJ-kr-8pt" userLabel="LunchCard">
-                                <rect key="frame" x="20" y="389" width="374" height="100"/>
+                                <rect key="frame" x="20" y="381" width="374" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lunch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yR3-pf-ouc">
-                                        <rect key="frame" x="24" y="26" width="44.5" height="19"/>
+                                        <rect key="frame" x="24" y="26" width="45.5" height="16"/>
                                         <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="16"/>
                                         <color key="textColor" name="Aluminium"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:30PM - 1:00PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sWm-2h-cAf">
-                                        <rect key="frame" x="24" y="49" width="236.5" height="33"/>
+                                        <rect key="frame" x="24" y="46" width="240" height="28"/>
                                         <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="28"/>
                                         <color key="textColor" name="Ebony"/>
                                         <nil key="highlightedColor"/>
@@ -432,16 +432,16 @@
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OIm-5D-KIh" userLabel="TeaCard">
-                                <rect key="frame" x="20" y="511" width="374" height="100"/>
+                                <rect key="frame" x="20" y="503" width="374" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tea" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QRa-Dg-jaG">
-                                        <rect key="frame" x="24" y="26" width="25" height="19"/>
+                                        <rect key="frame" x="24" y="26" width="27" height="16"/>
                                         <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="16"/>
                                         <color key="textColor" name="Aluminium"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3:00PM - 3:30PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frO-TA-bVk">
-                                        <rect key="frame" x="24" y="49" width="221" height="33"/>
+                                        <rect key="frame" x="24" y="46" width="237.5" height="28"/>
                                         <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="28"/>
                                         <color key="textColor" name="Ebony"/>
                                         <nil key="highlightedColor"/>
@@ -652,13 +652,13 @@
     </scenes>
     <designables>
         <designable name="f8p-8E-PyA">
-            <size key="intrinsicContentSize" width="164.5" height="18"/>
+            <size key="intrinsicContentSize" width="174" height="15.5"/>
         </designable>
         <designable name="sZT-ls-n5r">
-            <size key="intrinsicContentSize" width="106" height="18"/>
+            <size key="intrinsicContentSize" width="112.5" height="15.5"/>
         </designable>
         <designable name="viA-Vp-cJk">
-            <size key="intrinsicContentSize" width="119.5" height="18"/>
+            <size key="intrinsicContentSize" width="125.5" height="15.5"/>
         </designable>
     </designables>
     <resources>

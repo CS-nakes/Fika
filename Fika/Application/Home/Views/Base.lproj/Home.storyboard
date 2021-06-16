@@ -273,6 +273,7 @@
                         <outlet property="nameLabel" destination="lZc-V8-95W" id="UUs-Gg-teR"/>
                         <outlet property="otherImageView" destination="69f-jB-NFi" id="eK0-eE-wcw"/>
                         <outlet property="positionLabel" destination="jUC-48-5mW" id="yE9-NU-v3c"/>
+                        <outlet property="quoteLabel" destination="oAS-Hg-g5r" id="ooe-Kg-KHr"/>
                         <outlet property="selfImageView" destination="XHq-d3-xRV" id="WvN-g4-mKD"/>
                         <outlet property="timeLabel" destination="cpg-7b-OfI" id="LIV-Qg-mKf"/>
                     </connections>

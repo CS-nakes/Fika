@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2E0B14FB2679DBEC0086004F /* UIViewController+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0B14FA2679DBEC0086004F /* UIViewController+Keyboard.swift */; };
-		2E196CE8267A474600CFE6DF /* ConversationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E196CE7267A474600CFE6DF /* ConversationConstants.swift */; };
+		2E196CE8267A474600CFE6DF /* StringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E196CE7267A474600CFE6DF /* StringConstants.swift */; };
 		2E6D6A722679128300FA7600 /* Call.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E6D6A712679128300FA7600 /* Call.storyboard */; };
 		2E6D6A7E267917A600FA7600 /* CallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6D6A7D267917A600FA7600 /* CallViewController.swift */; };
 		2E6D6A802679287100FA7600 /* VideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6D6A7F2679287100FA7600 /* VideoCollectionViewCell.swift */; };
@@ -75,7 +75,7 @@
 /* Begin PBXFileReference section */
 		0D3610B65682502887E3FE54 /* Pods-Fika-FikaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fika-FikaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Fika-FikaUITests/Pods-Fika-FikaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2E0B14FA2679DBEC0086004F /* UIViewController+Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Keyboard.swift"; sourceTree = "<group>"; };
-		2E196CE7267A474600CFE6DF /* ConversationConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationConstants.swift; sourceTree = "<group>"; };
+		2E196CE7267A474600CFE6DF /* StringConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConstants.swift; sourceTree = "<group>"; };
 		2E6D6A712679128300FA7600 /* Call.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Call.storyboard; sourceTree = "<group>"; };
 		2E6D6A7D267917A600FA7600 /* CallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallViewController.swift; sourceTree = "<group>"; };
 		2E6D6A7F2679287100FA7600 /* VideoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -410,7 +410,7 @@
 			children = (
 				2EA6E4C826793AEB00889F78 /* AgoraConstants.swift */,
 				2E9FB1B02679A0FA00EAAF78 /* ColorConstants.swift */,
-				2E196CE7267A474600CFE6DF /* ConversationConstants.swift */,
+				2E196CE7267A474600CFE6DF /* StringConstants.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -811,7 +811,7 @@
 			files = (
 				AE867BA726783E82007A0EB2 /* TimingViewController.swift in Sources */,
 				72EB60982679B1F600203ABD /* FirebaseConnection.swift in Sources */,
-				2E196CE8267A474600CFE6DF /* ConversationConstants.swift in Sources */,
+				2E196CE8267A474600CFE6DF /* StringConstants.swift in Sources */,
 				2E0B14FB2679DBEC0086004F /* UIViewController+Keyboard.swift in Sources */,
 				2E7E392E26779EF000034007 /* UIView+ShadowColor.swift in Sources */,
 				2EFA3CDE2677BF1C009B2826 /* AccountRegistrationViewController.swift in Sources */,

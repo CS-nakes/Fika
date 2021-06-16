@@ -8,6 +8,7 @@ class HomeViewController: UIViewController {
     @IBOutlet private var timeLabel: UILabel!
     @IBOutlet private var selfImageView: UIImageView!
     @IBOutlet private var otherImageView: UIImageView!
+    @IBOutlet private var quoteLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +24,7 @@ class HomeViewController: UIViewController {
         navigationArray.append(temp!)
         self.navigationController?.viewControllers = navigationArray
 
+        quoteLabel.text = StringConstants.quotes.randomElement()
         loadSelf()
         loadSession()
     }

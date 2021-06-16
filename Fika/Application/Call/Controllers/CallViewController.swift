@@ -46,7 +46,7 @@ class CallViewController: UIViewController {
         self.navigationItem.setHidesBackButton(true, animated: true)
         getAgoraEngine().setChannelProfile(.communication)
         setUpVideo()
-        conversationStarters = ConversationConstants.starters.shuffled()
+        conversationStarters = StringConstants.starters.shuffled()
         conversationConstraint.constant = -20
         view.layoutIfNeeded()
     }

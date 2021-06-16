@@ -164,7 +164,7 @@ Please enter your company code to continue.</string>
                                 </constraints>
                                 <color key="textColor" name="Ebony"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="email"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="10"/>
@@ -197,7 +197,7 @@ Please enter your company code to continue.</string>
                                 </constraints>
                                 <color key="textColor" name="Ebony"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="new-password"/>
+                                <textInputTraits key="textInputTraits" textContentType="new-password"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="10"/>
@@ -224,7 +224,7 @@ Please enter your company code to continue.</string>
                                 </constraints>
                                 <color key="textColor" name="Ebony"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done" textContentType="new-password"/>
+                                <textInputTraits key="textInputTraits" textContentType="new-password"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="10"/>

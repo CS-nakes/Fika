@@ -13,4 +13,8 @@ class UserRepository {
         userDefaults.value(forKey: key) as? T
     }
 
+    static func deleteValue(forKey key: String) {
+        userDefaults.removeObject(forKey: key)
+    }
+
 }

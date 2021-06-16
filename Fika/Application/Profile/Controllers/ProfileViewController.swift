@@ -6,6 +6,9 @@ class ProfileViewController: UIViewController, UITextViewDelegate,
     @IBOutlet private var positionField: UITextField!
     @IBOutlet private var introduce: UITextView!
     @IBOutlet private var profileImage: UIImageView!
+    @IBOutlet private var continueButton: UIButton!
+
+    var user = User()
 
     let imagePicker = UIImagePickerController()
 
@@ -14,9 +17,19 @@ class ProfileViewController: UIViewController, UITextViewDelegate,
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        nameField.text = user.name
+        positionField.text = user.position
+        introduce.text = user.introduction
+
+        validateFields()
+
         introduce.delegate = self
-        introduce.text = textViewPlaceHolder
-        introduce.textColor = UIColor.systemGray3
+
+        if introduce.text == nil {
+            introduce.text = textViewPlaceHolder
+            introduce.textColor = UIColor.systemGray3
+        }
+
         introduce.layer.borderWidth = 1
         introduce.layer.borderColor = UIColor.systemGray5.cgColor
         introduce.layer.cornerRadius = 6
@@ -63,20 +76,54 @@ class ProfileViewController: UIViewController, UITextViewDelegate,
         }
     }
 
-    func validateProfile() -> Bool {
-        !(nameField.text?.trimmingCharacters(in: .whitespaces).isEmpty ?? true)
+//    @IBAction func onContinue(_ sender: UIButton) {
+//        user = User(name: nameField.text, position: positionField.text, introduction: introduce.text)
+//
+//
+//
+//    }
 
-    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        user = User(name: nameField.text, position: positionField.text, introduction: introduce.text)
+        if segue.identifier == "toTimeSlot" {
+            guard let nextController = segue.destination as? TimingViewController else {
+                return
+            }
 
-    @IBAction private func onSave(_ sender: UIButton) {
-        if validateProfile() {
-
-        } else {
-            displayErrors()
+            nextController.user = user
         }
     }
 
-    func displayErrors() {
+    @IBAction private func unwindToPresentingViewController(segue: UIStoryboardSegue) {
+        print("unwind")
+        if segue.identifier == "backToProfile" {
+            guard let controller = segue.source as? TimingViewController else {
+                return
+            }
 
+            user = User(name: controller.user.name, position: controller.user.position, companyId: controller.user.companyId,
+                        introduction: controller.user.introduction,
+                        profilePicture: controller.user.profilePicture, preferredTimeslots: controller.selectedSlots)
+
+            print(user.preferredTimeslots)
+
+        }
+    }
+
+    @IBAction private func onNameEditingEnd(_ sender: UITextField) {
+        validateFields()
+    }
+
+    @IBAction private func onPositionEditingEnd(_ sender: UITextField) {
+        validateFields()
+    }
+
+    func validateFields() {
+        if nameField.text?.trimmingCharacters(in: .whitespaces).isEmpty ?? false ||
+            positionField.text?.trimmingCharacters(in: .whitespaces).isEmpty ?? false {
+            continueButton.isHidden = true
+        } else {
+            continueButton.isHidden = false
+        }
     }
 }

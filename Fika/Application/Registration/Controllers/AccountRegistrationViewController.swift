@@ -16,6 +16,9 @@ class AccountRegistrationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         hideNavBar()
+        emailField.delegate = self
+        firstPasswordField.delegate = self
+        secondPasswordField.delegate = self
     }
 
     @IBAction private func onDidTapRegisterButton(_ sender: UIButton) {

@@ -67,7 +67,7 @@
                                 </constraints>
                                 <color key="textColor" name="Ebony"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <textInputTraits key="textInputTraits" textContentType="name"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="10"/>
@@ -97,7 +97,7 @@
                                 </constraints>
                                 <color key="textColor" name="Ebony"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <textInputTraits key="textInputTraits" textContentType="organization-title"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="10"/>
@@ -133,7 +133,7 @@
                                 </constraints>
                                 <color key="textColor" name="Ebony"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="10"/>

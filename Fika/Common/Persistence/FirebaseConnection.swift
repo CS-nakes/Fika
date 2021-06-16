@@ -122,25 +122,21 @@ struct FirebaseConnection {
             return
         }
 
-        db.collection(sessionPath).document(sessionId).updateData([
-            "isCompleted": true
-        ]) { err in
-            if let err = err {
+        db.collection(sessionPath).document(sessionId).updateData(["isCompleted": true]) { err in
+            guard let _ = err else {
                 completion(err)
-            } else {
+                return
+            }
+            db.collection(userPath).document(userId).updateData(["isAvailable": true]) { err in
+                guard let _ = err else {
+                    completion(err)
+                    return
+                }
                 completion(nil)
             }
+
         }
 
-        db.collection(userPath).document(userId).updateData([
-            "isAvailable": true
-        ]) { err in
-            if let err = err {
-                completion(err)
-            } else {
-                completion(nil)
-            }
-        }
     }
 
     // MARK: - FirebaseAuth

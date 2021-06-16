@@ -31,6 +31,7 @@ class CallViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.setHidesBackButton(true, animated: true)
         getAgoraEngine().setChannelProfile(.communication)
         setUpVideo()
     }
@@ -114,7 +115,7 @@ extension CallViewController: AgoraRtcEngineDelegate {
 extension CallViewController {
 
     @IBAction private func didTapExit(_ sender: UIButton) {
-        // Dismiss view
+        _ = navigationController?.popViewController(animated: true)
     }
 
     @IBAction private func didToggleMute(_ sender: UIButton) {

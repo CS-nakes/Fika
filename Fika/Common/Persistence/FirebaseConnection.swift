@@ -13,8 +13,9 @@ struct FirebaseConnection {
         let docRef = db.collection(userPath).document()
         let batch = db.batch()
 
-        let userDoc = UserRecord(name: user.name, position: user.position, profilePicture: user.profilePicture,
-                                 introduction: user.introduction, preferredTimeslots: user.preferredTimeslots)
+        let userDoc = UserRecord(name: user.name ?? "No name", position: user.position ?? "No position",
+             profilePicture: user.profilePicture ?? "No profile picture",
+                 introduction: user.introduction, preferredTimeslots: user.preferredTimeslots)
 
         try batch.setData(from: userDoc, forDocument: docRef)
 
@@ -37,10 +38,10 @@ struct FirebaseConnection {
             "preferredTimeslots": encodedPreferredTimeslots
         ] as [String: Any]
 
-        // decode
-//        if let data = UserDefaults.standard.data(forKey: "dataType") {
-//            let array = try JSONDecoder().decode([DataType].self, from: data)
-//        }
+        // decode code
+        // if let data = UserDefaults.standard.data(forKey: "dataType") {
+        //    let array = try JSONDecoder().decode([DataType].self, from: data)
+        // }
 
         for (fieldName, value) in userValues {
             UserRepository.saveValue(forKey: fieldName, value: value)
@@ -58,7 +59,8 @@ struct FirebaseConnection {
     // could also remove userId and grab userid from UserDefaults
     func fetchUpcomingSessions(userId: String, completion: @escaping ([Session]?, Error?) -> Void) {
 
-        // only get the last 1, because u might finish the call early. if fetch all, may show the call that you just ended
+        // only get the last 1, because u might finish the call early.
+        // if fetch all, may show the call that you just ended
 
         db.collection(sessionPath).getDocuments { snapshot, err in
             guard let sessionRecords = (snapshot?.documents
@@ -88,7 +90,8 @@ struct FirebaseConnection {
     // use case: display on session card
     func fetchUser(userId: String, completion: @escaping (User?, Error?) -> Void) {
         db.collection(userPath).document(userId).getDocument { document, err in
-            guard let userRecord = try? document?.data(as: UserRecord.self), err == nil, let user = try? User(from: userRecord) else {
+            guard let userRecord = try? document?.data(as: UserRecord.self), err == nil,
+                  let user = try? User(from: userRecord) else {
                 completion(nil, err)
                 return
             }

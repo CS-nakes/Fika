@@ -38,7 +38,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login now for an exciting world of one-to-one conversations!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEM-rQ-DSd">
-                                <rect key="frame" x="40" y="587" width="334" height="37.5"/>
+                                <rect key="frame" x="40" y="582" width="334" height="32"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="16"/>
                                 <color key="textColor" name="Aluminium"/>
                                 <nil key="highlightedColor"/>
@@ -50,7 +50,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yRu-YR-RDr">
-                                <rect key="frame" x="20" y="669" width="374" height="52"/>
+                                <rect key="frame" x="20" y="675" width="374" height="52"/>
                                 <color key="backgroundColor" name="Medium Aquamarine"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="FiX-Kr-2rg"/>
@@ -81,19 +81,19 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lps-Tn-agQ">
-                                <rect key="frame" x="122" y="748" width="170.5" height="19"/>
+                                <rect key="frame" x="119" y="754" width="176" height="16"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="16"/>
                                 <color key="textColor" name="Aluminium"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Fika" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahy-0q-YS4">
-                                <rect key="frame" x="103" y="519" width="208" height="33"/>
+                                <rect key="frame" x="99.5" y="519" width="215.5" height="28"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="28"/>
                                 <color key="textColor" name="Ebony"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jEc-8z-TzW">
-                                <rect key="frame" x="162" y="771" width="90" height="31"/>
+                                <rect key="frame" x="161" y="774" width="92" height="28"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="16"/>
                                 <state key="normal" title="Sign up now">
                                     <color key="titleColor" name="Medium Aquamarine"/>
@@ -148,31 +148,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome back! Enter your email address and password to login." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjI-dN-nCd">
-                                <rect key="frame" x="20" y="212" width="374" height="37.5"/>
+                                <rect key="frame" x="20" y="207" width="374" height="32"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="16"/>
                                 <color key="textColor" name="Aluminium"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpy-TX-zWd">
-                                <rect key="frame" x="20" y="153" width="69.5" height="33"/>
+                                <rect key="frame" x="20" y="153" width="71" height="28"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="28"/>
                                 <color key="textColor" name="Ebony"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAE-Qh-YCS">
-                                <rect key="frame" x="20" y="282.5" width="90" height="16.5"/>
+                                <rect key="frame" x="20" y="272" width="95" height="14"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
                                 <color key="textColor" name="Aluminium"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJD-G4-TbU">
-                                <rect key="frame" x="20" y="377" width="62" height="16.5"/>
+                                <rect key="frame" x="20" y="364" width="67.5" height="14"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
                                 <color key="textColor" name="Aluminium"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Email Address" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="iqp-aU-3RV" customClass="TextField" customModule="Fika">
-                                <rect key="frame" x="20" y="306" width="374" height="50"/>
+                                <rect key="frame" x="20" y="293" width="374" height="50"/>
                                 <color key="backgroundColor" name="White"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="n4U-Ze-Ji3"/>
@@ -199,7 +199,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Password" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="Pzd-ie-iqy" customClass="TextField" customModule="Fika">
-                                <rect key="frame" x="20" y="400.5" width="374" height="50"/>
+                                <rect key="frame" x="20" y="385" width="374" height="50"/>
                                 <color key="backgroundColor" name="White"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="5ke-6a-dfE"/>
@@ -254,6 +254,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="onDidTapLoginButton:" destination="EKN-y5-fbi" eventType="touchUpInside" id="9l5-7y-eHm"/>
+                                    <segue destination="SxI-st-wKh" kind="show" id="gvI-Yv-gRU"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -290,13 +291,23 @@
             </objects>
             <point key="canvasLocation" x="3147.826086956522" y="143.97321428571428"/>
         </scene>
+        <!--Home-->
+        <scene sceneID="nAW-1W-XeJ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" referencedIdentifier="Home" id="SxI-st-wKh" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="iu9-Ab-6VV"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oeN-co-FmH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3798" y="144"/>
+        </scene>
     </scenes>
     <designables>
         <designable name="Pzd-ie-iqy">
-            <size key="intrinsicContentSize" width="131" height="18"/>
+            <size key="intrinsicContentSize" width="140" height="15.5"/>
         </designable>
         <designable name="iqp-aU-3RV">
-            <size key="intrinsicContentSize" width="158.5" height="18"/>
+            <size key="intrinsicContentSize" width="167.5" height="15.5"/>
         </designable>
     </designables>
     <resources>

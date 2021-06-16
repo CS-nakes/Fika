@@ -67,7 +67,7 @@
                                 </constraints>
                                 <color key="textColor" name="Ebony"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="10"/>
@@ -85,6 +85,9 @@
                                         <color key="value" name="Gallery"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onNameEditingEnd:" destination="Y6W-OH-hqX" eventType="editingDidEnd" id="fZS-C7-ACA"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Position" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="viA-Vp-cJk" customClass="TextField" customModule="Fika">
                                 <rect key="frame" x="20" y="517.5" width="374" height="50"/>
@@ -94,7 +97,7 @@
                                 </constraints>
                                 <color key="textColor" name="Ebony"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="10"/>
@@ -112,6 +115,9 @@
                                         <color key="value" name="Gallery"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onPositionEditingEnd:" destination="Y6W-OH-hqX" eventType="editingDidEnd" id="Wmk-8d-1w3"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Introduction (Optional)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Avb-0k-Xbl">
                                 <rect key="frame" x="20" y="588.5" width="150" height="14"/>
@@ -179,7 +185,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="White Lilac"/>
                         <constraints>
                             <constraint firstItem="viA-Vp-cJk" firstAttribute="top" secondItem="xt7-5U-1D2" secondAttribute="bottom" constant="7" id="3RT-0W-l8r"/>
                             <constraint firstItem="FQF-dZ-LZV" firstAttribute="height" secondItem="vDu-zF-Fre" secondAttribute="height" multiplier="0.15" id="3TO-XE-E8g"/>
@@ -214,6 +220,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="VjC-2G-XcK"/>
                     <connections>
+                        <outlet property="continueButton" destination="gFB-5z-qFK" id="Nhe-20-OAG"/>
                         <outlet property="introductionField" destination="xjg-Tc-J5Y" id="kBu-KY-k8G"/>
                         <outlet property="nameField" destination="sZT-ls-n5r" id="ZQe-Il-D6F"/>
                         <outlet property="positionField" destination="viA-Vp-cJk" id="hg5-eG-2PG"/>
@@ -222,7 +229,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-28" y="838"/>
+            <point key="canvasLocation" x="-28.985507246376812" y="837.72321428571422"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="evf-o5-H9s">
@@ -304,91 +311,148 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Preferred Slots" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYW-Na-M6P">
-                                <rect key="frame" x="20" y="151" width="233.5" height="27.5"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="20" y="153" width="293" height="28"/>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="28"/>
+                                <color key="textColor" name="Ebony"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We'll try to match you during these time slots!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oS0-do-iO9">
-                                <rect key="frame" x="20" y="200" width="374" height="20.5"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" red="0.60626382540000001" green="0.60626382540000001" blue="0.60626382540000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <rect key="frame" x="20" y="209" width="374" height="16"/>
+                                <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="16"/>
+                                <color key="textColor" name="Aluminium"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VmA-Zf-c7Q" userLabel="BreakfastCard">
-                                <rect key="frame" x="20" y="275" width="374" height="90"/>
+                                <rect key="frame" x="20" y="259" width="374" height="100"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Breakfast" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7x-hX-sgq">
-                                        <rect key="frame" x="8" y="8" width="79" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Breakfast" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7x-hX-sgq">
+                                        <rect key="frame" x="24" y="26" width="76" height="16"/>
+                                        <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="16"/>
+                                        <color key="textColor" name="Aluminium"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="9:00AM - 9:30AM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ilF-Rr-goN">
-                                        <rect key="frame" x="8" y="39" width="247" height="35"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
-                                        <nil key="textColor"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9:00AM - 9:30AM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ilF-Rr-goN">
+                                        <rect key="frame" x="24" y="46" width="242.5" height="28"/>
+                                        <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="28"/>
+                                        <color key="textColor" name="Ebony"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" name="White"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="90" id="jS1-26-d0h"/>
+                                    <constraint firstItem="B7x-hX-sgq" firstAttribute="leading" secondItem="VmA-Zf-c7Q" secondAttribute="leading" constant="24" id="2IZ-So-bik"/>
+                                    <constraint firstItem="ilF-Rr-goN" firstAttribute="leading" secondItem="VmA-Zf-c7Q" secondAttribute="leading" constant="24" id="AuW-bF-4hV"/>
+                                    <constraint firstItem="ilF-Rr-goN" firstAttribute="top" secondItem="B7x-hX-sgq" secondAttribute="bottom" constant="4" id="fjR-zo-MK3"/>
+                                    <constraint firstItem="B7x-hX-sgq" firstAttribute="top" secondItem="VmA-Zf-c7Q" secondAttribute="top" constant="26" id="hK3-ki-jgU"/>
+                                    <constraint firstAttribute="height" constant="100" id="jS1-26-d0h"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="0.0" height="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="dropShadowColor">
+                                        <color key="value" name="Gallery"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="Ufq-aV-KSx" appends="YES" id="d9g-Jb-oGY"/>
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lQJ-kr-8pt" userLabel="LunchCard">
-                                <rect key="frame" x="20" y="387" width="374" height="90"/>
+                                <rect key="frame" x="20" y="381" width="374" height="100"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lunch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yR3-pf-ouc">
-                                        <rect key="frame" x="8" y="8" width="51" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lunch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yR3-pf-ouc">
+                                        <rect key="frame" x="24" y="26" width="45.5" height="16"/>
+                                        <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="16"/>
+                                        <color key="textColor" name="Aluminium"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="12:30PM - 1:00PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sWm-2h-cAf">
-                                        <rect key="frame" x="8" y="39" width="251" height="35"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
-                                        <nil key="textColor"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:30PM - 1:00PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sWm-2h-cAf">
+                                        <rect key="frame" x="24" y="46" width="240" height="28"/>
+                                        <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="28"/>
+                                        <color key="textColor" name="Ebony"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="90" id="dWX-5s-F5J"/>
+                                    <constraint firstItem="yR3-pf-ouc" firstAttribute="leading" secondItem="lQJ-kr-8pt" secondAttribute="leading" constant="24" id="0yv-vH-yoT"/>
+                                    <constraint firstItem="sWm-2h-cAf" firstAttribute="top" secondItem="yR3-pf-ouc" secondAttribute="bottom" constant="4" id="NSs-Dh-uBs"/>
+                                    <constraint firstItem="sWm-2h-cAf" firstAttribute="leading" secondItem="lQJ-kr-8pt" secondAttribute="leading" constant="24" id="OdO-df-Rk7"/>
+                                    <constraint firstAttribute="height" constant="100" id="dWX-5s-F5J"/>
+                                    <constraint firstItem="yR3-pf-ouc" firstAttribute="top" secondItem="lQJ-kr-8pt" secondAttribute="top" constant="26" id="v5e-Pa-Mfl"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="0.0" height="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="dropShadowColor">
+                                        <color key="value" name="Gallery"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="bgb-SU-HyE" appends="YES" id="bVi-r1-Ogu"/>
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OIm-5D-KIh" userLabel="TeaCard">
-                                <rect key="frame" x="20" y="499" width="374" height="90"/>
+                                <rect key="frame" x="20" y="503" width="374" height="100"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tea" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QRa-Dg-jaG">
-                                        <rect key="frame" x="8" y="8" width="29" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tea" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QRa-Dg-jaG">
+                                        <rect key="frame" x="24" y="26" width="27" height="16"/>
+                                        <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="16"/>
+                                        <color key="textColor" name="Aluminium"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3:00PM - 3:30PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frO-TA-bVk">
-                                        <rect key="frame" x="8" y="39" width="242" height="35"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
-                                        <nil key="textColor"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3:00PM - 3:30PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frO-TA-bVk">
+                                        <rect key="frame" x="24" y="46" width="237.5" height="28"/>
+                                        <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="28"/>
+                                        <color key="textColor" name="Ebony"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="90" id="Wst-QH-Rn0"/>
+                                    <constraint firstItem="frO-TA-bVk" firstAttribute="leading" secondItem="OIm-5D-KIh" secondAttribute="leading" constant="24" id="ALG-Bo-r0o"/>
+                                    <constraint firstAttribute="height" constant="100" id="Wst-QH-Rn0"/>
+                                    <constraint firstItem="frO-TA-bVk" firstAttribute="top" secondItem="QRa-Dg-jaG" secondAttribute="bottom" constant="4" id="nov-RG-LsY"/>
+                                    <constraint firstItem="QRa-Dg-jaG" firstAttribute="top" secondItem="OIm-5D-KIh" secondAttribute="top" constant="26" id="uha-TX-xMu"/>
+                                    <constraint firstItem="QRa-Dg-jaG" firstAttribute="leading" secondItem="OIm-5D-KIh" secondAttribute="leading" constant="24" id="vqC-4p-Owr"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="0.0" height="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="dropShadowColor">
+                                        <color key="value" name="Gallery"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="e0P-GN-X22" appends="YES" id="9Lg-bG-vFG"/>
                                 </connections>
@@ -420,18 +484,21 @@
                                         <color key="value" name="Niagara"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onFinish:" destination="vbq-Zx-nTG" eventType="touchUpInside" id="9Hg-Sv-MeO"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Zr3-dB-sLt"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="White Lilac"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="VmA-Zf-c7Q" firstAttribute="leading" secondItem="Zr3-dB-sLt" secondAttribute="leading" constant="20" id="BuU-Gn-bCD"/>
-                            <constraint firstItem="hYW-Na-M6P" firstAttribute="top" secondItem="Zr3-dB-sLt" secondAttribute="top" constant="63" id="HOb-3R-jYu"/>
-                            <constraint firstItem="VmA-Zf-c7Q" firstAttribute="top" secondItem="oS0-do-iO9" secondAttribute="bottom" constant="54.5" id="IMN-SJ-5Ze"/>
+                            <constraint firstItem="hYW-Na-M6P" firstAttribute="top" secondItem="Zr3-dB-sLt" secondAttribute="top" constant="65" id="HOb-3R-jYu"/>
+                            <constraint firstItem="VmA-Zf-c7Q" firstAttribute="top" secondItem="oS0-do-iO9" secondAttribute="bottom" constant="34" id="IMN-SJ-5Ze"/>
                             <constraint firstItem="oS0-do-iO9" firstAttribute="leading" secondItem="Zr3-dB-sLt" secondAttribute="leading" constant="20" id="K5o-jg-UvY"/>
                             <constraint firstItem="Zr3-dB-sLt" firstAttribute="bottom" secondItem="75c-aY-keo" secondAttribute="bottom" constant="20" id="OAL-rK-Mzh"/>
-                            <constraint firstItem="oS0-do-iO9" firstAttribute="top" secondItem="hYW-Na-M6P" secondAttribute="bottom" constant="21.5" id="PMR-uL-qsf"/>
+                            <constraint firstItem="oS0-do-iO9" firstAttribute="top" secondItem="hYW-Na-M6P" secondAttribute="bottom" constant="28" id="PMR-uL-qsf"/>
                             <constraint firstItem="Zr3-dB-sLt" firstAttribute="trailing" secondItem="VmA-Zf-c7Q" secondAttribute="trailing" constant="20" id="QUm-hg-mkm"/>
                             <constraint firstItem="OIm-5D-KIh" firstAttribute="top" secondItem="lQJ-kr-8pt" secondAttribute="bottom" constant="22" id="S6C-C5-LyR"/>
                             <constraint firstItem="lQJ-kr-8pt" firstAttribute="top" secondItem="VmA-Zf-c7Q" secondAttribute="bottom" constant="22" id="Ude-sO-NCe"/>
@@ -448,11 +515,14 @@
                     <navigationItem key="navigationItem" id="Eq1-y1-vKG"/>
                     <connections>
                         <outlet property="breakFastSlot" destination="VmA-Zf-c7Q" id="pwK-ON-4h5"/>
+                        <outlet property="finishButton" destination="75c-aY-keo" id="LEJ-sv-ucn"/>
                         <outlet property="lunchSlot" destination="lQJ-kr-8pt" id="xhZ-Gd-w03"/>
                         <outlet property="teaSlot" destination="OIm-5D-KIh" id="Wlj-4q-dMW"/>
+                        <segue destination="lMx-Fd-mrc" kind="unwind" identifier="backToProfile" unwindAction="unwindToPresentingViewControllerWithSegue:" id="xhO-a9-tF2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RSe-OS-EwZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="lMx-Fd-mrc" userLabel="Exit" sceneMemberID="exit"/>
                 <tapGestureRecognizer id="Ufq-aV-KSx" userLabel="Breakfast Tap Gesture Recognizer">
                     <connections>
                         <action selector="selectBreakfast:" destination="vbq-Zx-nTG" id="XbN-4x-dbL"/>
@@ -580,6 +650,9 @@
         </namedColor>
         <namedColor name="White">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White Lilac">
+            <color red="0.98000001907348633" green="0.98400002717971802" blue="0.99199998378753662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

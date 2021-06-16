@@ -6,11 +6,20 @@ class ProfileViewController: UIViewController, UITextViewDelegate,
     @IBOutlet private var positionField: UITextField!
     @IBOutlet private var introductionField: TextField!
     @IBOutlet private var profileImage: UIImageView!
+    @IBOutlet private var continueButton: UIButton!
+
+    var user = User()
 
     let imagePicker = UIImagePickerController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        nameField.text = user.name
+        positionField.text = user.position
+        introductionField.text = user.introduction
+        validateFields()
+
+        imagePicker.delegate = self
         introductionField.contentVerticalAlignment = .top
         hideNavBar()
     }
@@ -37,20 +46,34 @@ class ProfileViewController: UIViewController, UITextViewDelegate,
         dismiss(animated: true, completion: nil)
     }
 
-    func validateProfile() -> Bool {
-        !(nameField.text?.trimmingCharacters(in: .whitespaces).isEmpty ?? true)
-
-    }
-
-    @IBAction private func onSave(_ sender: UIButton) {
-        if validateProfile() {
-
-        } else {
-            displayErrors()
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        user.introduction = introductionField.text
+        if let nextController = segue.destination as? TimingViewController {
+            nextController.user = user
         }
     }
 
-    func displayErrors() {
-
+    func validateProfile() -> Bool {
+        !(nameField.text?.trimmingCharacters(in: .whitespaces).isEmpty ?? true)
     }
+
+    @IBAction private func onNameEditingEnd(_ sender: UITextField) {
+        validateFields()
+        user.name = nameField.text
+    }
+
+    @IBAction private func onPositionEditingEnd(_ sender: UITextField) {
+        validateFields()
+        user.position = positionField.text
+    }
+
+    func validateFields() {
+        if nameField.text?.trimmingCharacters(in: .whitespaces).isEmpty ?? false ||
+            positionField.text?.trimmingCharacters(in: .whitespaces).isEmpty ?? false {
+            continueButton.isHidden = true
+        } else {
+            continueButton.isHidden = false
+        }
+    }
+
 }

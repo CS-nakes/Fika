@@ -20,6 +20,11 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>NexaBold.otf</string>
+		<string>NexaLight.otf</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -34,7 +39,7 @@
 					<key>UISceneDelegateClassName</key>
 					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
 					<key>UISceneStoryboardFile</key>
-					<string>Profile</string>
+					<string>Landing</string>
 				</dict>
 			</array>
 		</dict>
@@ -44,12 +49,7 @@
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
-	<string>Profile</string>
-	<key>UIAppFonts</key>
-	<array>
-		<string>NexaBold.otf</string>
-		<string>NexaLight.otf</string>
-	</array>
+	<string>Landing</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
@@ -61,9 +61,10 @@
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationPortraitUpsideDown</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>Fika will need access to your camera solely for video calling purposes.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Fika will need access to your microphone solely for video calling purposes.</string>
 </dict>
 </plist>

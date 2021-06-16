@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E6D6A722679128300FA7600 /* Call.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E6D6A712679128300FA7600 /* Call.storyboard */; };
+		2E6D6A7E267917A600FA7600 /* CallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6D6A7D267917A600FA7600 /* CallViewController.swift */; };
+		2E6D6A802679287100FA7600 /* VideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6D6A7F2679287100FA7600 /* VideoCollectionViewCell.swift */; };
 		2E7E38E92676FC0A00034007 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E38E82676FC0A00034007 /* AppDelegate.swift */; };
 		2E7E38EB2676FC0A00034007 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E38EA2676FC0A00034007 /* SceneDelegate.swift */; };
 		2E7E38ED2676FC0A00034007 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E38EC2676FC0A00034007 /* HomeViewController.swift */; };
@@ -25,6 +28,8 @@
 		2E7E39372677B08200034007 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E39362677B08200034007 /* PageViewController.swift */; };
 		2E975DBB2678C88C00907565 /* UIViewController+HideNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E975DBA2678C88C00907565 /* UIViewController+HideNavBar.swift */; };
 		2E975DBE2678D45A00907565 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E975DBD2678D45A00907565 /* UserRepository.swift */; };
+		2E9FB1B12679A0FA00EAAF78 /* ColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9FB1B02679A0FA00EAAF78 /* ColorConstants.swift */; };
+		2EA6E4C926793AEB00889F78 /* AgoraConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA6E4C826793AEB00889F78 /* AgoraConstants.swift */; };
 		2EAB40762677B5C800FFF586 /* Registration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EAB40752677B5C800FFF586 /* Registration.storyboard */; };
 		2EAB40782677B7DF00FFF586 /* CompanyCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAB40772677B7DF00FFF586 /* CompanyCodeViewController.swift */; };
 		2EFA3CDB2677BBD8009B2826 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFA3CDA2677BBD8009B2826 /* TextField.swift */; };
@@ -64,6 +69,9 @@
 
 /* Begin PBXFileReference section */
 		0D3610B65682502887E3FE54 /* Pods-Fika-FikaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fika-FikaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Fika-FikaUITests/Pods-Fika-FikaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2E6D6A712679128300FA7600 /* Call.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Call.storyboard; sourceTree = "<group>"; };
+		2E6D6A7D267917A600FA7600 /* CallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallViewController.swift; sourceTree = "<group>"; };
+		2E6D6A7F2679287100FA7600 /* VideoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollectionViewCell.swift; sourceTree = "<group>"; };
 		2E7E38E52676FC0A00034007 /* Fika.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fika.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E7E38E82676FC0A00034007 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E7E38EA2676FC0A00034007 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +96,8 @@
 		2E7E39362677B08200034007 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		2E975DBA2678C88C00907565 /* UIViewController+HideNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+HideNavBar.swift"; sourceTree = "<group>"; };
 		2E975DBD2678D45A00907565 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		2E9FB1B02679A0FA00EAAF78 /* ColorConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConstants.swift; sourceTree = "<group>"; };
+		2EA6E4C826793AEB00889F78 /* AgoraConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgoraConstants.swift; sourceTree = "<group>"; };
 		2EAB40752677B5C800FFF586 /* Registration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Registration.storyboard; sourceTree = "<group>"; };
 		2EAB40772677B7DF00FFF586 /* CompanyCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyCodeViewController.swift; sourceTree = "<group>"; };
 		2EFA3CDA2677BBD8009B2826 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
@@ -152,6 +162,32 @@
 				F1B535850BA8503C8A8BB8A5 /* Pods-FikaTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		2E6D6A6E2679126500FA7600 /* Call */ = {
+			isa = PBXGroup;
+			children = (
+				2E6D6A6F2679126F00FA7600 /* Views */,
+				2E6D6A702679127400FA7600 /* Controllers */,
+			);
+			path = Call;
+			sourceTree = "<group>";
+		};
+		2E6D6A6F2679126F00FA7600 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2E6D6A712679128300FA7600 /* Call.storyboard */,
+				2E6D6A7F2679287100FA7600 /* VideoCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2E6D6A702679127400FA7600 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2E6D6A7D267917A600FA7600 /* CallViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		2E7E38DC2676FC0A00034007 = {
@@ -238,6 +274,7 @@
 		2E7E391C2677082500034007 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				2EA6E4C726793ADD00889F78 /* Constants */,
 				2E975DBC2678D44200907565 /* Persistence */,
 				2EFA3CDC2677BBE3009B2826 /* Views */,
 				2E7E392C26779ED900034007 /* Extensions */,
@@ -253,6 +290,7 @@
 				2E7E392226779AA600034007 /* Onboarding */,
 				2EAB40722677B59D00FFF586 /* Registration */,
 				2E7E391F2677086200034007 /* Home */,
+				2E6D6A6E2679126500FA7600 /* Call */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -354,6 +392,15 @@
 			path = Persistence;
 			sourceTree = "<group>";
 		};
+		2EA6E4C726793ADD00889F78 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				2EA6E4C826793AEB00889F78 /* AgoraConstants.swift */,
+				2E9FB1B02679A0FA00EAAF78 /* ColorConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		2EAB40722677B59D00FFF586 /* Registration */ = {
 			isa = PBXGroup;
 			children = (
@@ -442,8 +489,8 @@
 		AE867BA126783DF4007A0EB2 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				AE867BA326783E0B007A0EB2 /* Controllers */,
 				AE867BA226783E02007A0EB2 /* Views */,
+				AE867BA326783E0B007A0EB2 /* Controllers */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -585,6 +632,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				720742082677C1E100D5502B /* Landing.storyboard in Resources */,
+				2E6D6A722679128300FA7600 /* Call.storyboard in Resources */,
 				2E7E38F52676FC0C00034007 /* LaunchScreen.storyboard in Resources */,
 				2E7E38F22676FC0C00034007 /* Assets.xcassets in Resources */,
 				2E7E38F02676FC0A00034007 /* Home.storyboard in Resources */,
@@ -744,12 +792,16 @@
 				2E7E38ED2676FC0A00034007 /* HomeViewController.swift in Sources */,
 				2E7E39302677A6A700034007 /* OnboardingPageViewController.swift in Sources */,
 				7207421426783E9A00D5502B /* LoginPageViewController.swift in Sources */,
+				2E6D6A802679287100FA7600 /* VideoCollectionViewCell.swift in Sources */,
 				2E975DBB2678C88C00907565 /* UIViewController+HideNavBar.swift in Sources */,
 				2EFA3CDB2677BBD8009B2826 /* TextField.swift in Sources */,
 				2EAB40782677B7DF00FFF586 /* CompanyCodeViewController.swift in Sources */,
+				2E6D6A7E267917A600FA7600 /* CallViewController.swift in Sources */,
 				2E975DBE2678D45A00907565 /* UserRepository.swift in Sources */,
 				2E7E39332677AAF600034007 /* OnboardingPageViewControllerDelegate.swift in Sources */,
+				2E9FB1B12679A0FA00EAAF78 /* ColorConstants.swift in Sources */,
 				726E41372679020B00DA377F /* Session.swift in Sources */,
+				2EA6E4C926793AEB00889F78 /* AgoraConstants.swift in Sources */,
 				726E4134267901EE00DA377F /* Company.swift in Sources */,
 				2E7E39352677ACA700034007 /* OnboardingViewController.swift in Sources */,
 				7207420B2677C1F900D5502B /* LandingPageViewController.swift in Sources */,

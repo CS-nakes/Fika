@@ -6,6 +6,7 @@ class CompanyCodeViewController: UIViewController {
     var titleText = "Welcome to Fika"
 
     @IBOutlet private var titleLabel: UILabel!
+    @IBOutlet private var companyCode: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()

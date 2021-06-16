@@ -1,45 +1,37 @@
 import UIKit
 
 class TimingViewController: UIViewController {
+
     @IBOutlet private var breakFastSlot: UIView!
     @IBOutlet private var lunchSlot: UIView!
     @IBOutlet private var teaSlot: UIView!
 
     @IBOutlet private var finishButton: UIButton!
 
-    let backgroundColor = UIColor(red: 250 / 255, green: 251 / 255, blue: 253 / 255, alpha: 1)
-    var selectedSlots: [Timeslot] = []
+    let selectedColor = #colorLiteral(red: 0.8901960784, green: 0.9764705882, blue: 0.9647058824, alpha: 1)
 
     var user = User()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        selectedSlots = user.preferredTimeslots
+        hideNavBar()
+        navigationController?.delegate = self
         validate()
-        if selectedSlots.contains(.breakfast) {
-            breakFastSlot.backgroundColor = .init(red: 0, green: 1, blue: 0, alpha: 0.1)
+        if user.preferredTimeslots.contains(.breakfast) {
+            breakFastSlot.backgroundColor = selectedColor
         }
 
-        if selectedSlots.contains(.lunch) {
-            breakFastSlot.backgroundColor = .init(red: 0, green: 1, blue: 0, alpha: 0.1)
+        if user.preferredTimeslots.contains(.lunch) {
+            lunchSlot.backgroundColor = selectedColor
         }
 
-        if selectedSlots.contains(.tea) {
-            breakFastSlot.backgroundColor = .init(red: 0, green: 1, blue: 0, alpha: 0.1)
+        if user.preferredTimeslots.contains(.tea) {
+            teaSlot.backgroundColor = selectedColor
         }
-        setCardBorder(card: breakFastSlot)
-        setCardBorder(card: lunchSlot)
-        setCardBorder(card: teaSlot)
-    }
-
-    func setCardBorder(card: UIView) {
-        card.layer.borderWidth = 1
-        card.layer.borderColor = UIColor.systemGray5.cgColor
-        card.layer.cornerRadius = 15
     }
 
     func validate() {
-        if selectedSlots.isEmpty {
+        if user.preferredTimeslots.isEmpty {
             finishButton.isHidden = true
         } else {
             finishButton.isHidden = false
@@ -47,55 +39,61 @@ class TimingViewController: UIViewController {
     }
 
     @IBAction private func selectBreakfast(_ sender: UITapGestureRecognizer) {
-        if !selectedSlots.contains(.breakfast) {
-            breakFastSlot.backgroundColor = .init(red: 0, green: 1, blue: 0, alpha: 0.1)
-            selectedSlots.append(.breakfast)
+        if !user.preferredTimeslots.contains(.breakfast) {
+            breakFastSlot.backgroundColor = selectedColor
+            user.preferredTimeslots.append(.breakfast)
         } else {
-            breakFastSlot.backgroundColor = backgroundColor
-            guard let index = selectedSlots.firstIndex(of: .breakfast) else {
+            breakFastSlot.backgroundColor = .white
+            guard let index = user.preferredTimeslots.firstIndex(of: .breakfast) else {
                 return
             }
-            selectedSlots.remove(at: index)
+            user.preferredTimeslots.remove(at: index)
         }
         validate()
-
     }
 
     @IBAction private func selectLunch(_ sender: UITapGestureRecognizer) {
 
-        if !selectedSlots.contains(.lunch) {
-            lunchSlot.backgroundColor = .init(red: 0, green: 1, blue: 0, alpha: 0.1)
-            selectedSlots.append(.lunch)
+        if !user.preferredTimeslots.contains(.lunch) {
+            lunchSlot.backgroundColor = selectedColor
+            user.preferredTimeslots.append(.lunch)
         } else {
-            lunchSlot.backgroundColor = backgroundColor
-            guard let index = selectedSlots.firstIndex(of: .lunch) else {
+            lunchSlot.backgroundColor = .white
+            guard let index = user.preferredTimeslots.firstIndex(of: .lunch) else {
                 return
             }
-            selectedSlots.remove(at: index)
+            user.preferredTimeslots.remove(at: index)
         }
         validate()
     }
 
     @IBAction private func selectTea(_ sender: UITapGestureRecognizer) {
-
-        if !selectedSlots.contains(.tea) {
-            teaSlot.backgroundColor = .init(red: 0, green: 1, blue: 0, alpha: 0.1)
-            selectedSlots.append(.tea)
+        if !user.preferredTimeslots.contains(.tea) {
+            teaSlot.backgroundColor = selectedColor
+            user.preferredTimeslots.append(.tea)
         } else {
-            teaSlot.backgroundColor = backgroundColor
-            guard let index = selectedSlots.firstIndex(of: .tea) else {
+            teaSlot.backgroundColor = .white
+            guard let index = user.preferredTimeslots.firstIndex(of: .tea) else {
                 return
             }
-            selectedSlots.remove(at: index)
+            user.preferredTimeslots.remove(at: index)
         }
         validate()
     }
-    @IBAction func onFinish(_ sender: UIButton) {
-        user = User(name: user.name, position: user.position, companyId: user.companyId, introduction: user.introduction,
-                    profilePicture: user.profilePicture, preferredTimeslots: selectedSlots)
 
+    @IBAction private func onFinish(_ sender: UIButton) {
         print(user)
-
         // save to firebase
     }
+}
+
+extension TimingViewController: UINavigationControllerDelegate {
+
+    func navigationController(_ navigationController: UINavigationController,
+                              willShow viewController: UIViewController, animated: Bool) {
+        if let vc = viewController as? ProfileViewController {
+            vc.user = user
+        }
+    }
+
 }

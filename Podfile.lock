@@ -212,6 +212,8 @@ PODS:
     - abseil/base/base_internal
     - abseil/base/config
     - abseil/meta/type_traits
+  - AgoraRtcEngine_iOS (3.4.2)
+  - AgoraRtm_iOS (1.4.5)
   - BoringSSL-GRPC (0.0.7):
     - BoringSSL-GRPC/Implementation (= 0.0.7)
     - BoringSSL-GRPC/Interface (= 0.0.7)
@@ -311,6 +313,8 @@ PODS:
   - PromisesObjC (1.2.12)
 
 DEPENDENCIES:
+  - AgoraRtcEngine_iOS
+  - AgoraRtm_iOS
   - Firebase/Auth
   - Firebase/Firestore
   - Firebase/Storage
@@ -318,6 +322,8 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - abseil
+    - AgoraRtcEngine_iOS
+    - AgoraRtm_iOS
     - BoringSSL-GRPC
     - Firebase
     - FirebaseAuth
@@ -336,6 +342,8 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   abseil: 6c8eb7892aefa08d929b39f9bb108e5367e3228f
+  AgoraRtcEngine_iOS: 3a4d64f2866ffc122e090a693153bb673021f6fe
+  AgoraRtm_iOS: 5e3c7b30297cec3075d6d4a9657a0b9fd7387349
   BoringSSL-GRPC: 8edf627ee524575e2f8d19d56f068b448eea3879
   Firebase: 4bb49ae87756034cef870fa3c4006235eb46f475
   FirebaseAuth: e069ff5736fe9d5dcf61f36244bb1b1ce1897d17
@@ -352,6 +360,6 @@ SPEC CHECKSUMS:
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
 
-PODFILE CHECKSUM: 8469a7c8bc05350e8132d1c10a0460867c076b46
+PODFILE CHECKSUM: f53036cb0aeafe50419df3030f5f8e4cc3cab62c
 
 COCOAPODS: 1.10.1

@@ -238,6 +238,9 @@
                                         <color key="value" name="Niagara"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="yrz-l2-BVZ" kind="show" id="lm7-yS-pDB"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -265,10 +268,26 @@
                             <constraint firstItem="cfv-Ce-8Zz" firstAttribute="top" secondItem="sXe-TI-lXi" secondAttribute="bottom" constant="22" id="ywc-XL-ija"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="7D3-au-bc6" id="aUn-9o-owh"/>
+                        <outlet property="nameLabel" destination="lZc-V8-95W" id="UUs-Gg-teR"/>
+                        <outlet property="positionLabel" destination="jUC-48-5mW" id="yE9-NU-v3c"/>
+                        <outlet property="timeLabel" destination="cpg-7b-OfI" id="LIV-Qg-mKf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-4" y="80"/>
+        </scene>
+        <!--Call-->
+        <scene sceneID="QzE-ih-Qyw">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Call" referencedIdentifier="Call" id="yrz-l2-BVZ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="LYL-aL-19X"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gCZ-jz-Si7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="775" y="80"/>
         </scene>
     </scenes>
     <resources>

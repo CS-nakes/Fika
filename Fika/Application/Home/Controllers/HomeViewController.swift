@@ -2,6 +2,11 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet private var nameLabel: UILabel!
+    @IBOutlet private var positionLabel: UILabel!
+    @IBOutlet private var dateLabel: UILabel!
+    @IBOutlet private var timeLabel: UILabel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         hideNavBar()

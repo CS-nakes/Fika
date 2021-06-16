@@ -18,7 +18,7 @@ struct FirebaseConnection {
         }
 
         let userDoc = UserRecord(name: name, position: position, profilePictureId: user.profilePictureId,
-            introduction: user.introduction, preferredTimeslots: user.preferredTimeslots)
+             introduction: user.introduction, preferredTimeslots: user.preferredTimeslots, isAvailable: true)
 
         try batch.setData(from: userDoc, forDocument: docRef)
 

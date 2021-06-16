@@ -8,6 +8,8 @@ class ProfileViewController: UIViewController, UITextViewDelegate,
     @IBOutlet private var profileImage: UIImageView!
     @IBOutlet private var continueButton: UIButton!
 
+    var selectedImage: UIImage?
+
     var user = User()
 
     let imagePicker = UIImagePickerController()
@@ -21,6 +23,11 @@ class ProfileViewController: UIViewController, UITextViewDelegate,
         positionField.delegate = self
         introductionField.text = user.introduction
         introductionField.delegate = self
+        if selectedImage == nil {
+            profileImage.image = UIImage(named: "profile")
+        } else {
+            profileImage.image = selectedImage
+        }
         validateFields()
 
         imagePicker.delegate = self
@@ -28,6 +35,12 @@ class ProfileViewController: UIViewController, UITextViewDelegate,
         hideNavBar()
     }
 
+//    @IBAction func selectImage(_ sender: UITapGestureRecognizer) {
+//        imagePicker.allowsEditing = true
+//        imagePicker.sourceType = .photoLibrary
+//
+//        present(imagePicker, animated: true)
+//    }
     @IBAction private func selectImage(_ sender: UIButton) {
         imagePicker.allowsEditing = true
         imagePicker.sourceType = .photoLibrary
@@ -39,8 +52,9 @@ class ProfileViewController: UIViewController, UITextViewDelegate,
                                didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
 
         if let pickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
-            profileImage.contentMode = .scaleAspectFit
+            profileImage.contentMode = .scaleAspectFill
             profileImage.image = pickedImage
+            selectedImage = pickedImage
         }
 
         dismiss(animated: true, completion: nil)
@@ -54,6 +68,7 @@ class ProfileViewController: UIViewController, UITextViewDelegate,
         user.introduction = introductionField.text
         if let nextController = segue.destination as? TimingViewController {
             nextController.user = user
+            nextController.image = selectedImage
         }
     }
 

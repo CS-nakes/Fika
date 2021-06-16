@@ -11,6 +11,7 @@ class TimingViewController: UIViewController {
     let selectedColor = #colorLiteral(red: 0.8901960784, green: 0.9764705882, blue: 0.9647058824, alpha: 1)
 
     var user = User()
+    var image: UIImage?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -83,7 +84,9 @@ class TimingViewController: UIViewController {
 
     @IBAction private func onFinish(_ sender: UIButton) {
         print(user)
-        // save to firebase
+        // save user to firebase
+
+        // upload image to firebase
 
         performSegue(withIdentifier: "ToHome", sender: nil)
     }

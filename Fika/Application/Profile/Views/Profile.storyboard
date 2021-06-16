@@ -23,44 +23,42 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Your Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UnX-2n-OSK">
-                                <rect key="frame" x="20" y="153" width="233.5" height="33"/>
+                                <rect key="frame" x="20" y="153" width="250.5" height="28"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="28"/>
                                 <color key="textColor" name="Ebony"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="FQF-dZ-LZV">
-                                <rect key="frame" x="130.5" y="252.5" width="153" height="113.5"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="FQF-dZ-LZV">
+                                <rect key="frame" x="137.5" y="243" width="139" height="139.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="FQF-dZ-LZV" secondAttribute="height" multiplier="161:122" id="wid-ZX-nU4"/>
+                                    <constraint firstAttribute="width" secondItem="FQF-dZ-LZV" secondAttribute="height" id="wid-ZX-nU4"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cb1-YU-GlX">
-                                <rect key="frame" x="162.5" y="374.5" width="89" height="30"/>
-                                <state key="normal" title="Select image"/>
-                                <connections>
-                                    <action selector="selectImage:" destination="Y6W-OH-hqX" eventType="touchDown" id="97c-dA-XsM"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="USU-1o-oGY">
-                                <rect key="frame" x="20" y="412.5" width="37.5" height="16.5"/>
+                                <rect key="frame" x="20" y="418" width="39.5" height="14"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
                                 <color key="textColor" name="Aluminium"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help your colleagues get to know you better!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9GF-Q5-v4z">
-                                <rect key="frame" x="20" y="214" width="374" height="19"/>
+                                <rect key="frame" x="20" y="209" width="374" height="16"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="16"/>
                                 <color key="textColor" name="Aluminium"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Position" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xt7-5U-1D2">
-                                <rect key="frame" x="20" y="507" width="51" height="16.5"/>
+                                <rect key="frame" x="20" y="510" width="53" height="14"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
                                 <color key="textColor" name="Aluminium"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Name" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="sZT-ls-n5r" customClass="TextField" customModule="Fika">
-                                <rect key="frame" x="20" y="436" width="374" height="50"/>
+                                <rect key="frame" x="20" y="439" width="374" height="50"/>
                                 <color key="backgroundColor" name="White"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Wbo-lE-ePw"/>
@@ -90,7 +88,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Position" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="viA-Vp-cJk" customClass="TextField" customModule="Fika">
-                                <rect key="frame" x="20" y="530.5" width="374" height="50"/>
+                                <rect key="frame" x="20" y="531" width="374" height="50"/>
                                 <color key="backgroundColor" name="White"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="XVc-Lp-elY"/>
@@ -120,13 +118,13 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Introduction (Optional)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Avb-0k-Xbl">
-                                <rect key="frame" x="20" y="601.5" width="139.5" height="16.5"/>
+                                <rect key="frame" x="20" y="602" width="150" height="14"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
                                 <color key="textColor" red="0.60626382540000001" green="0.60626382540000001" blue="0.60626382540000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" placeholder="Introduce Yourself Here!" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="xjg-Tc-J5Y" customClass="TextField" customModule="Fika">
-                                <rect key="frame" x="20" y="625" width="374" height="100"/>
+                                <rect key="frame" x="20" y="623" width="374" height="100"/>
                                 <color key="backgroundColor" name="White"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="HPd-Ko-Mbq"/>
@@ -183,12 +181,25 @@
                                     <segue destination="vbq-Zx-nTG" kind="show" identifier="ToTimeSlots" id="YGy-yM-EfX"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cb1-YU-GlX">
+                                <rect key="frame" x="235.5" y="342" width="41" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="41" id="Jn2-YC-aVN"/>
+                                    <constraint firstAttribute="height" constant="41" id="VUp-7R-L1d"/>
+                                </constraints>
+                                <color key="tintColor" red="0.3978103872" green="0.76939731840000003" blue="0.65752826990000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" backgroundImage="camera.circle.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="selectImage:" destination="Y6W-OH-hqX" eventType="touchDown" id="97c-dA-XsM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" name="White Lilac"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="viA-Vp-cJk" firstAttribute="top" secondItem="xt7-5U-1D2" secondAttribute="bottom" constant="7" id="3RT-0W-l8r"/>
-                            <constraint firstItem="FQF-dZ-LZV" firstAttribute="height" secondItem="vDu-zF-Fre" secondAttribute="height" multiplier="0.15" id="3TO-XE-E8g"/>
+                            <constraint firstItem="FQF-dZ-LZV" firstAttribute="height" secondItem="vDu-zF-Fre" secondAttribute="height" multiplier="0.18" id="3TO-XE-E8g"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="9GF-Q5-v4z" secondAttribute="trailing" constant="20" id="727-DY-14v"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="gFB-5z-qFK" secondAttribute="trailing" constant="20" id="7V7-Lx-NI0"/>
                             <constraint firstItem="9GF-Q5-v4z" firstAttribute="top" secondItem="UnX-2n-OSK" secondAttribute="bottom" constant="28" id="7to-KX-tFH"/>
@@ -199,23 +210,23 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="viA-Vp-cJk" secondAttribute="trailing" constant="20" id="Dw1-MF-9Sl"/>
                             <constraint firstItem="xt7-5U-1D2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="FPc-Lp-Hhj"/>
                             <constraint firstItem="xjg-Tc-J5Y" firstAttribute="top" secondItem="Avb-0k-Xbl" secondAttribute="bottom" constant="7" id="Hpa-Or-s9c"/>
-                            <constraint firstItem="cb1-YU-GlX" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="JBc-U5-mKR"/>
+                            <constraint firstItem="cb1-YU-GlX" firstAttribute="top" secondItem="FQF-dZ-LZV" secondAttribute="bottom" constant="-41" id="J8F-6c-fF1"/>
                             <constraint firstItem="viA-Vp-cJk" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="Q3w-XP-evK"/>
                             <constraint firstItem="FQF-dZ-LZV" firstAttribute="top" secondItem="9GF-Q5-v4z" secondAttribute="bottom" constant="18" id="Sou-uI-iFe"/>
                             <constraint firstItem="xt7-5U-1D2" firstAttribute="top" secondItem="sZT-ls-n5r" secondAttribute="bottom" constant="21" id="TID-Pp-wZ2"/>
                             <constraint firstItem="Avb-0k-Xbl" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="ZMu-0Q-Y4F"/>
                             <constraint firstItem="xjg-Tc-J5Y" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="agX-x0-v6b"/>
                             <constraint firstItem="sZT-ls-n5r" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="cwb-AQ-FoS"/>
-                            <constraint firstItem="USU-1o-oGY" firstAttribute="top" secondItem="cb1-YU-GlX" secondAttribute="bottom" constant="8" symbolic="YES" id="d51-o6-yKr"/>
+                            <constraint firstItem="cb1-YU-GlX" firstAttribute="trailing" secondItem="FQF-dZ-LZV" secondAttribute="trailing" id="fbT-7h-GKc"/>
                             <constraint firstItem="gFB-5z-qFK" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="gkX-gt-Heo"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="gFB-5z-qFK" secondAttribute="bottom" constant="20" id="nHT-gb-zND"/>
                             <constraint firstItem="Avb-0k-Xbl" firstAttribute="top" secondItem="viA-Vp-cJk" secondAttribute="bottom" constant="21" id="nHU-EU-c3v"/>
                             <constraint firstItem="Avb-0k-Xbl" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="pbO-ME-Bgl"/>
                             <constraint firstItem="9GF-Q5-v4z" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="qBi-lO-u1O"/>
-                            <constraint firstItem="cb1-YU-GlX" firstAttribute="top" secondItem="FQF-dZ-LZV" secondAttribute="bottom" constant="7.5" id="qLm-0y-rwf"/>
                             <constraint firstItem="sZT-ls-n5r" firstAttribute="top" secondItem="USU-1o-oGY" secondAttribute="bottom" constant="7" id="qO7-TU-VwF"/>
                             <constraint firstItem="USU-1o-oGY" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="rw1-yQ-OLa"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="sZT-ls-n5r" secondAttribute="trailing" constant="20" id="u5e-tL-ka9"/>
+                            <constraint firstItem="USU-1o-oGY" firstAttribute="top" secondItem="FQF-dZ-LZV" secondAttribute="bottom" constant="35.5" id="zxh-sA-5CQ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="VjC-2G-XcK"/>
@@ -228,6 +239,12 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="mQA-X1-jgb">
+                    <connections>
+                        <action selector="selectImage:" destination="Y6W-OH-hqX" id="zLY-MS-cTn"/>
+                        <outlet property="delegate" destination="5EZ-qb-Rvc" id="Ne7-As-WpW"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-28.985507246376812" y="837.72321428571422"/>
         </scene>
@@ -311,28 +328,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Preferred Slots" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYW-Na-M6P">
-                                <rect key="frame" x="20" y="153" width="272.5" height="33"/>
+                                <rect key="frame" x="20" y="153" width="293" height="28"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="28"/>
                                 <color key="textColor" name="Ebony"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We'll try to match you during these time slots!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oS0-do-iO9">
-                                <rect key="frame" x="20" y="214" width="374" height="19"/>
+                                <rect key="frame" x="20" y="209" width="374" height="16"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="16"/>
                                 <color key="textColor" name="Aluminium"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VmA-Zf-c7Q" userLabel="BreakfastCard">
-                                <rect key="frame" x="20" y="267" width="374" height="100"/>
+                                <rect key="frame" x="20" y="259" width="374" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Breakfast" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7x-hX-sgq">
-                                        <rect key="frame" x="24" y="26" width="68" height="19"/>
+                                        <rect key="frame" x="24" y="26" width="76" height="16"/>
                                         <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="16"/>
                                         <color key="textColor" name="Aluminium"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9:00AM - 9:30AM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ilF-Rr-goN">
-                                        <rect key="frame" x="24" y="49" width="221" height="33"/>
+                                        <rect key="frame" x="24" y="46" width="242.5" height="28"/>
                                         <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="28"/>
                                         <color key="textColor" name="Ebony"/>
                                         <nil key="highlightedColor"/>
@@ -368,16 +385,16 @@
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lQJ-kr-8pt" userLabel="LunchCard">
-                                <rect key="frame" x="20" y="389" width="374" height="100"/>
+                                <rect key="frame" x="20" y="381" width="374" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lunch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yR3-pf-ouc">
-                                        <rect key="frame" x="24" y="26" width="44.5" height="19"/>
+                                        <rect key="frame" x="24" y="26" width="45.5" height="16"/>
                                         <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="16"/>
                                         <color key="textColor" name="Aluminium"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:30PM - 1:00PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sWm-2h-cAf">
-                                        <rect key="frame" x="24" y="49" width="236.5" height="33"/>
+                                        <rect key="frame" x="24" y="46" width="240" height="28"/>
                                         <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="28"/>
                                         <color key="textColor" name="Ebony"/>
                                         <nil key="highlightedColor"/>
@@ -413,16 +430,16 @@
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OIm-5D-KIh" userLabel="TeaCard">
-                                <rect key="frame" x="20" y="511" width="374" height="100"/>
+                                <rect key="frame" x="20" y="503" width="374" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tea" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QRa-Dg-jaG">
-                                        <rect key="frame" x="24" y="26" width="25" height="19"/>
+                                        <rect key="frame" x="24" y="26" width="27" height="16"/>
                                         <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="16"/>
                                         <color key="textColor" name="Aluminium"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3:00PM - 3:30PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frO-TA-bVk">
-                                        <rect key="frame" x="24" y="49" width="221" height="33"/>
+                                        <rect key="frame" x="24" y="46" width="237.5" height="28"/>
                                         <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="28"/>
                                         <color key="textColor" name="Ebony"/>
                                         <nil key="highlightedColor"/>
@@ -633,17 +650,18 @@
     </scenes>
     <designables>
         <designable name="sZT-ls-n5r">
-            <size key="intrinsicContentSize" width="106" height="18"/>
+            <size key="intrinsicContentSize" width="112.5" height="15.5"/>
         </designable>
         <designable name="viA-Vp-cJk">
-            <size key="intrinsicContentSize" width="119.5" height="18"/>
+            <size key="intrinsicContentSize" width="125.5" height="15.5"/>
         </designable>
         <designable name="xjg-Tc-J5Y">
-            <size key="intrinsicContentSize" width="150.5" height="18"/>
+            <size key="intrinsicContentSize" width="160.5" height="15.5"/>
         </designable>
     </designables>
     <resources>
-        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="camera.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="profile" width="483.32998657226562" height="483.32998657226562"/>
         <namedColor name="Aluminium">
             <color red="0.59600001573562622" green="0.59600001573562622" blue="0.59600001573562622" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

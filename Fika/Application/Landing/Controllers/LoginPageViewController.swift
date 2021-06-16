@@ -16,7 +16,9 @@ class LoginPageViewController: UIViewController {
         let password = passwordField.text!
 
         Auth.auth().signIn(withEmail: email, password: password) { [weak self] _, error in
-            guard let strongSelf = self else { return }
+            guard let strongSelf = self else {
+                return
+            }
 
             // Login unsuccessful
             if error != nil {

@@ -489,8 +489,8 @@
 		AE867BA126783DF4007A0EB2 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				AE867BA326783E0B007A0EB2 /* Controllers */,
 				AE867BA226783E02007A0EB2 /* Views */,
+				AE867BA326783E0B007A0EB2 /* Controllers */,
 			);
 			path = Profile;
 			sourceTree = "<group>";

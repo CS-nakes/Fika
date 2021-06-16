@@ -45,9 +45,9 @@ Finally, open the `Fika.xcworkspace` file to view the project. You will need to 
 
 ## Sample Screens
 
-<p align="center"><img width="40%" src="docs/images/onboarding.png" alt="Fika Onboarding" />&nbsp;&nbsp;<img width="40%" src="docs/images/profile.png" alt="Fika Profile" /></p>
+<p align="center"><img width="40%" src="docs/images/onboarding.png" alt="Fika Onboarding" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img width="40%" src="docs/images/profile.png" alt="Fika Profile" /></p>
 
-<p align="center"><img width="40%" src="docs/images/home.png" alt="Fika Home" />&nbsp;&nbsp;<img width="40%" src="docs/images/call.png" alt="Fika Call" /></p>
+<p align="center"><img width="40%" src="docs/images/home.png" alt="Fika Home" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img width="40%" src="docs/images/call.png" alt="Fika Call" /></p>
 
 ## Acknowledgements
 

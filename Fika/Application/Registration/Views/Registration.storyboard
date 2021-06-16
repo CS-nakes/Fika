@@ -22,13 +22,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Fika" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJn-7e-OrA">
-                                <rect key="frame" x="20" y="153" width="215.5" height="28"/>
+                                <rect key="frame" x="20" y="153" width="208" height="33"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="28"/>
                                 <color key="textColor" name="Ebony"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GbS-sD-7nk">
-                                <rect key="frame" x="20" y="209" width="374" height="68"/>
+                                <rect key="frame" x="20" y="214" width="374" height="68"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="68" id="sX7-BX-cDb"/>
                                 </constraints>
@@ -40,7 +40,7 @@ Please enter your company code to continue.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnp-F7-Fz3">
-                                <rect key="frame" x="20" y="310" width="100.5" height="14"/>
+                                <rect key="frame" x="20" y="315" width="99" height="16.5"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
                                 <color key="textColor" name="Aluminium"/>
                                 <nil key="highlightedColor"/>
@@ -77,7 +77,7 @@ Please enter your company code to continue.</string>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Company Code" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="GaC-dS-wOP" customClass="TextField" customModule="Fika">
-                                <rect key="frame" x="20" y="331" width="374" height="50"/>
+                                <rect key="frame" x="20" y="338.5" width="374" height="50"/>
                                 <color key="backgroundColor" name="White"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="CIW-ph-0Ug"/>
@@ -141,13 +141,13 @@ Please enter your company code to continue.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register for Company A" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZQ-Lt-uT5">
-                                <rect key="frame" x="20" y="153" width="374" height="28"/>
+                                <rect key="frame" x="20" y="153" width="374" height="33"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="28"/>
                                 <color key="textColor" name="Ebony"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L3X-aE-w9A">
-                                <rect key="frame" x="20" y="207" width="374" height="87"/>
+                                <rect key="frame" x="20" y="212" width="374" height="87"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="87" id="etK-yg-HdV"/>
                                 </constraints>
@@ -157,7 +157,7 @@ Please enter your company code to continue.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Email Address" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="oKC-8Q-9NP" customClass="TextField" customModule="Fika">
-                                <rect key="frame" x="20" y="348" width="374" height="50"/>
+                                <rect key="frame" x="20" y="355.5" width="374" height="50"/>
                                 <color key="backgroundColor" name="White"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="3cc-K4-DJR"/>
@@ -184,13 +184,13 @@ Please enter your company code to continue.</string>
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxs-00-3fJ">
-                                <rect key="frame" x="20" y="327" width="95" height="14"/>
+                                <rect key="frame" x="20" y="332" width="90" height="16.5"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
                                 <color key="textColor" name="Aluminium"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Password" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="oAH-gq-9OH" customClass="TextField" customModule="Fika">
-                                <rect key="frame" x="20" y="440" width="374" height="50"/>
+                                <rect key="frame" x="20" y="450" width="374" height="50"/>
                                 <color key="backgroundColor" name="White"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="pAl-50-bhH"/>
@@ -217,7 +217,7 @@ Please enter your company code to continue.</string>
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm Your Password" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="B6C-FU-In8" customClass="TextField" customModule="Fika">
-                                <rect key="frame" x="20" y="501" width="374" height="50"/>
+                                <rect key="frame" x="20" y="511" width="374" height="50"/>
                                 <color key="backgroundColor" name="White"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="iWW-xB-0Wk"/>
@@ -244,7 +244,7 @@ Please enter your company code to continue.</string>
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBL-WE-ACy">
-                                <rect key="frame" x="20" y="419" width="67.5" height="14"/>
+                                <rect key="frame" x="20" y="426.5" width="62" height="16.5"/>
                                 <fontDescription key="fontDescription" name="NexaBold" family="Nexa Bold" pointSize="14"/>
                                 <color key="textColor" name="Aluminium"/>
                                 <nil key="highlightedColor"/>
@@ -278,6 +278,7 @@ Please enter your company code to continue.</string>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="onDidTapRegisterButton:" destination="2lx-eb-8JL" eventType="touchUpInside" id="de5-NR-Yyq"/>
+                                    <segue destination="dJ9-EV-Vgk" kind="show" id="71v-Jg-QUi"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -319,6 +320,16 @@ Please enter your company code to continue.</string>
             </objects>
             <point key="canvasLocation" x="1879.7101449275365" y="77.678571428571431"/>
         </scene>
+        <!--Profile-->
+        <scene sceneID="OaN-vi-pI0">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" referencedIdentifier="Profile" id="dJ9-EV-Vgk" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="meN-fi-HVE"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fuq-pr-WOm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2641" y="78"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="qzo-fp-6Ee">
             <objects>
@@ -338,6 +349,20 @@ Please enter your company code to continue.</string>
             <point key="canvasLocation" x="56.521739130434788" y="77.678571428571431"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="B6C-FU-In8">
+            <size key="intrinsicContentSize" width="148" height="18"/>
+        </designable>
+        <designable name="GaC-dS-wOP">
+            <size key="intrinsicContentSize" width="167.5" height="18"/>
+        </designable>
+        <designable name="oAH-gq-9OH">
+            <size key="intrinsicContentSize" width="131" height="18"/>
+        </designable>
+        <designable name="oKC-8Q-9NP">
+            <size key="intrinsicContentSize" width="158.5" height="18"/>
+        </designable>
+    </designables>
     <resources>
         <namedColor name="Aluminium">
             <color red="0.59600001573562622" green="0.59600001573562622" blue="0.59600001573562622" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

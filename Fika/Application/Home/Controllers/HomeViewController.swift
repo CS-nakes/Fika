@@ -43,7 +43,7 @@ class HomeViewController: UIViewController {
 
     func loadSession() {
         // swiftlint:disable:next closure_body_length
-        FirebaseConnection().fetchUpcomingSessions { sessions, error in
+        FirebaseConnection().upcomingSessionsListener { sessions, error in
             guard error == nil, let session = sessions?.first,
                   let userId: String = UserRepository.readValue(forKey: "userId"),
                   let participantId = session.participants.first(where: { $0 != userId }) else {
@@ -53,7 +53,6 @@ class HomeViewController: UIViewController {
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "d MMMM, E"
 
-            // swiftlint:disable:next closure_body_length
             FirebaseConnection().fetchUser(userId: participantId) { otherUser, error in
                 guard error == nil, let otherUser = otherUser else {
                     return

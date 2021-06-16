@@ -111,7 +111,7 @@ struct FirebaseConnection {
         }
 
         db.collection(userPath).document(userId)
-            .addSnapshotListener { documentSnapshot, _ in
+            .addSnapshotListener { _, _ in
                 fetchUpcomingSessions(completion: completion)
             }
     }

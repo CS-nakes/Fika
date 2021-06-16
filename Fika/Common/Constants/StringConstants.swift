@@ -7,7 +7,17 @@ enum StringConstants {
         "What hobby do you wish you had more time for?",
         "Tell me three fun facts about yourself.",
         "What was the first thing you bought with your own money?",
-        "How would you spend a million dollars in 24 hours?"
+        "How would you spend a million dollars in 24 hours?",
+        "What's one thing that would make your day better right now?",
+        "What do you know a surprising amount of that most people don't?",
+        "What's the nicest thing someone has ever done for you?",
+        "What's one thing you won't ever do again?",
+        "If you could move anywhere, where would you go?",
+        "What’s your biggest pet peeve?",
+        "What is the worst piece of advice you’ve ever gotten?",
+        "What always makes you laugh, even when you’re upset?",
+        "What’s the worst trend you’ve ever taken part in?",
+        "What is something that’s really popular right now that will be ridiculous in five years?"
     ]
 
     static let quotes = [

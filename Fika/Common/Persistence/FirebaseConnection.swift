@@ -18,7 +18,7 @@ struct FirebaseConnection {
         }
 
         let userDoc = UserRecord(name: name, position: position, profilePictureId: user.profilePictureId,
-             introduction: user.introduction, preferredTimeslots: user.preferredTimeslots, isAvailable: true)
+                                 introduction: user.introduction, preferredTimeslots: user.preferredTimeslots, isAvailable: true)
 
         try batch.setData(from: userDoc, forDocument: docRef)
 
@@ -47,7 +47,7 @@ struct FirebaseConnection {
         // }
 
         for (fieldName, value) in userValues where value != nil {
-            UserRepository.saveValue(forKey: fieldName, value: value)
+            UserRepository.saveValue(forKey: fieldName, value: value!)
         }
 
     }

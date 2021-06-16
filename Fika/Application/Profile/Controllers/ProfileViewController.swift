@@ -24,6 +24,7 @@ class ProfileViewController: UIViewController, UITextViewDelegate,
         introductionField.text = user.introduction
         introductionField.delegate = self
         if selectedImage == nil {
+            // swiftlint:disable:next object_literal
             profileImage.image = UIImage(named: "profile")
         } else {
             profileImage.image = selectedImage
@@ -85,7 +86,7 @@ class ProfileViewController: UIViewController, UITextViewDelegate,
             !position.trimmingCharacters(in: .whitespaces).isEmpty
     }
 
-    @IBAction func onContinueDidPress(_ sender: UIButton) {
+    @IBAction private func onContinueDidPress(_ sender: UIButton) {
         if !areFieldsValid() {
             return
         }

@@ -293,10 +293,10 @@
 		2E7E391D2677082E00034007 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				AE867BA126783DF4007A0EB2 /* Profile */,
 				720742022677C17400D5502B /* Landing */,
 				2E7E392226779AA600034007 /* Onboarding */,
 				2EAB40722677B59D00FFF586 /* Registration */,
+				AE867BA126783DF4007A0EB2 /* Profile */,
 				2E7E391F2677086200034007 /* Home */,
 				2E6D6A6E2679126500FA7600 /* Call */,
 			);

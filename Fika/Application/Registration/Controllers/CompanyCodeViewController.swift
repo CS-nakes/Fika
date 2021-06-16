@@ -17,5 +17,11 @@ class CompanyCodeViewController: UIViewController {
         titleLabel.text = titleText
         companyCodeTextField.delegate = self
     }
+    
+    @IBAction func onContinueDidPress(_ sender: UIButton) {
+        // TODO: Validation + Logic
+        performSegue(withIdentifier: "ToRegistration", sender: nil)
+    }
+    
 
 }

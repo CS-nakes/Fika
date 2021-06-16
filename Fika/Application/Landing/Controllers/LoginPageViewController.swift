@@ -36,6 +36,7 @@ class LoginPageViewController: UIViewController {
         // Login successful
         // TODO: transition to another page and persist user data?
         print("Login successful for email!")
+        performSegue(withIdentifier: "ToHome", sender: nil)
     }
 
 }

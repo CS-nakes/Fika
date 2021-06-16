@@ -42,6 +42,7 @@ class AccountRegistrationViewController: UIViewController {
 
         // Registration successful
         print("User is created successfully!")
-
+        
+        performSegue(withIdentifier: "ToProfile", sender: nil)
     }
 }

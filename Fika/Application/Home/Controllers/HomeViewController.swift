@@ -9,6 +9,8 @@ class HomeViewController: UIViewController {
     @IBOutlet private var selfImageView: UIImageView!
     @IBOutlet private var otherImageView: UIImageView!
     @IBOutlet private var quoteLabel: UILabel!
+    
+    var sessionId = "SESSION_ID"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +30,12 @@ class HomeViewController: UIViewController {
         loadSelf()
         loadSession()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? CallViewController {
+            vc.sessionId = sessionId
+        }
+    }
 
     func loadSelf() {
         guard let profileImageId: String = UserRepository.readValue(forKey: "profilePictureId") else {
@@ -44,12 +52,13 @@ class HomeViewController: UIViewController {
     func loadSession() {
         // swiftlint:disable:next closure_body_length
         FirebaseConnection().upcomingSessionsListener { sessions, error in
-            guard error == nil, let session = sessions?.first,
+            guard error == nil, let session = sessions?.first, let sessionId = session.id,
                   let userId: String = UserRepository.readValue(forKey: "userId"),
                   let participantId = session.participants.first(where: { $0 != userId }) else {
                 return
             }
-
+            
+            self.sessionId = sessionId
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "d MMMM, E"
 

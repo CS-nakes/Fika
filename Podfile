@@ -11,6 +11,7 @@ target 'Fika' do
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
   pod 'Firebase/Storage'
+  pod 'FirebaseFirestoreSwift', '> 7.0-beta'
 
   target 'FikaTests' do
     inherit! :search_paths

@@ -178,7 +178,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="vbq-Zx-nTG" kind="show" identifier="ToTimeSlots" id="YGy-yM-EfX"/>
+                                    <action selector="onContinueDidPress:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="WMj-jO-zeq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cb1-YU-GlX">
@@ -236,6 +236,7 @@
                         <outlet property="nameField" destination="sZT-ls-n5r" id="ZQe-Il-D6F"/>
                         <outlet property="positionField" destination="viA-Vp-cJk" id="hg5-eG-2PG"/>
                         <outlet property="profileImage" destination="FQF-dZ-LZV" id="nLk-tM-3v9"/>
+                        <segue destination="vbq-Zx-nTG" kind="show" identifier="ToTimeSlots" id="oL8-n3-5jb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -18,22 +18,25 @@ class LoginPageViewController: UIViewController {
         let email = emailField.text!
         let password = passwordField.text!
 
-        Auth.auth().signIn(withEmail: email, password: password) { [weak self] _, error in
-            guard let strongSelf = self else {
-                return
-            }
+        FirebaseConnection().signIn(email: email, password: password, completion: signInCompletion)
+    }
 
-            // Login unsuccessful
-            if error != nil {
-                // TODO: create an alert here
-                print("Login unsuccessful. Please check your email and/or password.")
-                return
-            }
-
-            // Login successful
-            // TODO: transition to another page and persist user data?
-            print("Login successful for email \(email)!")
+    private func signInCompletion(authResult: AuthDataResult?, error: Error?) {
+        guard let strongSelf = authResult else {
+            return
         }
 
+        // Login unsuccessful
+        if error != nil {
+            // TODO: create an alert here
+            print("Login unsuccessful. Please check your email and/or password.")
+            return
+        }
+
+        // Login successful
+        // TODO: transition to another page and persist user data?
+        print("Login successful for email!")
+        performSegue(withIdentifier: "ToHome", sender: nil)
     }
+
 }

@@ -42,6 +42,9 @@
 		726E41372679020B00DA377F /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726E41362679020B00DA377F /* Session.swift */; };
 		726E41392679022000DA377F /* Timeslot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726E41382679022000DA377F /* Timeslot.swift */; };
 		726E413C2679024100DA377F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726E413B2679024100DA377F /* User.swift */; };
+		72EB60982679B1F600203ABD /* FirebaseConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EB60972679B1F600203ABD /* FirebaseConnection.swift */; };
+		72EB609E2679C17300203ABD /* UserRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EB609D2679C17300203ABD /* UserRecord.swift */; };
+		72EB60A02679C45B00203ABD /* SessionRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EB609F2679C45B00203ABD /* SessionRecord.swift */; };
 		7633D95931701ED80FB10C53 /* Pods_Fika.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89CCA8B38AD2B1972628860B /* Pods_Fika.framework */; };
 		A6226FCB045949A80AFD8C28 /* Pods_Fika_FikaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CEC1E71191AF86975A1FF0F /* Pods_Fika_FikaUITests.framework */; };
 		AE68628926777A9700059414 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE68628826777A9700059414 /* Profile.storyboard */; };
@@ -113,6 +116,9 @@
 		726E41362679020B00DA377F /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		726E41382679022000DA377F /* Timeslot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timeslot.swift; sourceTree = "<group>"; };
 		726E413B2679024100DA377F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		72EB60972679B1F600203ABD /* FirebaseConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseConnection.swift; sourceTree = "<group>"; };
+		72EB609D2679C17300203ABD /* UserRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRecord.swift; sourceTree = "<group>"; };
+		72EB609F2679C45B00203ABD /* SessionRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionRecord.swift; sourceTree = "<group>"; };
 		7D062D7F631673D8E70DE3D5 /* Pods-Fika-FikaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fika-FikaUITests.release.xcconfig"; path = "Target Support Files/Pods-Fika-FikaUITests/Pods-Fika-FikaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		89CCA8B38AD2B1972628860B /* Pods_Fika.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fika.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C1D270DE54533AF1D03D78F /* Pods-FikaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FikaTests.debug.xcconfig"; path = "Target Support Files/Pods-FikaTests/Pods-FikaTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -287,10 +293,10 @@
 		2E7E391D2677082E00034007 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				AE867BA126783DF4007A0EB2 /* Profile */,
 				720742022677C17400D5502B /* Landing */,
 				2E7E392226779AA600034007 /* Onboarding */,
 				2EAB40722677B59D00FFF586 /* Registration */,
+				AE867BA126783DF4007A0EB2 /* Profile */,
 				2E7E391F2677086200034007 /* Home */,
 				2E6D6A6E2679126500FA7600 /* Call */,
 			);
@@ -390,7 +396,9 @@
 		2E975DBC2678D44200907565 /* Persistence */ = {
 			isa = PBXGroup;
 			children = (
+				72EB609C2679C16A00203ABD /* Record */,
 				2E975DBD2678D45A00907565 /* UserRepository.swift */,
+				72EB60972679B1F600203ABD /* FirebaseConnection.swift */,
 			);
 			path = Persistence;
 			sourceTree = "<group>";
@@ -487,6 +495,15 @@
 				726E413B2679024100DA377F /* User.swift */,
 			);
 			path = User;
+			sourceTree = "<group>";
+		};
+		72EB609C2679C16A00203ABD /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				72EB609D2679C17300203ABD /* UserRecord.swift */,
+				72EB609F2679C45B00203ABD /* SessionRecord.swift */,
+			);
+			path = Record;
 			sourceTree = "<group>";
 		};
 		AE867BA126783DF4007A0EB2 /* Profile */ = {
@@ -790,10 +807,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE867BA726783E82007A0EB2 /* TimingViewController.swift in Sources */,
+				72EB60982679B1F600203ABD /* FirebaseConnection.swift in Sources */,
 				2E0B14FB2679DBEC0086004F /* UIViewController+Keyboard.swift in Sources */,
 				2E7E392E26779EF000034007 /* UIView+ShadowColor.swift in Sources */,
 				2EFA3CDE2677BF1C009B2826 /* AccountRegistrationViewController.swift in Sources */,
 				2E7E38ED2676FC0A00034007 /* HomeViewController.swift in Sources */,
+				72EB60A02679C45B00203ABD /* SessionRecord.swift in Sources */,
 				2E7E39302677A6A700034007 /* OnboardingPageViewController.swift in Sources */,
 				7207421426783E9A00D5502B /* LoginPageViewController.swift in Sources */,
 				2E6D6A802679287100FA7600 /* VideoCollectionViewCell.swift in Sources */,
@@ -814,6 +833,7 @@
 				2E7E38EB2676FC0A00034007 /* SceneDelegate.swift in Sources */,
 				726E41392679022000DA377F /* Timeslot.swift in Sources */,
 				2E7E39372677B08200034007 /* PageViewController.swift in Sources */,
+				72EB609E2679C17300203ABD /* UserRecord.swift in Sources */,
 				726E413C2679024100DA377F /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

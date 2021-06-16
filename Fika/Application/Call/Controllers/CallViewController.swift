@@ -101,7 +101,7 @@ class CallViewController: UIViewController {
                 self.selfVideoConstraint.constant = -120
                 UIView.animate(withDuration: 1, delay: 0, options: .curveEaseInOut) {
                     self.view.layoutIfNeeded()
-                    self.hideSelfVideoButton.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
+                    // self.hideSelfVideoButton.transform = CGAffineTransform(rotationAngle: 2.0 * CGFloat.pi)
                 }
             }
     }
@@ -163,7 +163,7 @@ extension CallViewController {
 
         UIView.animate(withDuration: 0.5) {
             self.view.layoutIfNeeded()
-            self.hideSelfVideoButton.transform = CGAffineTransform(rotationAngle: CGFloat.pi * 2.0)
+            // self.hideSelfVideoButton.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
         } completion: { _ in
             self.initialiseTimer()
         }

@@ -31,20 +31,17 @@ class AccountRegistrationViewController: UIViewController {
             return
         }
 
-        Auth.auth().createUser(withEmail: email, password: firstPassword) { authResult, error in
-            guard let user = authResult?.user, error == nil else {
-                print("Error \(error?.localizedDescription ?? "")")
-                return
-            }
+        FirebaseConnection().createAuth(email: email, password: firstPassword, completion: createAuthCompletion)
+    }
 
-            // Registration successful
-            print("User is created successfully!")
-
-            // Transition to home
-
-            // Send user id, email, and company to firestore
-
+    private func createAuthCompletion(authResult: AuthDataResult?, error: Error?) {
+        guard let user = authResult?.user, error == nil else {
+            print("Error \(error?.localizedDescription ?? "")")
+            return
         }
+
+        // Registration successful
+        print("User is created successfully!")
 
     }
 }

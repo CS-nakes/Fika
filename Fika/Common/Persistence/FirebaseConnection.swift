@@ -10,45 +10,27 @@ struct FirebaseConnection {
 
     // use case: on creating profile
     func createUser(user: User, completion: @escaping (Error?) -> Void) throws {
-        let docRef = db.collection(userPath).document()
-        let batch = db.batch()
+        UserRepository.deleteValue(forKey: "profilePictureId")
+        // only called after createAuth
+        guard let userId: String = UserRepository.readValue(forKey: "userId") else {
+            completion(DatabaseError.noUserId)
+            return
+        }
 
         guard let name = user.name, let position = user.position else {
-            throw DatabaseError.invalidUser
+            completion(DatabaseError.invalidUser)
+            return
         }
 
         let userDoc = UserRecord(name: name, position: position, profilePictureId: user.profilePictureId,
                                  introduction: user.introduction, preferredTimeslots: user.preferredTimeslots, isAvailable: true)
 
-        try batch.setData(from: userDoc, forDocument: docRef)
-
-        batch.commit { err in
-            completion(err)
-        }
-
-        // store in userDefaults
-
-        guard let encodedPreferredTimeslots = try? JSONEncoder().encode(user.preferredTimeslots) else {
-            return
-        }
-
-        let userValues = [
-            "userId": docRef.documentID,
-            "name": name,
-            "position": position,
-            // no company id
-            "introduction": user.introduction ?? "",
-            "profilePictureId": user.profilePictureId,
-            "preferredTimeslots": encodedPreferredTimeslots
-        ] as [String: Any?]
-
-        // decode code
-        // if let data = UserDefaults.standard.data(forKey: "dataType") {
-        //    let array = try JSONDecoder().decode([DataType].self, from: data)
-        // }
-
-        for (fieldName, value) in userValues where value != nil {
-            UserRepository.saveValue(forKey: fieldName, value: value!)
+        try db.collection(userPath).document(userId).setData(from: userDoc) { err in
+            if let err = err {
+                completion(err)
+            } else {
+                completion(nil)
+            }
         }
 
     }
@@ -56,7 +38,7 @@ struct FirebaseConnection {
     // MARK: - FirebaseDatabase: Get
 
     // could also remove userId and grab userid from UserDefaults
-    func fetchUpcomingSessions(completion: @escaping ([Session]?, Error?) -> Void) {
+    private func fetchUpcomingSessions(completion: @escaping ([Session]?, Error?) -> Void) {
 
         // only get the last 1, because u might finish the call early.
         // if fetch all, may show the call that you just ended
@@ -142,11 +124,38 @@ struct FirebaseConnection {
     // MARK: - FirebaseAuth
 
     func signIn(email: String, password: String, completion: @escaping (AuthDataResult?, Error?) -> Void) {
-        Auth.auth().signIn(withEmail: email, password: password, completion: completion)
+        UserRepository.deleteValue(forKey: "profilePictureId")
+        UserRepository.deleteValue(forKey: "userId")
+        Auth.auth().signIn(withEmail: email, password: password) { authDataResult, error in
+            guard let userId = authDataResult?.user.uid, error == nil else {
+                // should not reach
+                completion(authDataResult, error)
+                return
+            }
+            UserRepository.saveValue(forKey: "userId", value: userId)
+            fetchUser(userId: userId) { user, error in
+                guard let profilePictureId = user?.profilePictureId else {
+                    completion(authDataResult, error)
+                    return
+                }
+                UserRepository.saveValue(forKey: "profilePictureId", value: profilePictureId)
+                completion(authDataResult, error)
+            }
+
+        }
     }
 
     func createAuth(email: String, password: String, completion: @escaping (AuthDataResult?, Error?) -> Void) {
-        Auth.auth().createUser(withEmail: email, password: password, completion: completion)
+        UserRepository.deleteValue(forKey: "profilePictureId")
+        UserRepository.deleteValue(forKey: "userId")
+        Auth.auth().createUser(withEmail: email, password: password) { authDataResult, error in
+            guard let userId = authDataResult?.user.uid else {
+                completion(authDataResult, error)
+                return
+            }
+            UserRepository.saveValue(forKey: "userId", value: userId)
+            completion(authDataResult, error)
+        }
     }
 
     // MARK: - FirebaseCloudStorage
@@ -166,6 +175,7 @@ struct FirebaseConnection {
             if error != nil {
                 completion(nil, error)
             } else {
+                UserRepository.saveValue(forKey: "profilePictureId", value: id)
                 completion(id, nil)
             }
         }
@@ -190,6 +200,7 @@ struct FirebaseConnection {
 }
 
 enum DatabaseError: Error {
-    case invalidUser
     case noUserId
+    case invalidUser
+    case firebaseError
 }

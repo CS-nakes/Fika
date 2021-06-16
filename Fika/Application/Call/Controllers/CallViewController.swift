@@ -3,15 +3,21 @@ import AgoraRtcKit
 
 class CallViewController: UIViewController {
 
+    @IBOutlet private var loadingView: UIView!
     @IBOutlet private var selfCollectionView: UICollectionView!
     @IBOutlet private var otherCollectionView: UICollectionView!
     @IBOutlet private var muteButton: UIButton!
+    @IBOutlet private var videoButton: UIButton!
 
     var callId: UInt = 0 // Int based IDs for Agora
     var muted = false {
         didSet {
             muteButton.isSelected = muted
-            muteButton.backgroundColor = muted ? .systemRed : .lightGray
+        }
+    }
+    var cameraOff = false {
+        didSet {
+            videoButton.isSelected = cameraOff
         }
     }
     var inCall = false
@@ -105,16 +111,21 @@ extension CallViewController: AgoraRtcEngineDelegate {
 
 extension CallViewController {
 
-    @IBAction private func didTapExit(_ sender: Any) {
+    @IBAction private func didTapExit(_ sender: UIButton) {
         // Dismiss view
     }
 
-    @IBAction private func didToggleMute(_ sender: Any) {
+    @IBAction private func didToggleMute(_ sender: UIButton) {
         muted.toggle()
         getAgoraEngine().muteLocalAudioStream(muted)
     }
 
-    @IBAction private func didTapSwitchCamera(_ sender: Any) {
+    @IBAction private func didToggleVideo(_ sender: UIButton) {
+        cameraOff.toggle()
+        getAgoraEngine().enableLocalVideo(!cameraOff)
+    }
+
+    @IBAction private func didTapSwitchCamera(_ sender: UIButton) {
         getAgoraEngine().switchCamera()
     }
 
@@ -151,6 +162,11 @@ extension CallViewController: UICollectionViewDelegate, UICollectionViewDataSour
             videoCanvas.view = videoCell.videoView
             videoCanvas.renderMode = .hidden
             getAgoraEngine().setupRemoteVideo(videoCanvas)
+            loadingView.isHidden = true
+        }
+
+        if otherUserId == nil {
+            loadingView.isHidden = false
         }
 
         return cell

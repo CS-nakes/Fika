@@ -14,7 +14,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession,
                options connectionOptions: UIScene.ConnectionOptions) {
         if let hasOnboarded: Bool = UserRepository.readValue(forKey: "onboarded") {
-            print(hasOnboarded) // To void the warning
+            print(hasOnboarded ? "User has already onboarded" : "Should not print this")
             return
         }
 

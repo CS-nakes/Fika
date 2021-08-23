@@ -15,7 +15,7 @@ Fika aims to solve this problem by providing a platform for such one-to-one conv
 > It means making time for friends and colleagues to share a cup of coffee (or tea) and a little something to eat. To take a pause in life and socialise. To relax the mind and strengthen relationships.
 
 
-Fika was build over 3 days for the [CODE_EXP Hackathon 2021](https://codeexp.tk.sg/), which is part of [BrainHack 2021](https://www.dsta.gov.sg/brainhack).
+Fika was built over 3 days for the [CODE_EXP Hackathon 2021](https://codeexp.tk.sg/), which is part of [BrainHack 2021](https://www.dsta.gov.sg/brainhack).
 
 ## Team Members
 
